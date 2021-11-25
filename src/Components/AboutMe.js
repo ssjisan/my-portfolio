@@ -4,7 +4,7 @@ import Menu from './Menu';
 import "./Styles/AboutMe.css"
 export default function AboutMe({pages}) {
     return (
-        <div className="container">
+        <div className="aboueMe-body">
         <Grid container>
             <Grid item md={10}>
                 This is About Me

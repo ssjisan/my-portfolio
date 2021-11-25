@@ -14,7 +14,7 @@ export default function Menu({pages}) {
   >
     <Grid>
       <Link to="/" className="Link">
-        <Typography className="item" variant="h6" style={{borderBottom: pages===1? "2px solid green" : "2px solid transparent" }}>Home</Typography>
+        <Typography className="item" variant="h6" style={{borderBottom: pages===1? "2px solid green" : "2px solid transparent"}}>Home</Typography>
       </Link>
     </Grid>
     <Grid>
