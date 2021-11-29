@@ -10,7 +10,7 @@ export default function Contact({pages}) {
                 This is Contact
             </Grid>
             <Grid item md={2}>
-                    <Menu pages={6}/>
+                <Menu pages={6}/>
             </Grid>
         </Grid>
         </div>
