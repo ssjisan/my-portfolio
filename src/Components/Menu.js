@@ -1,8 +1,8 @@
-import React from "react";
 import { Grid, Typography } from "@mui/material";
+import { Box } from "@mui/system";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Styles/MenuStyles.css";
-import { Box } from "@mui/system";
 
 export default function Menu({ pages }) {
   return (
@@ -12,6 +12,7 @@ export default function Menu({ pages }) {
         flexDirection="column"
         alignItems="flex-end"
         spacing={5}
+        style={{ paddingRight: "20px" }}
       >
         <Grid item>
           <Link to="/" className="Link">
@@ -19,8 +20,11 @@ export default function Menu({ pages }) {
               className="item"
               variant="h6"
               style={{
-                borderBottom:
-                  pages === 1 ? "2px solid green" : "2px solid transparent",
+                fontSize: pages === 1 ? "30px" : "20px",
+                fontWeight: pages === 1 ? "bold" : "",
+                color: "#444",
+                textShadow: "2px 10px 10px #ccc",
+                padding: pages === 1 ? 20 : "",
               }}
             >
               Home
@@ -33,8 +37,12 @@ export default function Menu({ pages }) {
               className="item"
               variant="h6"
               style={{
-                borderBottom:
-                  pages === 2 ? "2px solid green" : "2px solid transparent",
+                fontSize: pages === 2 ? "30px" : "20px",
+                fontWeight: pages === 2 ? "bold" : "",
+                color: "#444",
+                textShadow: "2px 10px 10px #ccc",
+
+                padding: pages === 2 ? 20 : "",
               }}
             >
               About Me
@@ -47,8 +55,11 @@ export default function Menu({ pages }) {
               className="item"
               variant="h6"
               style={{
-                borderBottom:
-                  pages === 3 ? "2px solid green" : "2px solid transparent",
+                fontSize: pages === 3 ? "30px" : "20px",
+                fontWeight: pages === 3 ? "bold" : "",
+                color: "#444",
+                textShadow: "2px 10px 10px #ccc",
+                padding: pages === 3 ? 20 : "",
               }}
             >
               Projects
@@ -61,8 +72,11 @@ export default function Menu({ pages }) {
               className="item"
               variant="h6"
               style={{
-                borderBottom:
-                  pages === 4 ? "2px solid green" : "2px solid transparent",
+                fontSize: pages === 4 ? "30px" : "20px",
+                fontWeight: pages === 4 ? "bold" : "",
+                color: "#444",
+                textShadow: "2px 10px 10px #ccc",
+                padding: pages === 4 ? 20 : "",
               }}
             >
               Experience
@@ -75,8 +89,11 @@ export default function Menu({ pages }) {
               className="item"
               variant="h6"
               style={{
-                borderBottom:
-                  pages === 5 ? "2px solid green" : "2px solid transparent",
+                fontSize: pages === 5 ? "30px" : "20px",
+                fontWeight: pages === 5 ? "bold" : "",
+                color: "#444",
+                textShadow: "2px 10px 10px #ccc",
+                padding: pages === 5 ? 20 : "",
               }}
             >
               Blog
@@ -89,8 +106,11 @@ export default function Menu({ pages }) {
               className="item"
               variant="h6"
               style={{
-                borderBottom:
-                  pages === 6 ? "2px solid green" : "2px solid transparent",
+                fontSize: pages === 6 ? "30px" : "20px",
+                fontWeight: pages === 6 ? "bold" : "",
+                color: "#444",
+                textShadow: "2px 10px 10px #ccc",
+                padding: pages === 6 ? 20 : "",
               }}
             >
               Contact
