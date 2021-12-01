@@ -99,34 +99,6 @@ export default function HomeCard() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid>
-          <Typography style={{ fontSize: 25 }}>
-            OLED Temperature and Humidity Meter oled-temp-humid-meter.ino
-            Displays results on 128 x 64 OLED display Uses AM2320 I2C
-            Temperature and Humidity sensor Uses Adafruit SSD1306 OLED Library
-            Uses Adafruit AM2320 Library Uses Adafruit GFX Graphics Library OLED
-            Temperature and Humidity Meter oled-temp-humid-meter.ino Displays
-            results on 128 x 64 OLED display Uses AM2320 I2C Temperature and
-            Humidity sensor Uses Adafruit SSD1306 OLED Library Uses Adafruit
-            AM2320 Library Uses Adafruit GFX Graphics Library OLED Temperature
-            and Humidity Meter oled-temp-humid-meter.ino Displays results on 128
-            x 64 OLED display Uses AM2320 I2C Temperature and Humidity sensor
-            Uses Adafruit SSD1306 OLED Library Uses Adafruit AM2320 Library Uses
-            Adafruit GFX Graphics Library OLED Temperature and Humidity Meter
-            oled-temp-humid-meter.ino Displays results on 128 x 64 OLED display
-            Uses AM2320 I2C Temperature and Humidity sensor Uses Adafruit
-            SSD1306 OLED Library Uses Adafruit AM2320 Library Uses Adafruit GFX
-            Graphics Library OLED Temperature and Humidity Meter
-            oled-temp-humid-meter.ino Displays results on 128 x 64 OLED display
-            Uses AM2320 I2C Temperature and Humidity sensor Uses Adafruit
-            SSD1306 OLED Library Uses Adafruit AM2320 Library Uses Adafruit GFX
-            Graphics Library OLED Temperature and Humidity Meter
-            oled-temp-humid-meter.ino Displays results on 128 x 64 OLED display
-            Uses AM2320 I2C Temperature and Humidity sensor Uses Adafruit
-            SSD1306 OLED Library Uses Adafruit AM2320 Library Uses Adafruit GFX
-            Graphics Library
-          </Typography>
-        </Grid>
       </Grid>
     </Box>
   );
