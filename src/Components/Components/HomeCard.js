@@ -1,9 +1,10 @@
 import { Grid, Typography, useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useEffect } from "react";
-import { useDencrypt } from "use-dencrypt-effect";
 // import { Link } from "react-router-dom";
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
+import { useDencrypt } from "use-dencrypt-effect";
+import jisan from "./../images/jisan.png";
 const values = [
   "Front-end Developer",
   "Prototyping With Figma",
@@ -64,11 +65,7 @@ export default function HomeCard() {
           )}
         </Grid>
         <Grid item xs={12} md={6}>
-          <img
-            src="https://ssjisan-pp.web.app/static/media/jisan.cdabf414.png"
-            width={fontForMobile ? "300px" : "400px"}
-            alt=""
-          />
+          <img src={jisan} width={fontForMobile ? "300px" : "400px"} alt="" />
         </Grid>
         <Grid item xs={12} md={6}>
           <Grid container spacing={3}>
@@ -101,6 +98,34 @@ export default function HomeCard() {
               </a>
             </Grid>
           </Grid>
+        </Grid>
+        <Grid>
+          <Typography style={{ fontSize: 25 }}>
+            OLED Temperature and Humidity Meter oled-temp-humid-meter.ino
+            Displays results on 128 x 64 OLED display Uses AM2320 I2C
+            Temperature and Humidity sensor Uses Adafruit SSD1306 OLED Library
+            Uses Adafruit AM2320 Library Uses Adafruit GFX Graphics Library OLED
+            Temperature and Humidity Meter oled-temp-humid-meter.ino Displays
+            results on 128 x 64 OLED display Uses AM2320 I2C Temperature and
+            Humidity sensor Uses Adafruit SSD1306 OLED Library Uses Adafruit
+            AM2320 Library Uses Adafruit GFX Graphics Library OLED Temperature
+            and Humidity Meter oled-temp-humid-meter.ino Displays results on 128
+            x 64 OLED display Uses AM2320 I2C Temperature and Humidity sensor
+            Uses Adafruit SSD1306 OLED Library Uses Adafruit AM2320 Library Uses
+            Adafruit GFX Graphics Library OLED Temperature and Humidity Meter
+            oled-temp-humid-meter.ino Displays results on 128 x 64 OLED display
+            Uses AM2320 I2C Temperature and Humidity sensor Uses Adafruit
+            SSD1306 OLED Library Uses Adafruit AM2320 Library Uses Adafruit GFX
+            Graphics Library OLED Temperature and Humidity Meter
+            oled-temp-humid-meter.ino Displays results on 128 x 64 OLED display
+            Uses AM2320 I2C Temperature and Humidity sensor Uses Adafruit
+            SSD1306 OLED Library Uses Adafruit AM2320 Library Uses Adafruit GFX
+            Graphics Library OLED Temperature and Humidity Meter
+            oled-temp-humid-meter.ino Displays results on 128 x 64 OLED display
+            Uses AM2320 I2C Temperature and Humidity sensor Uses Adafruit
+            SSD1306 OLED Library Uses Adafruit AM2320 Library Uses Adafruit GFX
+            Graphics Library
+          </Typography>
         </Grid>
       </Grid>
     </Box>

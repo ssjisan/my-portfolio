@@ -1,11 +1,11 @@
-import React from "react";
 import { Grid, useMediaQuery } from "@mui/material";
-import Menu from "./Menu";
-import "./Styles/Home.css";
-import HomeCard from "./Components/HomeCard";
 import { Box } from "@mui/system";
-import MenuHeaderMobile from "./MenuHeaderMobile";
+import React from "react";
+import HomeCard from "./Components/HomeCard";
+import Menu from "./Menu";
 import MenuFooterMobile from "./MenuFooterMobile";
+import MenuHeaderMobile from "./MenuHeaderMobile";
+import "./Styles/Home.css";
 
 export default function Home({ pages }) {
   const fontForMobile = useMediaQuery("(max-width:900px)");
@@ -14,9 +14,6 @@ export default function Home({ pages }) {
       {!fontForMobile && (
         <Grid
           container
-          justifyContent="center"
-          alignContent="center"
-          alignItems="center"
         >
           <Grid item md={10} style={{ padding: "5%" }}>
             <HomeCard />
@@ -27,14 +24,14 @@ export default function Home({ pages }) {
         </Grid>
       )}
       {fontForMobile && (
-        <Grid container>
-          <Grid item xs={12}>
+        <Grid container style={{ display: "flex" , justifyContent: "space-between"  }}>
+          <Grid item xs={12} style={{ display:"flex", justifyContent:"center", width:"100%", top:0,maxHeight:"10vh", padding:"2%"}}>
             <MenuHeaderMobile />
           </Grid>
-          <Grid item xs={12} style={{padding:"10%"}}>
+          <Grid item xs={12} style={{paddingTop:"10%",maxHeight:"85vh",overflowY:"scroll"}}>
             <HomeCard />
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} style={{display:"flex", justifyContent:"center", width:"100%", position:"fixed", bottom:0,maxHeight:"10vh"}}>
             <MenuFooterMobile/>
           </Grid>
         </Grid>

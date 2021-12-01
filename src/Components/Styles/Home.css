@@ -1,8 +1,8 @@
-.home-body{
-    background-image: url("../images/home.jpg"); 
-    background-color: #cccccc; 
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.home-body {
+  background-image: url("../images/home.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:100vh;
+  background-size: cover;
+}

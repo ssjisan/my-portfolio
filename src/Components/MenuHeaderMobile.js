@@ -11,7 +11,6 @@ export default function MenuHeaderMobile({ pages }) {
         <Grid item>
           <Link to="/" className="Link">
             <Typography
-              
               variant="body1"
               style={{
                 fontSize: pages === 1 ? "30px" : "20px",
@@ -28,7 +27,6 @@ export default function MenuHeaderMobile({ pages }) {
         <Grid item>
           <Link to="/" className="Link">
             <Typography
-              
               variant="body1"
               style={{
                 fontSize: pages === 1 ? "30px" : "20px",
@@ -45,7 +43,6 @@ export default function MenuHeaderMobile({ pages }) {
         <Grid item>
           <Link to="/" className="Link">
             <Typography
-              
               variant="body1"
               style={{
                 fontSize: pages === 1 ? "30px" : "20px",
