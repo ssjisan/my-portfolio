@@ -13,9 +13,11 @@ const values = [
 
 export default function HomeCard() {
   const { result, dencrypt } = useDencrypt();
-  const fontForMobile = useMediaQuery("(max-width:900px)");
-
-  useEffect(() => {
+  const forBelow900 = useMediaQuery("(max-width:900px)");
+  const forBelow1500= useMediaQuery("(max-width:1500px)");
+  const forBelow1200= useMediaQuery("(max-width:1210px)");
+  const for955to901 = useMediaQuery("(min-width:901px) and (max-width:960px)");
+    useEffect(() => {
     let i = 0;
     const action = setInterval(() => {
       dencrypt(values[i]);
@@ -31,41 +33,41 @@ export default function HomeCard() {
     <Box>
       <Grid
         container
-        spacing={2}
+        spacing={1}
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
         alignContent="center"
-        style={{ padding: fontForMobile ? "20px" : "" }}
+        style={{ padding: forBelow900 ? "20px" : "" }}
       >
         <Grid item xs={12} md={6}>
-          <Typography variant={fontForMobile ? "h6" : "h4"}>
+          <Typography variant={forBelow900 ? "h6" : "h4"}>
             Hi, I am
           </Typography>
-          <Typography variant={fontForMobile ? "h4" : "h2"}>
+          <Typography variant={(forBelow900 && "h4") ||(forBelow1200 && "h4") || (forBelow1500 && "h3") || "h2"}>
             Sadman Sakib Jisan
           </Typography>
-          {!fontForMobile && (
-            <Box style={{ display: "flex" }}>
-              <Typography variant="h6">I Love to work with</Typography>
+          {!forBelow900 && (
+            <Box style={{ display: "flex"}}>
+              <Typography variant={(forBelow1200 && "body2")||(forBelow1200 && "body1") || "h6"} style={{width:"200px"}}>I Love to work with</Typography>
               &nbsp;&nbsp;
-              <Typography variant="h6" style={{ color: "red" }}>
+              <Typography variant={(forBelow1200 && "body2")||(forBelow1200 && "body1") || "h6"} style={{ color: "red",width:"300px"}}>
                 {result}
               </Typography>
             </Box>
           )}
-          {fontForMobile && (
+          {forBelow900 && (
             <Box style={{ display: "flex" }}>
-              <Typography variant="body2">I Love to work with</Typography>
+              <Typography variant="body2" style={{ width:"150px"}}>I Love to work with</Typography>
               &nbsp;&nbsp;
-              <Typography variant="body2" style={{ color: "red" }}>
+              <Typography variant="body2" style={{ color: "red", width:"200px"}}>
                 {result}
               </Typography>
             </Box>
           )}
         </Grid>
         <Grid item xs={12} md={6}>
-          <img src={jisan} width={fontForMobile ? "300px" : "400px"} alt="" />
+          <img src={jisan} width={forBelow900 ? "280px" : "400px"} alt="" />
         </Grid>
         <Grid item xs={12} md={6}>
           <Grid container spacing={3}>

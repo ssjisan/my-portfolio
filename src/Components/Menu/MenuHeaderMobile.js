@@ -2,22 +2,19 @@ import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Styles/MenuStyles.css";
+import "../Styles/MenuStyles.css";
 
 export default function MenuHeaderMobile({ pages }) {
   return (
     <Box>
-      <Grid container spacing={2} justifyContent="center">
+      <Grid container spacing={5} justifyContent="center">
         <Grid item>
           <Link to="/" className="Link">
             <Typography
-              variant="body1"
               style={{
-                fontSize: pages === 1 ? "30px" : "20px",
-                fontWeight: pages === 1 ? "bold" : "",
+                fontSize: "15px",
+                borderBottom: pages===1 ? "2px solid black" : "2px solid transparent",
                 color: "#444",
-                textShadow: "2px 10px 10px #ccc",
-                padding: pages === 1 ? 20 : "",
               }}
             >
               Home
@@ -27,13 +24,10 @@ export default function MenuHeaderMobile({ pages }) {
         <Grid item>
           <Link to="/" className="Link">
             <Typography
-              variant="body1"
               style={{
-                fontSize: pages === 1 ? "30px" : "20px",
-                fontWeight: pages === 1 ? "bold" : "",
+                fontSize: "15px",
+
                 color: "#444",
-                textShadow: "2px 10px 10px #ccc",
-                padding: pages === 1 ? 20 : "",
               }}
             >
               Projects
@@ -43,13 +37,10 @@ export default function MenuHeaderMobile({ pages }) {
         <Grid item>
           <Link to="/" className="Link">
             <Typography
-              variant="body1"
               style={{
-                fontSize: pages === 1 ? "30px" : "20px",
-                fontWeight: pages === 1 ? "bold" : "",
+                fontSize: "15px",
+
                 color: "#444",
-                textShadow: "2px 10px 10px #ccc",
-                padding: pages === 1 ? 20 : "",
               }}
             >
               Experiences

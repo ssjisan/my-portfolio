@@ -1,6 +1,6 @@
 import React from 'react'
 import {Grid} from '@mui/material';
-import Menu from './Menu';
+import Menu from "./Menu/Menu";
 import "./Styles/AboutMe.css"
 export default function AboutMe({pages}) {
     return (
