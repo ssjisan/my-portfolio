@@ -1,18 +1,21 @@
-import React from 'react'
-import {Grid} from '@mui/material';
+import React from "react";
+import { Grid, useMediaQuery } from "@mui/material";
 import Menu from "./Menu/Menu";
-import "./Styles/AboutMe.css"
-export default function AboutMe({pages}) {
-    return (
-        <div className="aboueMe-body">
-        <Grid container>
-            <Grid item md={10}>
-                This is About Me
-            </Grid>
-            <Grid item md={2}>
-                <Menu pages={2}/>
-            </Grid>
+import "./Styles/AboutMe.css";
+import AboutMeCard from "./Components/AboutMeCard"
+import { Box } from "@mui/system";
+export default function AboutMe({ pages }) {
+  const fontForMobile = useMediaQuery("(max-width:900px)");
+  return (
+    <Box className="aboueMe-body">
+      <Grid container>
+        <Grid item md={10} style={{ padding: "5%" }}>
+          <AboutMeCard />
         </Grid>
-        </div>
-    )
+        <Grid item md={2}>
+          <Menu pages={2} />
+        </Grid>
+      </Grid>
+    </Box>
+  );
 }
