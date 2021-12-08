@@ -2,16 +2,17 @@ import { Grid, Typography, useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import "../Styles/AboutMe.css";
-export default function BioCard() {
+export default function ProjectCard() {
   const forBelow900 = useMediaQuery("(max-width:900px)");
   const forBelow1500 = useMediaQuery("(max-width:1500px)");
   const forBelow1200 = useMediaQuery("(max-width:1210px)");
   //   const for955to901 = useMediaQuery("(min-width:901px) and (max-width:960px)");
   return (
-    <Box>
+    <Box style={{maxHeight:"79vh", overflowY:"auto"}}>
       <Grid
         container
         spacing={1}
+        flexDirection="column"
         justifyContent="center"
         alignItems="center"
         alignContent="center"
@@ -20,12 +21,22 @@ export default function BioCard() {
         <Grid
           item
           xs={12}
-          md={6}
+          md={12}
           style={{ display: "flex", justifyContent: "center" }}
         >
           <img
-            src="https://i.ibb.co/ZKJyRbJ/about-Me-Section.png"
-            width="80%"
+            src="https://i.ibb.co/g3Xtj8F/react.png"
+            width="50px" height="50px"
+            alt="" 
+          />
+           <img
+            src="https://i.ibb.co/g3Xtj8F/react.png"
+            width="50px" height="50px"
+            alt=""
+          />
+           <img
+            src="https://i.ibb.co/g3Xtj8F/react.png"
+            width="50px" height="50px"
             alt=""
           />
         </Grid>
