@@ -15,6 +15,7 @@ export default function MenuHeaderMobile({ pages }) {
                 fontSize: "15px",
                 borderBottom: pages===1 ? "2px solid black" : "2px solid transparent",
                 color: "#444",
+                fontWeight: pages === 1 ? "bold" : "",
               }}
             >
               Home

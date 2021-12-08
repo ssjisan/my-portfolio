@@ -9,21 +9,22 @@ export default function MenuFooterMobile({ pages }) {
     <Box>
       <Grid container spacing={5} justifyContent="center">
         <Grid item>
-          <Link to="/" className="Link">
+          <Link to="/about" className="Link">
             <Typography
               className="item"
               style={{
                 fontSize: "15px",
-                
+                borderTop: pages===2 ? "2px solid black" : "2px solid transparent",
                 color: "#444",
+                fontWeight: pages === 2 ? "bold" : "",
               }}
             >
-              About Me
+              Bio
             </Typography>
           </Link>
         </Grid>
         <Grid item>
-          <Link to="/" className="Link">
+          <Link to="/contact" className="Link">
             <Typography
               className="item"
               style={{
@@ -42,7 +43,6 @@ export default function MenuFooterMobile({ pages }) {
               className="item"
               style={{
                 fontSize: "15px",
-
                 color: "#444",
               }}
             >

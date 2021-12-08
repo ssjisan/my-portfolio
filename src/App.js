@@ -1,10 +1,10 @@
 import { Routes, Route,BrowserRouter } from "react-router-dom";
 import Home from "./Components/Home";
-import AboutMe from "./Components/AboutMe";
 import Projects from "./Components/Projects";
 import Experiences from "./Components/Experiences";
 import Blog from "./Components/Blog";
 import Contact from "./Components/Contact";
+import Bio from "./Components/Bio";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="about" element={<AboutMe/>} />
+        <Route path="about" element={<Bio/>} />
         <Route path="projects" element={<Projects/>} />
         <Route path="experience" element={<Experiences/>} />
         <Route path="blog" element={<Blog/>} />

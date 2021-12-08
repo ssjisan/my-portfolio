@@ -40,11 +40,10 @@ export default function Menu({ pages }) {
                 fontWeight: pages === 2 ? "bold" : "",
                 color: "#444",
                 textShadow: "2px 10px 10px #ccc",
-
                 padding: pages === 2 ? 20 : "",
               }}
             >
-              About Me
+             Bio
             </Typography>
           </Link>
         </Grid>

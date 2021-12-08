@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 // import { Link } from "react-router-dom";
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 import { useDencrypt } from "use-dencrypt-effect";
-import jisan from "./../images/jisan.png";
 const values = [
   "Front-end Developer",
   "Prototyping With Figma",
@@ -41,7 +40,7 @@ export default function HomeCard() {
         style={{ padding: forBelow900 ? "20px" : "" }}
       >
         <Grid item xs={12} md={6}>
-          <Typography variant={forBelow900 ? "h6" : "h4"}>
+          <Typography variant={forBelow900 ? "body1" : "h4"}>
             Hi, I am
           </Typography>
           <Typography variant={(forBelow900 && "h4") ||(forBelow1200 && "h4") || (forBelow1500 && "h3") || "h2"}>
@@ -50,7 +49,7 @@ export default function HomeCard() {
           {!forBelow900 && (
             <Box style={{ display: "flex"}}>
               <Typography variant={(forBelow1200 && "body2")||(forBelow1200 && "body1") || "h6"} style={{width:"200px"}}>I Love to work with</Typography>
-              &nbsp;&nbsp;
+              
               <Typography variant={(forBelow1200 && "body2")||(forBelow1200 && "body1") || "h6"} style={{ color: "red",width:"300px"}}>
                 {result}
               </Typography>
@@ -59,7 +58,7 @@ export default function HomeCard() {
           {forBelow900 && (
             <Box style={{ display: "flex" }}>
               <Typography variant="body2" style={{ width:"150px"}}>I Love to work with</Typography>
-              &nbsp;&nbsp;
+              
               <Typography variant="body2" style={{ color: "red", width:"200px"}}>
                 {result}
               </Typography>
@@ -67,7 +66,7 @@ export default function HomeCard() {
           )}
         </Grid>
         <Grid item xs={12} md={6}>
-          <img src={jisan} width={forBelow900 ? "280px" : "400px"} alt="" />
+          <img src="https://i.ibb.co/N6LGtdj/jisan.png" width={forBelow900 ? "280px" : "400px"} alt="" />
         </Grid>
         <Grid item xs={12} md={6}>
           <Grid container spacing={3}>
