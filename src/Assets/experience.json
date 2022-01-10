@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "companyName": "Tech Hack Limited",
+        "companyLogo":"https://i.ibb.co/BqFm8rf/techhack.png",
+        "position": "Front-end Developer",
+        "start":"September,2021",
+        "end":"present",
+        "responsibilities":[""]
+    },
+    {
+        "id": 2,
+        "companyName": "Eric Frank India",
+        "companyLogo":"",
+        "position": "Front-end Developer, Intern",
+        "start":"December,2020",
+        "end":"January,2021",
+        "responsibilities":[""]
+    },
+    {
+        "id": 3,
+        "companyName": "Antaranga Dot Com Limited",
+        "companyLogo":"https://i.ibb.co/X2jcbNp/antbd.png",
+        "position": "Network Operation Center Engineer",
+        "start":"November,2020",
+        "end":"September,2021",
+        "responsibilities":[""]
+    },
+    {
+        "id": 4,
+        "companyName": "Antaranga Dot Com Limited",
+        "companyLogo":"https://i.ibb.co/X2jcbNp/antbd.png",
+        "position": "Support Engineer",
+        "start":"December,2018",
+        "end":"November,2020",
+        "responsibilities":[""]
+    }
+]

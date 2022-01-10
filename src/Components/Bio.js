@@ -32,7 +32,7 @@ export default function Bio({ pages }) {
             <BioCard />
           </Grid>
           <Grid item xs={12} style={{display:"flex", justifyContent:"center", width:"100%", position:"fixed", bottom:0,maxHeight:"10vh"}}>
-            <MenuFooterMobile pages={2}/>
+            <MenuFooterMobile pages={4}/>
           </Grid>
         </Grid>
       )}

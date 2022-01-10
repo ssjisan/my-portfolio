@@ -5,6 +5,7 @@ import Experiences from "./Components/Experiences";
 import Blog from "./Components/Blog";
 import Contact from "./Components/Contact";
 import Bio from "./Components/Bio";
+import SingleBlog from "./Components/SingleBlog";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="experience" element={<Experiences/>} />
         <Route path="blog" element={<Blog/>} />
         <Route path="contact" element={<Contact/>} />
+        <Route path="blogDetails/:id" element={<SingleBlog/>} />
       </Routes>
       </BrowserRouter>
     </div>

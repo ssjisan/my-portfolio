@@ -6,7 +6,6 @@ import { Box } from "@mui/system";
 import BlogCard from "./Components/BlogCard";
 import MenuHeaderMobile from "./Menu/MenuHeaderMobile";
 import MenuFooterMobile from "./Menu/MenuFooterMobile";
-import BlogCardForMobile from "./Components/BlogCardForMobile";
 export default function Blog({ pages }) {
   const fontForMobile = useMediaQuery("(max-width:900px)");
 
@@ -35,7 +34,7 @@ export default function Blog({ pages }) {
             <BlogCard />
           </Grid>
           <Grid item xs={12} style={{display:"flex", justifyContent:"center", width:"100%", position:"fixed", bottom:0,maxHeight:"10vh"}}>
-            <MenuFooterMobile pages={2}/>
+            <MenuFooterMobile pages={6}/>
           </Grid>
         </Grid>
       )}

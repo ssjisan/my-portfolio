@@ -6,3 +6,10 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
   }
+  .jobBox{
+    background-image: url("https://i.ibb.co/vQRbY2T/Abstract-white-and-grey-background-with-dynamic-waves-shape-You-can-use-for-ad-poster-template-busin.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }

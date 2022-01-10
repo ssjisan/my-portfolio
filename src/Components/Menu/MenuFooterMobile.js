@@ -14,9 +14,9 @@ export default function MenuFooterMobile({ pages }) {
               className="item"
               style={{
                 fontSize: "15px",
-                borderTop: pages===2 ? "2px solid black" : "2px solid transparent",
+                borderTop: pages===4 ? "2px solid black" : "2px solid transparent",
                 color: "#444",
-                fontWeight: pages === 2 ? "bold" : "",
+                fontWeight: pages === 4 &&"bold",
               }}
             >
               Bio
@@ -29,8 +29,9 @@ export default function MenuFooterMobile({ pages }) {
               className="item"
               style={{
                 fontSize: "15px",
-
+                borderTop: pages===5 ? "2px solid black" : "2px solid transparent",
                 color: "#444",
+                fontWeight: pages === 5 && "bold",
               }}
             >
               Contact Me
@@ -38,12 +39,14 @@ export default function MenuFooterMobile({ pages }) {
           </Link>
         </Grid>
         <Grid item>
-          <Link to="/" className="Link">
+          <Link to="/blog" className="Link">
             <Typography
               className="item"
               style={{
                 fontSize: "15px",
+                borderTop: pages === 6 ? "2px solid black" : "2px solid transparent",
                 color: "#444",
+                fontWeight: pages === 6 && "bold",
               }}
             >
               Blogs

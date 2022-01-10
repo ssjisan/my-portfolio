@@ -27,8 +27,9 @@ export default function MenuHeaderMobile({ pages }) {
             <Typography
               style={{
                 fontSize: "15px",
-
+                borderBottom: pages===2 ? "2px solid black" : "2px solid transparent",
                 color: "#444",
+                fontWeight: pages === 2 ? "bold" : "",
               }}
             >
               Projects
@@ -38,11 +39,12 @@ export default function MenuHeaderMobile({ pages }) {
         <Grid item>
           <Link to="/" className="Link">
             <Typography
-              style={{
-                fontSize: "15px",
-
-                color: "#444",
-              }}
+             style={{
+              fontSize: "15px",
+              borderBottom: pages===3 ? "2px solid black" : "2px solid transparent",
+              color: "#444",
+              fontWeight: pages === 3 ? "bold" : "",
+            }}
             >
               Experiences
             </Typography>
