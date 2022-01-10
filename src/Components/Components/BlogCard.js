@@ -13,6 +13,8 @@ import blogData from "../../Assets/data.json";
 import ReactHtmlParser from 'react-html-parser';
 
 import { useState } from "react";
+import "../Styles/AboutMe.css";
+
 export default function BlogCard() {
   const forBelow900 = useMediaQuery("(max-width:900px)");
   const forBelow1500 = useMediaQuery("(max-width:1500px)");
@@ -41,7 +43,7 @@ export default function BlogCard() {
               <Typography variant="body1" style={{ color: "#7A7A9D" }}>
                 {ReactHtmlParser(data.Details.substring(0, 250))}
               </Typography>
-              <Typography variant="h6" style={{ color: "#22215B" }}>
+              <Typography variant="body2" style={{ color: "#22215B" }}>
                 Read More
               </Typography>
             </CardContent>
