@@ -10,12 +10,12 @@ import { Box } from "@mui/system";
 import React from "react";
 import "../Styles/AboutMe.css";
 import blogData from "../../Assets/data.json";
-import ReactHtmlParser from 'react-html-parser';
+import ReactHtmlParser from "react-html-parser";
 
 import { useState } from "react";
 import "../Styles/AboutMe.css";
 
-export default function BlogCard() {
+export default function BlogCardForMobile() {
   const forBelow900 = useMediaQuery("(max-width:900px)");
   const forBelow1500 = useMediaQuery("(max-width:1500px)");
   const forBelow1200 = useMediaQuery("(max-width:1210px)");
