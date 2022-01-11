@@ -19,11 +19,11 @@ export default function Menu({ pages }) {
               className="item"
               variant="h6"
               style={{
-                fontSize: pages === 1 ? "30px" : "20px",
+                fontSize: pages === 1 ? "24px" : "20px",
                 fontWeight: pages === 1 ? "bold" : "",
                 color: "#444",
-                textShadow: "2px 10px 10px #ccc",
-                padding: pages === 1 ? 20 : "",
+                textShadow: "15px 0px 20px rgba(0,0,0,0.66)",
+                padding: pages === 1 ? 20 : 10,
               }}
             >
               Home
@@ -36,11 +36,11 @@ export default function Menu({ pages }) {
               className="item"
               variant="h6"
               style={{
-                fontSize: pages === 2 ? "30px" : "20px",
+                fontSize: pages === 2 ? "24px" : "20px",
                 fontWeight: pages === 2 ? "bold" : "",
                 color: "#444",
-                textShadow: "2px 10px 10px #ccc",
-                padding: pages === 2 ? 20 : "",
+                textShadow: "15px 0px 20px rgba(0,0,0,0.66)",
+                padding: pages === 2 ? 20 : 10,
               }}
             >
              Bio
@@ -53,11 +53,11 @@ export default function Menu({ pages }) {
               className="item"
               variant="h6"
               style={{
-                fontSize: pages === 3 ? "30px" : "20px",
+                fontSize: pages === 3 ? "24px" : "20px",
                 fontWeight: pages === 3 ? "bold" : "",
                 color: "#444",
-                textShadow: "2px 10px 10px #ccc",
-                padding: pages === 3 ? 20 : "",
+                textShadow: "15px 0px 20px rgba(0,0,0,0.66)",
+                padding: pages === 3 ? 20 : 10,
               }}
             >
               Projects
@@ -70,11 +70,11 @@ export default function Menu({ pages }) {
               className="item"
               variant="h6"
               style={{
-                fontSize: pages === 4 ? "30px" : "20px",
+                fontSize: pages === 4 ? "24px" : "20px",
                 fontWeight: pages === 4 ? "bold" : "",
                 color: "#444",
-                textShadow: "2px 10px 10px #ccc",
-                padding: pages === 4 ? 20 : "",
+                textShadow: "15px 0px 20px rgba(0,0,0,0.66)",
+                padding: pages === 4 ? 20 : 10,
               }}
             >
               Experience
@@ -87,11 +87,11 @@ export default function Menu({ pages }) {
               className="item"
               variant="h6"
               style={{
-                fontSize: pages === 5 ? "30px" : "20px",
+                fontSize: pages === 5 ? "24px" : "20px",
                 fontWeight: pages === 5 ? "bold" : "",
                 color: "#444",
-                textShadow: "2px 10px 10px #ccc",
-                padding: pages === 5 ? 20 : "",
+                textShadow: "15px 0px 20px rgba(0,0,0,0.66)",
+                padding: pages === 5 ? 20 : 10,
               }}
             >
               Blog
@@ -104,11 +104,11 @@ export default function Menu({ pages }) {
               className="item"
               variant="h6"
               style={{
-                fontSize: pages === 6 ? "30px" : "20px",
+                fontSize: pages === 6 ? "24px" : "20px",
                 fontWeight: pages === 6 ? "bold" : "",
                 color: "#444",
-                textShadow: "2px 10px 10px #ccc",
-                padding: pages === 6 ? 20 : "",
+                textShadow: "15px 0px 20px rgba(0,0,0,0.66)",
+                padding: pages === 6 ? 20 : 10,
               }}
             >
               Contact

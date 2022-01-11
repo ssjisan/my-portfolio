@@ -1,7 +1,10 @@
 import {
   Card,
+  CardActions,
   CardContent,
+  Collapse,
   Grid,
+  IconButton,
   Typography,
   useMediaQuery,
 } from "@mui/material";
@@ -12,72 +15,89 @@ import Avatar from "@mui/material/Avatar";
 import job from "../../Assets/experience.json";
 import { useState } from "react";
 import "../Styles/Experience.css";
+import { styled } from "@mui/material/styles";
+import { BsCaretDown } from "react-icons/bs";
+
+const ExpandMore = styled((props) => {
+  const { expand, ...other } = props;
+  return <IconButton {...other} />;
+})(({ theme, expand }) => ({
+  transform: !expand ? "rotate(0deg)" : "rotate(180deg)",
+  marginLeft: "auto",
+  transition: theme.transitions.create("transform", {
+    duration: theme.transitions.duration.shortest,
+  }),
+}));
 export default function ExperienceCard() {
   const forBelow900 = useMediaQuery("(max-width:900px)");
   const forBelow1500 = useMediaQuery("(max-width:1500px)");
   const forBelow1200 = useMediaQuery("(max-width:1210px)");
-  //   const for955to901 = useMediaQuery("(min-width:901px) and (max-width:960px)");
   const [experience, setExperience] = useState(job);
+  const [expanded, setExpanded] = useState(false);
+  const handleExpandClick = (id) => {
+    setExpanded(expanded === id ? false : id);
+  };
   return (
     <Grid container spacing={1}>
       {experience.map((data) => (
-        <Grid item md={4} sm={6} xs={12}>
-          <Box
-            style={{
-              padding: "2%",
-              borderRadius: "6px",
-              border: data.end === "present" && "1px solid ",
-            }}
-          >
-            <Card
-              style={{
-                borderRadius: "6px"}}
-            >
-              <Box className="jobBox">
-                <Box
+        <Grid item xs={12} md={6} sm={6} lg={4}>
+          <Card>
+            <Box className="jobBox" >
+              <Box
+                style={{
+                  padding: "5%",
+                }}
+              >
+                <Avatar
                   style={{
-                    padding: "5%",
+                    width: "100px",
+                    height: "100px",
+                    border: "5px solid #F7F8FA",
+                    backgroundColor: "#fff",
+                    borderRadius: "50%",
+                    margin: "auto",
                   }}
-                >
-                  <Avatar
-                    style={{
-                      width: "100px",
-                      height: "100px",
-                      border: "5px solid #F7F8FA",
-                      backgroundColor: "#fff",
-                      borderRadius: "50%",
-                      margin: "auto",
-                    }}
-                    src={
-                      data.companyLogo && data.companyLogo.length
-                        ? `${data.companyLogo}`
-                        : `https://ui-avatars.com/api/?color=00756A&name=${data.companyName}`
-                    }
-                  />
-                </Box>
+                  src={
+                    data.companyLogo && data.companyLogo.length
+                      ? `${data.companyLogo}`
+                      : `https://ui-avatars.com/api/?color=00756A&name=${data.companyName}`
+                  }
+                />
               </Box>
-              <CardContent style={{ padding: "3%" }}>
-                <Typography
-                  variant="h5"
-                  style={{ fontWeight: "bold", color: "#22215B" }}
-                >
-                  {data.companyName}
-                </Typography>
-                <Typography variant="body1">{data.position}</Typography>
-                <Typography variant="body2">
-                  {data.start}-{data.end}
-                </Typography>
-                <Typography variant="body2" style={{ fontWeight: "bold" }}>
+            </Box>
+            <CardContent>
+              <Typography
+                variant="h5"
+                style={{ fontWeight: "bold", color: "#22215B", paddingBottom:"5%"}}
+              >
+                {data.companyName}
+              </Typography>
+              <Typography variant="body1" style={{paddingLeft:"3%",marginBottom:"3%"}}>{data.position}</Typography>
+              <Typography variant="body2" style={{paddingLeft:"3%"}}>
+                {data.start}-{data.end}
+              </Typography>
+            </CardContent>
+            <CardActions disableSpacing>
+              <ExpandMore
+                expand={expanded === data.id}
+                onClick={() => handleExpandClick(data.id)}
+              >
+                <BsCaretDown />
+              </ExpandMore>
+            </CardActions>
+            <Collapse in={expanded === data.id} timeout="auto" unmountOnExit>
+              <CardContent>
+                <Typography variant="body1" style={{ fontWeight: "bold",paddingBottom:"2%"}}>
                   Responsibilities:
                 </Typography>
                 {data.responsibilities.map((data) => (
-                  <Box>
-                    <Typography variant="caption">-{data}</Typography> <br />
+                  <Box style={{paddingLeft:"2%"}}>
+                    <Typography variant="body2">-{data}</Typography> <br />
                   </Box>
                 ))}
               </CardContent>
-            </Card>
-          </Box>
+            </Collapse>
+          </Card>
         </Grid>
       ))}
     </Grid>

@@ -23,7 +23,7 @@ export default function MenuHeaderMobile({ pages }) {
           </Link>
         </Grid>
         <Grid item>
-          <Link to="/" className="Link">
+          <Link to="/projects" className="Link">
             <Typography
               style={{
                 fontSize: "15px",
@@ -37,7 +37,7 @@ export default function MenuHeaderMobile({ pages }) {
           </Link>
         </Grid>
         <Grid item>
-          <Link to="/" className="Link">
+          <Link to="/experience" className="Link">
             <Typography
              style={{
               fontSize: "15px",

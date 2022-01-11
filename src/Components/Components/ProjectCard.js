@@ -42,8 +42,8 @@ export default function ProjectCard() {
   return (
     <Grid container spacing={1}>
       {project.map((data) => (
-        <Grid item md={4} sm={6} xs={12} >
-          <Card sx={{ maxWidth: 345 }} style={{overflowY:"auto"}}>
+        <Grid item lg={4} md={6} sm={6} >
+          <Card>
             <CardHeader title={data.title} />
             <CardMedia
               component="img"

@@ -19,16 +19,16 @@
     },
     {
         "id": 3,
-        "companyName": "Antaranga Dot Com Limited",
+        "companyName": "Antaranga Dot Com Ltd.",
         "companyLogo":"https://i.ibb.co/X2jcbNp/antbd.png",
-        "position": "Network Operation Center Engineer",
+        "position": "NOC Engineer",
         "start":"November,2020",
         "end":"September,2021",
         "responsibilities":["Working with FTTH network","Maintain BDCOM & Huawei OLT", "Configure OLT and ONU", "Troubleshooting OLT and ONU based problem", "Mikrotik router configure", "Cisco Switch monitoring", "VLAN configure", "Client site support", "Bandwidth management", "Maintain and monitoring network via NMS, MRTG, DUDE"]
     },
     {
         "id": 4,
-        "companyName": "Antaranga Dot Com Limited",
+        "companyName": "Antaranga Dot Com Ltd.",
         "companyLogo":"https://i.ibb.co/X2jcbNp/antbd.png",
         "position": "Support Engineer",
         "start":"December,2018",

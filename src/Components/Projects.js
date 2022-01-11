@@ -15,7 +15,7 @@ export default function Projects({pages}) {
         <Grid
           container
         >
-          <Grid item md={10} style={{ padding: "5%" }}>
+          <Grid item md={10} style={{ padding: "5%",maxHeight:"85vh",overflowY:"scroll" }}>
             <ProjectCard />
           </Grid>
           <Grid item md={2}>
@@ -26,9 +26,9 @@ export default function Projects({pages}) {
       {fontForMobile && (
         <Grid container style={{ display: "flex" , justifyContent: "space-between"  }}>
           <Grid item xs={12} style={{ display:"flex", justifyContent:"center", width:"100%", top:0,maxHeight:"10vh", padding:"2%"}}>
-            <MenuHeaderMobile pages={3}/>
+            <MenuHeaderMobile pages={2}/>
           </Grid>
-          <Grid item xs={12} style={{paddingTop:"5%",maxHeight:"85vh",overflowY:"scroll"}}>
+          <Grid item xs={12} style={{padding:"5%",maxHeight:"85vh",overflowY:"scroll"}}>
             <ProjectCard />
           </Grid>
           <Grid item xs={12} style={{display:"flex", justifyContent:"center", width:"100%", position:"fixed", bottom:0,maxHeight:"10vh"}}>
