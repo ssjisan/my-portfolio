@@ -6,7 +6,7 @@
         "position": "Front-end Developer",
         "start":"September,2021",
         "end":"present",
-        "responsibilities":[""]
+        "responsibilities":["Developing UX with Figma","User flow and prototyping","Converting UX to UI with React.js and Material ui","Creating useable components for future use"]
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "position": "Front-end Developer, Intern",
         "start":"December,2020",
         "end":"January,2021",
-        "responsibilities":[""]
+        "responsibilities":["Developed UX with figma","Developed UI with ReactJS and React BootStrap","Collaborate with Backend Team"]
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "position": "Network Operation Center Engineer",
         "start":"November,2020",
         "end":"September,2021",
-        "responsibilities":[""]
+        "responsibilities":["Working with FTTH network","Maintain BDCOM & Huawei OLT", "Configure OLT and ONU", "Troubleshooting OLT and ONU based problem", "Mikrotik router configure", "Cisco Switch monitoring", "VLAN configure", "Client site support", "Bandwidth management", "Maintain and monitoring network via NMS, MRTG, DUDE"]
     },
     {
         "id": 4,
@@ -33,6 +33,6 @@
         "position": "Support Engineer",
         "start":"December,2018",
         "end":"November,2020",
-        "responsibilities":[""]
+        "responsibilities":["Works with FTP server (File Upload)", "Maintain ERP","Configure different types of wireless router", "AP configure", "Work with VM", "DVR configure", "Maintain local support team", "Customer support via phone either visiting home"]
     }
 ]
