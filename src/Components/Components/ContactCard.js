@@ -1,6 +1,7 @@
 import {
   Button,
   Card,
+  Divider,
   Grid,
   TextField,
   Typography,
@@ -9,11 +10,25 @@ import {
 import { Box } from "@mui/system";
 import React from "react";
 import "../Styles/AboutMe.css";
+import { BsFacebook, BsGithub, BsLinkedin,BsFillTelephoneFill,BsEnvelopeFill } from "react-icons/bs";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import emailjs from 'emailjs-com';
+
 export default function ContactCard() {
   const forBelow900 = useMediaQuery("(max-width:900px)");
   const forBelow1500 = useMediaQuery("(max-width:1500px)");
   const forBelow1200 = useMediaQuery("(max-width:1210px)");
   //   const for955to901 = useMediaQuery("(min-width:901px) and (max-width:960px)");
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('portfolio_mail', 'portfolio_mail', e.target, 'user_mtQO7Imxg03OwEfEUDR1n')
+      .then((result) => {
+         alert("send")
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  };
   return (
     <Box>
       <Card>
@@ -43,33 +58,87 @@ export default function ContactCard() {
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                alignItems: "center"
+                alignItems: "center",
               }}
             >
-              <Typography variant="h4" style={{ fontWeight: "bold" }}>
+              <Typography variant="h4" style={{ fontWeight: "bold",marginBottom:"20px"}}>
                 Lets's get in touch
               </Typography>
-              <Typography variant="h6" style={{marginBottom:"20px"}}>
-                Lets's get in touch
-              </Typography>
+              <Box>
+                <a
+                  href="https://www.linkedin.com/in/ssjisan/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <BsLinkedin style={{ fontSize: "30px", color: "#0077b5", padding:"10px"}} />
+                </a>
+                <a
+                  href="https://github.com/ssjisan"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <BsGithub style={{ fontSize: "30px", color: "#171515", padding:"10px" }} />
+                </a>
+                <a
+                  href="https://www.facebook.com/userjisan/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <BsFacebook style={{ fontSize: "30px", color: "#3b5998", padding:"10px" }} />
+                </a>
+              </Box>
+
+              <Divider style={{margin:"10px", width:"100%"}}>
+                {" "}
+                <Typography>OR</Typography>
+              </Divider>
+              <Box style={{display:"flex",flexDirection:"column"}}>
+                <Typography><BsFillTelephoneFill/> &nbsp; +88 01675 89 39 67</Typography>
+                <Typography><BsEnvelopeFill/> &nbsp; ssjisan.dev@gmail.com</Typography>
+                <Typography><FaMapMarkerAlt/> &nbsp; Khilkhet,Dhaka</Typography>
+              </Box>
+              <Divider style={{margin:"10px", width:"100%"}}>
+                {" "}
+                <Typography>OR</Typography>
+              </Divider>
+              <form onSubmit={sendEmail}>
               <TextField
+              required
                 label="Name"
+                name="name"
                 variant="outlined"
-                style={{borderRadius:"20px",marginBottom:"20px",width:"100%"}}
+                style={{
+                  borderRadius: "20px",
+                  marginBottom: "20px",
+                  width: "100%",
+                }}
               />
               <TextField
+              required
                 label="E-mail"
                 variant="outlined"
-                style={{borderRadius:"20px",marginBottom:"20px",width:"100%"}}
+                name="email"
+                style={{
+                  borderRadius: "20px",
+                  marginBottom: "20px",
+                  width: "100%",
+                }}
               />
               <TextField
+              required
                 label="Message"
+                name="message"
                 variant="outlined"
                 multiline
-                rows={4}
-                style={{borderRadius:"20px",marginBottom:"20px",width:"100%"}}
+                rows={3}
+                style={{
+                  borderRadius: "20px",
+                  marginBottom: "20px",
+                  width: "100%",
+                }}
               />
-              <Button variant="contained">Send</Button>
+              <Button variant="contained" type="submit">Send</Button>
+              </form>
             </Box>
           </Grid>
         </Grid>
