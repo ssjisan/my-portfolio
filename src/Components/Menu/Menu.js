@@ -1,9 +1,10 @@
 import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/MenuStyles.css"
-export default function Menu({ pages }) {
+
+export default function Menu({ pages,handleClick}) {
   return (
     <Box>
       <Grid
@@ -31,7 +32,7 @@ export default function Menu({ pages }) {
           </Link>
         </Grid>
         <Grid item>
-          <Link to="/about" className="Link">
+          <Link to="/about" className="Link" >
             <Typography
               className="item"
               variant="h6"

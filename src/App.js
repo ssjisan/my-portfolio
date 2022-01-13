@@ -8,6 +8,7 @@ import Bio from "./Components/Bio";
 import SingleBlog from "./Components/SingleBlog";
 
 function App() {
+  
   return (
     <div>
       <BrowserRouter>

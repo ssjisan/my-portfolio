@@ -9,6 +9,7 @@ import MenuFooterMobile from "./Menu/MenuFooterMobile";
 export default function Bio({ pages }) {
   const fontForMobile = useMediaQuery("(max-width:900px)");
 
+
   return (
     <Box className="bio-body">
       {!fontForMobile && (
