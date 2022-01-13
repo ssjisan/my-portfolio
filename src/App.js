@@ -6,6 +6,7 @@ import Blog from "./Components/Blog";
 import Contact from "./Components/Contact";
 import Bio from "./Components/Bio";
 import SingleBlog from "./Components/SingleBlog";
+import NotFound from "./Components/NotFound";
 
 function App() {
   
@@ -13,13 +14,14 @@ function App() {
     <div>
       <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route exact path="/" element={<Home/>} />
         <Route path="about" element={<Bio/>} />
         <Route path="projects" element={<Projects/>} />
         <Route path="experience" element={<Experiences/>} />
         <Route path="blog" element={<Blog/>} />
         <Route path="contact" element={<Contact/>} />
         <Route path="blogDetails/:id" element={<SingleBlog/>} />
+        <Route path="*" element={<NotFound/>} />
       </Routes>
       </BrowserRouter>
     </div>

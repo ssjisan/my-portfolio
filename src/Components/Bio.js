@@ -1,25 +1,36 @@
-import React, { useState } from "react";
-import { CircularProgress, Grid, useMediaQuery } from "@mui/material";
+import React, { useRef, useState,useEffect } from "react";
+import { Grid, useMediaQuery } from "@mui/material";
 import Menu from "./Menu/Menu";
 import "./Styles/AboutMe.css";
 import { Box } from "@mui/system";
 import BioCard from "./Components/BioCard";
 import MenuHeaderMobile from "./Menu/MenuHeaderMobile";
 import MenuFooterMobile from "./Menu/MenuFooterMobile";
+import Lottie from "lottie-web";
 export default function Bio({ pages }) {
   const fontForMobile = useMediaQuery("(max-width:900px)");
   const [loading, setLoading] = useState(true);
+  const container = useRef(null)
+  useEffect(()=>{
+    Lottie.loadAnimation({
+      container: container.current,
+      renderer:'svg',
+      loop:true,
+      autoPlay:true,
+      animationData:require("../Assets/anime.json")
+    })
+  },[])
   setTimeout(() => {
     setLoading(false);
-  }, 2000);
+  }, 3000);
   return (
     <Box className="bio-body">
       {loading ? (
-        <Box style={{display: 'flex', justifyContent: 'center',alignItems: 'center',height: '100vh'}}>
-          <CircularProgress />
+        <Box style={{display: 'flex', justifyContent: 'center',alignItems: 'center',height:"100vh"}} >
+          <Box ref={container} style={{width:"250px" }}></Box>
         </Box>
       ) : (
-        <>
+        <Box>
           {!fontForMobile && (
             <Grid container>
               <Grid item md={10} style={{ padding: "5%" }}>
@@ -76,7 +87,7 @@ export default function Bio({ pages }) {
               </Grid>
             </Grid>
           )}
-        </>
+        </Box>
       )}
     </Box>
   );
