@@ -8,15 +8,15 @@ import {
   Grid,
   IconButton,
   Typography,
-  useMediaQuery,
+  useMediaQuery
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import React, { useState } from "react";
+import { AiFillGithub } from "react-icons/ai";
+import { BsCaretDown } from "react-icons/bs";
+import { GoGlobe } from "react-icons/go";
 import projectData from "../../Assets/projects.json";
 import "../Styles/AboutMe.css";
-import { BsCaretDown } from "react-icons/bs";
-import { AiFillGithub } from "react-icons/ai";
-import { GoGlobe  } from "react-icons/go";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
