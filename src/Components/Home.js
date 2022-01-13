@@ -1,17 +1,43 @@
 import { Grid, useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import HomeCard from "./Components/HomeCard";
 import Menu from "./Menu/Menu";
 import MenuFooterMobile from "./Menu/MenuFooterMobile";
 import MenuHeaderMobile from "./Menu/MenuHeaderMobile";
+import Lottie from "lottie-web";
 import "./Styles/Home.css";
 
 export default function Home({ pages }) {
   const fontForMobile = useMediaQuery("(max-width:900px)");
+  const [loading, setLoading] = useState(true);
+  const container = useRef(null);
+  useEffect(() => {
+    Lottie.loadAnimation({
+      container: container.current,
+      renderer: "svg",
+      loop: true,
+      autoPlay: true,
+      animationData: require("../Assets/anime.json"),
+    });
+  }, []);
+  setTimeout(() => {
+    setLoading(false);
+  }, 3000);
   return (
     <Box className="home-body">
-      {!fontForMobile && (
+      {loading ? (
+        <Box
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+          }}
+        >
+          <Box ref={container} style={{ width: "250px" }}></Box>
+        </Box>
+      ) :(<Box>{!fontForMobile && (
         <Grid
           container
         >
@@ -35,7 +61,7 @@ export default function Home({ pages }) {
             <MenuFooterMobile/>
           </Grid>
         </Grid>
-      )}
+      )}</Box>)}
     </Box>
   );
 }

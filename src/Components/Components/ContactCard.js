@@ -1,8 +1,10 @@
 import {
+  Alert,
   Button,
   Card,
   Divider,
   Grid,
+  Snackbar,
   TextField,
   Typography,
   useMediaQuery,
@@ -18,17 +20,27 @@ export default function ContactCard() {
   const forBelow900 = useMediaQuery("(max-width:900px)");
   const forBelow1500 = useMediaQuery("(max-width:1500px)");
   const forBelow1200 = useMediaQuery("(max-width:1210px)");
+  const [open, setOpen] = React.useState(false);
+
   //   const for955to901 = useMediaQuery("(min-width:901px) and (max-width:960px)");
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm('portfolio_mail', 'portfolio_mail', e.target, 'user_mtQO7Imxg03OwEfEUDR1n')
       .then((result) => {
-         alert("send")
+        setOpen(true);
       }, (error) => {
           console.log(error.text);
       });
       e.target.reset()
   };
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
+
   return (
     <Box>
       <Card>
@@ -142,6 +154,11 @@ export default function ContactCard() {
             </Box>
           </Grid>
         </Grid>
+        <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+          Thanks for your message! 
+        </Alert>
+      </Snackbar>
       </Card>
     </Box>
   );
