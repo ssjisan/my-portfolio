@@ -1,12 +1,12 @@
-import React, { useRef, useState,useEffect } from "react";
 import { Grid, useMediaQuery } from "@mui/material";
-import Menu from "./Menu/Menu";
-import "./Styles/AboutMe.css";
 import { Box } from "@mui/system";
-import BioCard from "./Components/BioCard";
-import MenuHeaderMobile from "./Menu/MenuHeaderMobile";
-import MenuFooterMobile from "./Menu/MenuFooterMobile";
 import Lottie from "lottie-web";
+import React, { useEffect, useRef, useState } from "react";
+import BioCard from "./Components/BioCard";
+import Menu from "./Menu/Menu";
+import MenuFooterMobile from "./Menu/MenuFooterMobile";
+import MenuHeaderMobile from "./Menu/MenuHeaderMobile";
+import "./Styles/AboutMe.css";
 export default function Bio({ pages }) {
   const fontForMobile = useMediaQuery("(max-width:900px)");
   const [loading, setLoading] = useState(true);

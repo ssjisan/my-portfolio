@@ -2,51 +2,77 @@
     {
         "id": 1,
         "title": "Developer Hiring Platform",
-        "shortDescription":"A platform for software company, where they can find developer",
+        "shortDescription": "A platform for software company, where they can find developer",
         "detailsDescription": "Running Project for my current company.",
-        "tech":["React.js","Material ui", "React-Hook", "React Hook Form"],
-        "image":"https://i.ibb.co/CbrsDxz/unbiased-Process.png",
-        "github":"",
-        "live":""
+        "tech": [
+            "React.js",
+            "Material ui",
+            "React-Hook",
+            "React Hook Form"
+        ],
+        "image": "https://i.ibb.co/CbrsDxz/unbiased-Process.png",
+        "github": "",
+        "live": ""
     },
     {
         "id": 2,
-        "title": "Developer Hiring Platform",
-        "shortDescription":"A platform for software company, where they can find developer",
+        "title": "Innovation Venture",
+        "shortDescription": "A platform for software company, where they can find developer",
         "detailsDescription": "Running Project for my current company.",
-        "tech":["React.js","Material ui", "React-Hook", "React Hook Form", ""],
-        "image":"https://i.ibb.co/CbrsDxz/unbiased-Process.png",
-        "github":"",
-        "live":""
+        "tech": [
+            "React.js",
+            "React-Hook",
+            "Material ui",
+            "Lottie"
+        ],
+        "image": "https://i.ibb.co/CbrsDxz/unbiased-Process.png",
+        "github": "https://github.com/ssjisan/innovation-venture",
+        "live": ""
     },
     {
         "id": 3,
-        "title": "Developer Hiring Platform",
-        "shortDescription":"A platform for software company, where they can find developer",
+        "title": "Actuality-The Pshychological Test",
+        "shortDescription": "A platform for software company, where they can find developer",
         "detailsDescription": "Running Project for my current company.",
-        "tech":["React.js","Material ui", "React-Hook", "React Hook Form", ""],
-        "image":"https://i.ibb.co/CbrsDxz/unbiased-Process.png",
-        "github":"",
-        "live":""
+        "tech": [
+            "React.js",
+            "Material ui",
+            "React-Hook",
+            "React Hook Form",
+            ""
+        ],
+        "image": "https://i.ibb.co/CbrsDxz/unbiased-Process.png",
+        "github": "https://github.com/ssjisan/personality-test",
+        "live": ""
     },
     {
         "id": 4,
-        "title": "Developer Hiring Platform",
-        "shortDescription":"A platform for software company, where they can find developer",
+        "title": "Weather-App",
+        "shortDescription": "A simple weather forecast website for searching weather updates based on city name",
         "detailsDescription": "Running Project for my current company.",
-        "tech":["React.js","Material ui", "React-Hook", "React Hook Form", ""],
-        "image":"https://i.ibb.co/CbrsDxz/unbiased-Process.png",
-        "github":"",
-        "live":""
+        "tech": [
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "image": "https://i.ibb.co/CbrsDxz/unbiased-Process.png",
+        "github": "https://github.com/ssjisan/weather-app",
+        "live": "https://ssjisan.github.io/weather-app/"
     },
     {
         "id": 5,
         "title": "Developer Hiring Platform",
-        "shortDescription":"A platform for software company, where they can find developer",
+        "shortDescription": "A platform for software company, where they can find developer",
         "detailsDescription": "Running Project for my current company.",
-        "tech":["React.js","Material ui", "React-Hook", "React Hook Form", ""],
-        "image":"https://i.ibb.co/CbrsDxz/unbiased-Process.png",
-        "github":"",
-        "live":""
+        "tech": [
+            "React.js",
+            "Material ui",
+            "React-Hook",
+            "React Hook Form",
+            ""
+        ],
+        "image": "https://i.ibb.co/CbrsDxz/unbiased-Process.png",
+        "github": "",
+        "live": ""
     }
 ]
