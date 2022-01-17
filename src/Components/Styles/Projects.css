@@ -6,3 +6,20 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
+.scroll::-webkit-scrollbar-track
+{
+	background-color: transparent;
+	border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: transparent;
+}
+
+.scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #D8D8D8;
+}

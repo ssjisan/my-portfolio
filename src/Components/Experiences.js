@@ -42,6 +42,7 @@ export default function Experiences({ pages }) {
               <Grid
                 item
                 md={10}
+                className="scroll"
                 style={{
                   padding: "5%",
                   maxHeight: "85vh",

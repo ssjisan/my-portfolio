@@ -44,6 +44,7 @@ export default function Blog({ pages }) {
             <Grid
               item
               md={10}
+              className="scroll"
               style={{ padding: "5%", maxHeight: "100vh", overflowY: "scroll" }}
             >
               <BlogCard />

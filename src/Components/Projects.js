@@ -43,6 +43,7 @@ export default function Projects({ pages }) {
             <Grid
               item
               md={10}
+              className="scroll"
               style={{ padding: "5%", maxHeight: "85vh", overflowY: "scroll" }}
             >
               <ProjectCard />

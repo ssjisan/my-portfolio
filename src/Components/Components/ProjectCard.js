@@ -8,7 +8,8 @@ import {
   Grid,
   IconButton,
   Typography,
-  useMediaQuery
+  useMediaQuery,
+  Chip
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import React, { useState } from "react";
@@ -53,9 +54,7 @@ export default function ProjectCard() {
             />
             <CardContent>
               <Typography variant="body2" color="text.secondary">
-                This impressive paella is a perfect party dish and a fun meal to
-                cook together with your guests. Add 1 cup of frozen peas along
-                with the mussels, if you like.
+                {data.shortDescription}
               </Typography>
             </CardContent>
             <CardActions disableSpacing>
@@ -72,15 +71,13 @@ export default function ProjectCard() {
             </CardActions>
             <Collapse in={expanded === data.id} timeout="auto" unmountOnExit>
               <CardContent>
-                <Typography paragraph>Tech:</Typography>
+                <Typography paragraph>Description</Typography>
                 <Typography paragraph>
-                  Heat 1/2 cup of the broth in a pot until simmering, add
-                  saffron and set aside for 10 minutes.
+                  {data.detailsDescription}
                 </Typography>
-                <Typography>
-                  Set aside off of the heat to let rest for 10 minutes, and then
-                  serve.
-                </Typography>
+                <Typography paragraph>Tech:</Typography>
+                {data.tech.map((data)=>
+                <Chip label={data} style={{marginRight:"5px"}}/>)}
               </CardContent>
             </Collapse>
           </Card>
