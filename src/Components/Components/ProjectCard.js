@@ -59,9 +59,9 @@ export default function ProjectCard() {
             </CardContent>
             <CardActions disableSpacing>
               <IconButton aria-label="add to favorites"><GoGlobe/></IconButton>
-              <IconButton aria-label="share">
+              <a href={data.github}><IconButton aria-label="share">
                 <AiFillGithub />
-              </IconButton>
+              </IconButton></a>
               <ExpandMore
                 expand={expanded === data.id}
                 onClick={()=>handleExpandClick(data.id)}
