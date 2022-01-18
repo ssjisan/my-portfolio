@@ -8,11 +8,14 @@
             "React.js",
             "Material ui",
             "React-Hook",
-            "React Hook Form"
+            "React Hook Form",
+            "Context-api",
+            "Express.js",
+            "Mongodb"
         ],
-        "image": "https://i.ibb.co/CbrsDxz/unbiased-Process.png",
+        "image": "https://i.ibb.co/MSKy7S8/TechHack.png",
         "github": "",
-        "live": ""
+        "live": "https://techhack-ca.herokuapp.com/"
     },
     {
         "id": 2,

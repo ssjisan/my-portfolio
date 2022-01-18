@@ -1,11 +1,3 @@
-.bio-body {
-    background-image: url("https://i.ibb.co/9qNYj0B/home.jpg"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 100vh; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
 .bioScroll::-webkit-scrollbar-track
 {
 	background-color: transparent;

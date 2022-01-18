@@ -6,9 +6,10 @@ import Menu from "./Menu/Menu";
 import MenuFooterMobile from "./Menu/MenuFooterMobile";
 import MenuHeaderMobile from "./Menu/MenuHeaderMobile";
 import Lottie from "lottie-web";
-import "./Styles/Home.css";
+import useStyles from "./Styles/HomeStyle"
 
 export default function Home() {
+  const classes = useStyles();
   const fontForMobile = useMediaQuery("(max-width:900px)");
   const [loading, setLoading] = useState(true);
   const container = useRef(null);
@@ -25,7 +26,7 @@ export default function Home() {
     setLoading(false);
   }, 2500);
   return (
-    <Box className="home-body">
+    <Box className={classes.home}>
       {loading ? (
         <Box
           style={{
@@ -57,7 +58,7 @@ export default function Home() {
           <Grid item xs={12} style={{paddingTop:"5%",maxHeight:"85vh",overflowY:"scroll"}}>
             <HomeCard />
           </Grid>
-          <Grid item xs={12} style={{display:"flex", justifyContent:"center", width:"100%", position:"fixed", bottom:0,maxHeight:"10vh"}}>
+              <Grid item xs={12} style={{ }} className={classes.MenuFooterMobile}>
             <MenuFooterMobile/>
           </Grid>
         </Grid>

@@ -23,6 +23,7 @@ export default function BioCard() {
             src="https://i.ibb.co/ZKJyRbJ/about-Me-Section.png"
             width="80%"
             alt=""
+            style={{borderRadius:"20px"}}
           />
         </Grid>
         <Grid item xs={12} md={6}>
