@@ -21,7 +21,7 @@ export default function Experiences({ pages }) {
   }, []);
   setTimeout(() => {
     setLoading(false);
-  }, 3000);
+  }, 2500);
   return (
     <Box className="experiences-body">
       {loading ? (

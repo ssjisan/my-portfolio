@@ -23,7 +23,7 @@ export default function Home({ pages }) {
   }, []);
   setTimeout(() => {
     setLoading(false);
-  }, 3000);
+  }, 2500);
   return (
     <Box className="home-body">
       {loading ? (

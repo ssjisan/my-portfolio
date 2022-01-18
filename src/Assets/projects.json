@@ -38,7 +38,8 @@
             "React.js",
             "Material ui",
             "React-Hook",
-            "React Hook Form"
+            "React Hook Form",
+            "Context-api"
         ],
         "image": "https://i.ibb.co/P6YGsp5/personality-test.png",
         "github": "https://github.com/ssjisan/personality-test",
@@ -51,27 +52,26 @@
         "detailsDescription": "Running Project for my current company.",
         "tech": [
             "JavaScript",
+            "Weather-api",
             "HTML",
             "CSS"
         ],
-        "image": "https://i.ibb.co/CbrsDxz/unbiased-Process.png",
+        "image": "https://i.ibb.co/JHgY4kZ/weather-app.png",
         "github": "https://github.com/ssjisan/weather-app",
         "live": "https://ssjisan.github.io/weather-app/"
     },
     {
         "id": 5,
-        "title": "Developer Hiring Platform",
-        "shortDescription": "A platform for software company, where they can find developer",
+        "title": "Guess the number",
+        "shortDescription": "Guess the Number is basically an number guessing game. You will guess a number and give it to the box and machine will match it. Enjoy!!!",
         "detailsDescription": "Running Project for my current company.",
         "tech": [
-            "React.js",
-            "Material ui",
-            "React-Hook",
-            "React Hook Form",
-            ""
+            "JavaScript",
+            "HTML",
+            "Css"
         ],
-        "image": "https://i.ibb.co/CbrsDxz/unbiased-Process.png",
-        "github": "",
-        "live": ""
+        "image": "https://i.ibb.co/rZGwV4m/guess-game.png",
+        "github": "https://github.com/ssjisan/Guess-The-Number",
+        "live": "https://ssjisan.github.io/Guess-The-Number/"
     }
 ]

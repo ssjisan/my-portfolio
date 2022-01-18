@@ -23,7 +23,7 @@ export default function Blog({ pages }) {
   }, []);
   setTimeout(() => {
     setLoading(false);
-  }, 3000);
+  }, 2500);
   return (
     <Box className="bio-body">
       {loading ? (
