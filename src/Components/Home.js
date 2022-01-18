@@ -8,7 +8,7 @@ import MenuHeaderMobile from "./Menu/MenuHeaderMobile";
 import Lottie from "lottie-web";
 import "./Styles/Home.css";
 
-export default function Home({ pages }) {
+export default function Home() {
   const fontForMobile = useMediaQuery("(max-width:900px)");
   const [loading, setLoading] = useState(true);
   const container = useRef(null);

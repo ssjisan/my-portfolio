@@ -6,7 +6,7 @@ import ExperienceCard from "./Components/ExperienceCard";
 import MenuHeaderMobile from "./Menu/MenuHeaderMobile";
 import MenuFooterMobile from "./Menu/MenuFooterMobile";
 import Lottie from "lottie-web";
-export default function Experiences({ pages }) {
+export default function Experiences() {
   const fontForMobile = useMediaQuery("(max-width:900px)");
   const [loading, setLoading] = useState(true);
   const container = useRef(null);

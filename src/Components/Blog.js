@@ -8,7 +8,7 @@ import MenuHeaderMobile from "./Menu/MenuHeaderMobile";
 import MenuFooterMobile from "./Menu/MenuFooterMobile";
 import Lottie from "lottie-web";
 
-export default function Blog({ pages }) {
+export default function Blog() {
   const fontForMobile = useMediaQuery("(max-width:900px)");
   const [loading, setLoading] = useState(true);
   const container = useRef(null);

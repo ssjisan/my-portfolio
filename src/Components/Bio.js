@@ -7,7 +7,7 @@ import Menu from "./Menu/Menu";
 import MenuFooterMobile from "./Menu/MenuFooterMobile";
 import MenuHeaderMobile from "./Menu/MenuHeaderMobile";
 import "./Styles/AboutMe.css";
-export default function Bio({ pages }) {
+export default function Bio() {
   const fontForMobile = useMediaQuery("(max-width:900px)");
   const [loading, setLoading] = useState(true);
   const container = useRef(null)
