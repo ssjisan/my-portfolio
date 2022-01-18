@@ -54,8 +54,8 @@ export default function ProjectCard() {
               </Typography>
             </CardContent>
             <CardActions disableSpacing>
-              <IconButton aria-label="add to favorites"><GoGlobe/></IconButton>
-              <a href={data.github}><IconButton aria-label="share">
+              <a href={data.live}><IconButton><GoGlobe/></IconButton></a>
+              <a href={data.github}><IconButton>
                 <AiFillGithub />
               </IconButton></a>
               <ExpandMore

@@ -6,8 +6,15 @@ import {
   Grid,
   IconButton,
   Typography,
+  Box,
 } from "@mui/material";
-import { Box } from "@mui/system";
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineDot from "@mui/lab/TimelineDot";
+import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import React from "react";
 import "../Styles/AboutMe.css";
 import Avatar from "@mui/material/Avatar";
@@ -16,7 +23,6 @@ import { useState } from "react";
 import "../Styles/Experience.css";
 import { styled } from "@mui/material/styles";
 import { BsCaretDown } from "react-icons/bs";
-
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -36,67 +42,26 @@ export default function ExperienceCard() {
   };
   return (
     <Grid container spacing={1}>
-      {experience.map((data) => (
-        <Grid item xs={12} md={6} sm={6} lg={4} key={data.id}>
-          <Card>
-            <Box className="jobBox" >
-              <Box
-                style={{
-                  padding: "5%",
-                }}
-              >
-                <Avatar
-                  style={{
-                    width: "100px",
-                    height: "100px",
-                    border: "5px solid #F7F8FA",
-                    backgroundColor: "#fff",
-                    borderRadius: "50%",
-                    margin: "auto",
-                  }}
-                  src={
-                    data.companyLogo && data.companyLogo.length
-                      ? `${data.companyLogo}`
-                      : `https://ui-avatars.com/api/?color=00756A&name=${data.companyName}`
-                  }
-                />
-              </Box>
-            </Box>
-            <CardContent>
-              <Typography
-                variant="h5"
-                style={{ fontWeight: "bold", color: "#22215B", paddingBottom:"5%"}}
-              >
-                {data.companyName}
-              </Typography>
-              <Typography variant="body1" style={{paddingLeft:"3%",marginBottom:"3%"}}>{data.position}</Typography>
-              <Typography variant="body2" style={{paddingLeft:"3%"}}>
-                {data.start}-{data.end}
-              </Typography>
-            </CardContent>
-            <CardActions disableSpacing>
-              <ExpandMore
-                expand={expanded === data.id}
-                onClick={() => handleExpandClick(data.id)}
-              >
-                <BsCaretDown />
-              </ExpandMore>
-            </CardActions>
-            <Collapse in={expanded === data.id} timeout="auto" unmountOnExit>
-              <CardContent>
-                <Typography variant="body1" style={{ fontWeight: "bold",paddingBottom:"2%"}}>
-                  Responsibilities:
-                </Typography>
-                {data.responsibilities.map((data,i) => (
-                  <Box style={{ paddingLeft: "2%" }} key={i}>
-                    <Typography variant="body2">-{data}</Typography> <br />
-                  </Box>
-                ))}
-              </CardContent>
-            </Collapse>
-          </Card>
-        </Grid>
-      ))}
+      <Box>
+        <Timeline position="alternate">
+        {experience.map((data, index) => (
+  <TimelineItem>
+  <TimelineOppositeContent color="text.secondary">
+    {data.start}-{data.end}
+  </TimelineOppositeContent>
+  <TimelineSeparator>
+  <Avatar src={data.companyLogo}/>
+    <TimelineConnector />
+  </TimelineSeparator>
+  <TimelineContent><Card style={{backgroundColor:"#fafafa",padding:""}}>
+     <Typography>{data.companyName}</Typography>
+     <Typography>{data.position}</Typography>
+    </Card></TimelineContent>
+</TimelineItem>
+ ))}
+        </Timeline>
+      </Box>
     </Grid>
   );
 }
+
