@@ -3,7 +3,6 @@ import { Grid, useMediaQuery } from "@mui/material";
 import Menu from "./Menu/Menu";
 import "./Styles/AboutMe.css";
 import { Box } from "@mui/system";
-import BioCard from "./Components/BioCard";
 import MenuHeaderMobile from "./Menu/MenuHeaderMobile";
 import MenuFooterMobile from "./Menu/MenuFooterMobile";
 import BlogCardDetails from "./Components/BlogCardDetails";
@@ -11,15 +10,16 @@ import { useParams } from "react-router-dom";
 import blogData from "../Assets/blogData.json";
 import Lottie from "lottie-web";
 
-export default function SingleBlog({ pages }) {
+export default function SingleBlog() {
   const fontForMobile = useMediaQuery("(max-width:900px)");
   const { id } = useParams();
+  // eslint-disable-next-line
   const [blog, setBlog] = useState(blogData);
   const [singleBlog, setSingleBlog] = useState([]);
   useEffect(() => {
     let selectedBlog = blog.filter((data) => data.id === +id);
     setSingleBlog(selectedBlog);
-  }, []);
+  }, []);// eslint-disable-line react-hooks/exhaustive-deps
   const [loading, setLoading] = useState(true);
   const container = useRef(null);
   useEffect(() => {

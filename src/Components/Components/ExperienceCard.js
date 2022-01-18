@@ -6,7 +6,6 @@ import {
   Grid,
   IconButton,
   Typography,
-  useMediaQuery,
 } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
@@ -29,9 +28,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 export default function ExperienceCard() {
-  const forBelow900 = useMediaQuery("(max-width:900px)");
-  const forBelow1500 = useMediaQuery("(max-width:1500px)");
-  const forBelow1200 = useMediaQuery("(max-width:1210px)");
+  // eslint-disable-next-line
   const [experience, setExperience] = useState(job);
   const [expanded, setExpanded] = useState(false);
   const handleExpandClick = (id) => {

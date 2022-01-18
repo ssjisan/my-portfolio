@@ -7,7 +7,6 @@ import {
   Snackbar,
   TextField,
   Typography,
-  useMediaQuery,
 } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
@@ -17,12 +16,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import emailjs from 'emailjs-com';
 
 export default function ContactCard() {
-  const forBelow900 = useMediaQuery("(max-width:900px)");
-  const forBelow1500 = useMediaQuery("(max-width:1500px)");
-  const forBelow1200 = useMediaQuery("(max-width:1210px)");
   const [open, setOpen] = React.useState(false);
-
-  //   const for955to901 = useMediaQuery("(min-width:901px) and (max-width:960px)");
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm('portfolio_mail', 'portfolio_mail', e.target, 'user_mtQO7Imxg03OwEfEUDR1n')

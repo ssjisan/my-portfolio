@@ -4,9 +4,7 @@ import {
   CardMedia,
   Grid,
   Typography,
-  useMediaQuery,
 } from "@mui/material";
-import { Box } from "@mui/system";
 import React from "react";
 import "../Styles/AboutMe.css";
 import blogData from "../../Assets/blogData.json";
@@ -16,10 +14,7 @@ import "../Styles/AboutMe.css";
 import { Link } from "react-router-dom";
 
 export default function BlogCard() {
-  const forBelow900 = useMediaQuery("(max-width:900px)");
-  const forBelow1500 = useMediaQuery("(max-width:1500px)");
-  const forBelow1200 = useMediaQuery("(max-width:1210px)");
-  //   const for955to901 = useMediaQuery("(min-width:901px) and (max-width:960px)");
+  // eslint-disable-next-line
   const [blog, setBlog] = useState(blogData);
   return (
     <Grid container spacing={1}>

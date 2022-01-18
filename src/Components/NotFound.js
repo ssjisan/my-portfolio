@@ -1,19 +1,11 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import {
-  CircularProgress,
-  Grid,
   Typography,
-  useMediaQuery,
 } from "@mui/material";
-import Menu from "./Menu/Menu";
 import "./Styles/AboutMe.css";
 import { Box } from "@mui/system";
-import BioCard from "./Components/BioCard";
-import MenuHeaderMobile from "./Menu/MenuHeaderMobile";
-import MenuFooterMobile from "./Menu/MenuFooterMobile";
 import Lottie from "lottie-web";
 export default function NotFound({ pages }) {
-  const fontForMobile = useMediaQuery("(max-width:900px)");
   const container = useRef(null);
   useEffect(() => {
     Lottie.loadAnimation({

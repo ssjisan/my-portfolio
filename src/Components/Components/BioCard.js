@@ -1,11 +1,8 @@
-import { Grid, Typography, useMediaQuery } from "@mui/material";
-import { Box } from "@mui/system";
+import { Grid, Typography, useMediaQuery,Box } from "@mui/material";
 import React from "react";
 import "../Styles/AboutMe.css";
 export default function BioCard() {
   const forBelow900 = useMediaQuery("(max-width:900px)");
-  const forBelow1500 = useMediaQuery("(max-width:1500px)");
-  const forBelow1200 = useMediaQuery("(max-width:1210px)");
   return (
     <Box>
       <Grid
