@@ -39,7 +39,7 @@ export default function ProjectCard() {
   return (
     <Grid container spacing={1}>
       {project.map((data) => (
-        <Grid item lg={4} md={6} sm={6} >
+        <Grid item lg={4} md={6} sm={6} key={data.id}>
           <Card>
             <CardHeader title={data.title} />
             <CardMedia
@@ -72,8 +72,8 @@ export default function ProjectCard() {
                   {data.detailsDescription}
                 </Typography>
                 <Typography paragraph>Tech:</Typography>
-                {data.tech.map((data)=>
-                <Chip label={data} style={{marginRight:"5px"}}/>)}
+                {data.tech.map((data,i)=>
+                  <Chip label={data} style={{ margin: "5px" }} key={i}/>)}
               </CardContent>
             </Collapse>
           </Card>

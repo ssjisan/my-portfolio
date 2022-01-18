@@ -19,7 +19,7 @@ export default function BlogCard() {
   return (
     <Grid container spacing={1}>
       {blog.map((data) => (
-        <Grid item md={4} sm={6} xs={12}>
+        <Grid item md={4} sm={6} xs={12} key={data.id}>
           <Card style={{ borderRadius: "20px" }}>
             <CardMedia style={{ padding: "2%" }}>
               <img

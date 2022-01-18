@@ -83,7 +83,7 @@ export default function Contact({ pages }) {
               maxHeight: "10vh",
             }}
           >
-            <MenuFooterMobile pages={6} />
+            <MenuFooterMobile pages={5} />
           </Grid>
         </Grid>
       )}

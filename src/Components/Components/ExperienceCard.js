@@ -37,7 +37,7 @@ export default function ExperienceCard() {
   return (
     <Grid container spacing={1}>
       {experience.map((data) => (
-        <Grid item xs={12} md={6} sm={6} lg={4}>
+        <Grid item xs={12} md={6} sm={6} lg={4} key={data.id}>
           <Card>
             <Box className="jobBox" >
               <Box
@@ -87,8 +87,8 @@ export default function ExperienceCard() {
                 <Typography variant="body1" style={{ fontWeight: "bold",paddingBottom:"2%"}}>
                   Responsibilities:
                 </Typography>
-                {data.responsibilities.map((data) => (
-                  <Box style={{paddingLeft:"2%"}}>
+                {data.responsibilities.map((data,i) => (
+                  <Box style={{ paddingLeft: "2%" }} key={i}>
                     <Typography variant="body2">-{data}</Typography> <br />
                   </Box>
                 ))}
