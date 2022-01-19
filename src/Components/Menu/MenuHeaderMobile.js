@@ -16,6 +16,7 @@ export default function MenuHeaderMobile({ pages }) {
                 borderBottom: pages===1 ? "2px solid black" : "2px solid transparent",
                 color: "#444",
                 fontWeight: pages === 1 ? "bold" : "",
+                textShadow:pages === 1 && "15px 0px 20px rgba(0,0,0,0.66)",
               }}
             >
               Home
@@ -30,6 +31,7 @@ export default function MenuHeaderMobile({ pages }) {
                 borderBottom: pages===2 ? "2px solid black" : "2px solid transparent",
                 color: "#444",
                 fontWeight: pages === 2 ? "bold" : "",
+                textShadow:pages === 2 && "15px 0px 20px rgba(0,0,0,0.66)",
               }}
             >
               Projects
@@ -43,7 +45,8 @@ export default function MenuHeaderMobile({ pages }) {
               fontSize: "15px",
               borderBottom: pages===3 ? "2px solid black" : "2px solid transparent",
               color: "#444",
-              fontWeight: pages === 3 ? "bold" : "",
+                fontWeight: pages === 3 ? "bold" : "",
+                textShadow:pages === 3 && "15px 0px 20px rgba(0,0,0,0.66)",
             }}
             >
               Experiences

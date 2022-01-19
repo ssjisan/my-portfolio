@@ -6,7 +6,7 @@ import "../Styles/MenuStyles.css";
 
 export default function MenuFooterMobile({ pages }) {
   return (
-    <Box>
+    <Box style={{ marginBottom: "10px" }}>
       <Grid container spacing={5} justifyContent="center">
         <Grid item>
           <Link to="/about" className="Link">
@@ -14,9 +14,11 @@ export default function MenuFooterMobile({ pages }) {
               className="item"
               style={{
                 fontSize: "15px",
-                borderTop: pages===4 ? "2px solid black" : "2px solid transparent",
+                borderTop:
+                  pages === 4 ? "2px solid black" : "2px solid transparent",
                 color: "#444",
-                fontWeight: pages === 4 &&"bold",
+                fontWeight: pages === 4 && "bold",
+                textShadow: pages === 4 && "15px 0px 20px rgba(0,0,0,0.66)",
               }}
             >
               Bio
@@ -29,9 +31,11 @@ export default function MenuFooterMobile({ pages }) {
               className="item"
               style={{
                 fontSize: "15px",
-                borderTop: pages===5 ? "2px solid black" : "2px solid transparent",
+                borderTop:
+                  pages === 5 ? "2px solid black" : "2px solid transparent",
                 color: "#444",
                 fontWeight: pages === 5 && "bold",
+                textShadow: pages === 5 && "15px 0px 20px rgba(0,0,0,0.66)",
               }}
             >
               Contact Me
@@ -44,9 +48,11 @@ export default function MenuFooterMobile({ pages }) {
               className="item"
               style={{
                 fontSize: "15px",
-                borderTop: pages === 6 ? "2px solid black" : "2px solid transparent",
+                borderTop:
+                  pages === 6 ? "2px solid black" : "2px solid transparent",
                 color: "#444",
                 fontWeight: pages === 6 && "bold",
+                textShadow: pages === 6 && "15px 0px 20px rgba(0,0,0,0.66)",
               }}
             >
               Blogs
