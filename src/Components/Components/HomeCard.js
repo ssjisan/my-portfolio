@@ -5,9 +5,9 @@ import React, { useEffect } from "react";
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 import { useDencrypt } from "use-dencrypt-effect";
 const values = [
-  "Front-end Developer",
-  "Prototyping With Figma",
-  "UI/UX Designer",
+  "Front-end development",
+  "Prototyping with figma",
+  "UI/UX designing",
 ];
 
 export default function HomeCard() {
@@ -47,7 +47,7 @@ export default function HomeCard() {
           </Typography>
           {!forBelow900 && (
             <Box style={{ display: "flex"}}>
-              <Typography variant={(forBelow1200 && "body2")||(forBelow1200 && "body1") || "h6"} style={{width:"200px"}}>I Love to work with</Typography>
+              <Typography variant={(forBelow1200 && "body2")||(forBelow1200 && "body1") || "h6"} style={{width:"180px"}}>I Love to work with</Typography>
               
               <Typography variant={(forBelow1200 && "body2")||(forBelow1200 && "body1") || "h6"} style={{ color: "red",width:"300px"}}>
                 {result}
@@ -56,7 +56,7 @@ export default function HomeCard() {
           )}
           {forBelow900 && (
             <Box style={{ display: "flex" }}>
-              <Typography variant="body2" style={{ width:"150px"}}>I Love to work with</Typography>
+              <Typography variant="body2" style={{ width:"130px"}}>I Love to work with</Typography>
               
               <Typography variant="body2" style={{ color: "red", width:"200px"}}>
                 {result}

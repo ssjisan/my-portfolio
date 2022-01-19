@@ -10,7 +10,9 @@ import useStyles from "./Styles/HomeStyle"
 
 export default function Home() {
   const classes = useStyles();
-  const fontForMobile = useMediaQuery("(max-width:900px)");
+  const forBelow900 = useMediaQuery("(max-width:900px)");
+  const forBelow600 = useMediaQuery("(max-width:600px)");
+  const forBelow400 = useMediaQuery("(max-width:400px)");
   const [loading, setLoading] = useState(true);
   const container = useRef(null);
   useEffect(() => {
@@ -38,7 +40,7 @@ export default function Home() {
         >
           <Box ref={container} style={{ width: "250px" }}></Box>
         </Box>
-      ) :(<Box>{!fontForMobile && (
+      ) :(<Box>{!forBelow900 && (
         <Grid
           container
         >
@@ -50,15 +52,15 @@ export default function Home() {
           </Grid>
         </Grid>
       )}
-      {fontForMobile && (
+      {forBelow900 && (
         <Grid container style={{ display: "flex" , justifyContent: "space-between"  }}>
           <Grid item xs={12} style={{ display:"flex", justifyContent:"center", width:"100%", top:0,maxHeight:"10vh", padding:"2%"}}>
             <MenuHeaderMobile pages={1}/>
           </Grid>
-          <Grid item xs={12} style={{paddingTop:"5%",maxHeight:"85vh",overflowY:"scroll"}}>
+          <Grid item xs={12} style={{paddingTop:(forBelow400&&"25%")||(forBelow600&&"20%")||"15%",maxHeight:"85vh",overflowY:"scroll"}}>
             <HomeCard />
           </Grid>
-              <Grid item xs={12} style={{ }} className={classes.MenuFooterMobile}>
+              <Grid item xs={12} className={classes.MenuFooterMobile}>
             <MenuFooterMobile/>
           </Grid>
         </Grid>

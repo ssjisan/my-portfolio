@@ -55,6 +55,7 @@ export default function SingleBlog() {
               <Grid
                 item
                 md={10}
+                className="scroll"
                 style={{
                   padding: "5%",
                   maxHeight: "100vh",
