@@ -2,13 +2,13 @@
   {
     "id": 1,
     "title": "Developer Hiring Platform",
-    "shortDescription": "A platform for software company, where they can find developer",
-    "detailsDescription": "Running Project for my current company.",
+    "shortDescription": "A platform for software company, where they can find developer for full time or contractual job",
+    "detailsDescription": "Running Project for my current company. A developer can find job and a company can hire a developer based on their criteria. Firstly developer have to create his/her own accout. And after this developer can attend any skill test. This test result will boost the profile of developer. And a user can create his/her company profile. This company profile will be the identity of the company. Company can create a job circuler,shortlist,hire,offer,set interview for developer",
     "tech": [
       "React.js",
       "Material ui",
+      "React router",
       "React-Hook",
-      "React Hook Form",
       "Context-api",
       "Express.js",
       "Mongodb"
@@ -20,9 +20,15 @@
   {
     "id": 2,
     "title": "Innovation Venture",
-    "shortDescription": "A platform for software company, where they can find developer",
-    "detailsDescription": "Running Project for my current company.",
-    "tech": ["React.js", "React-Hook", "Material ui", "Lottie"],
+    "shortDescription": "A platform for a software company, where they can offer their services, and give an update to the client",
+    "detailsDescription": "This is a complete full stack dummy project. Is platform can be used for any software fire. Firm can show their prime services, current clients, services price. A user who want to build any tech product like website, e-commerce, mobile app or similar like that they can give an order to the firm. An admin pnale will be added for company staff. By this dashboard they can give an update to the client, receive the order e.t.c",
+    "tech": [
+      "React.js",
+      "React-Hook",
+      "React router",
+      "Material ui",
+      "Lottie"
+    ],
     "image": "https://i.ibb.co/R0HhRtJ/innovation-venture.png",
     "github": "https://github.com/ssjisan/innovation-venture",
     "live": ""
@@ -47,8 +53,13 @@
     "id": 4,
     "title": "Weather-App",
     "shortDescription": "A simple weather forecast website for searching weather updates based on city name",
-    "detailsDescription": "Running Project for my current company.",
-    "tech": ["JavaScript", "Weather-api", "HTML", "CSS"],
+    "detailsDescription": "A simple weather forecast website for searching weather updates based on city name. The background image will change by demanding weather status. Showing results with temperature and weather status.",
+    "tech": [
+      "JavaScript",
+      "Weather-api",
+      "HTML",
+      "CSS"
+    ],
     "image": "https://i.ibb.co/JHgY4kZ/weather-app.png",
     "github": "https://github.com/ssjisan/weather-app",
     "live": "https://ssjisan.github.io/weather-app/"
@@ -56,9 +67,13 @@
   {
     "id": 5,
     "title": "Guess the number",
-    "shortDescription": "Guess the Number is basically an number guessing game. You will guess a number and give it to the box and machine will match it. Enjoy!!!",
-    "detailsDescription": "Running Project for my current company.",
-    "tech": ["JavaScript", "HTML", "Css"],
+    "shortDescription": "Guess the Number is basically an number guessing game.",
+    "detailsDescription": "Guess the Number is basically an number guessing game. You will guess a number and give it to the box and machine will match it. If a guess is wrong it will continue and show the wrong setp. But when it was right, the machine will notify you",
+    "tech": [
+      "JavaScript",
+      "HTML",
+      "Css"
+    ],
     "image": "https://i.ibb.co/rZGwV4m/guess-game.png",
     "github": "https://github.com/ssjisan/Guess-The-Number",
     "live": "https://ssjisan.github.io/Guess-The-Number/"
