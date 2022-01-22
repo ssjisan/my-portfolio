@@ -65,7 +65,7 @@ export default function HomeCard() {
           )}
         </Grid>
         <Grid item xs={12} md={6}>
-          <img src="https://i.ibb.co/N6LGtdj/jisan.png" width={forBelow900 ? "280px" : "400px"} alt="" />
+          <img src="https://i.ibb.co/X7Gpy7z/newHome.png" width={forBelow900 ? "280px" : "400px"} alt="" />
         </Grid>
         <Grid item xs={12} md={6}>
           <Grid container spacing={3}>
