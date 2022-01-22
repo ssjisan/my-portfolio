@@ -20,8 +20,8 @@ export default function BioCard() {
           style={{ display: "flex", justifyContent: "center" }}
         >
           <img
-            src="https://i.ibb.co/ZKJyRbJ/about-Me-Section.png"
-            width="80%"
+            src="https://i.ibb.co/4mc2Jg6/bioCard.jpg"
+            width="100%"
             alt=""
             style={{borderRadius:"20px"}}
           />
