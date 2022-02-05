@@ -8,5 +8,6 @@ export default makeStyles((theme) => ({
     position: "fixed",
     bottom: 0,
     maxHeight: "10vh",
+    backgroundColor: "white"
   },
 }));

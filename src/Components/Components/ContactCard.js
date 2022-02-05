@@ -123,6 +123,7 @@ export default function ContactCard() {
               required
                 label="E-mail"
                 variant="outlined"
+                type="email"
                 name="email"
                 style={{
                   borderRadius: "20px",

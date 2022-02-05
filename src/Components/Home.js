@@ -57,7 +57,7 @@ export default function Home() {
           <Grid item xs={12} style={{ display:"flex", justifyContent:"center", width:"100%", top:0,maxHeight:"10vh", padding:"2%"}}>
             <MenuHeaderMobile pages={1}/>
           </Grid>
-          <Grid item xs={12} style={{paddingTop:(forBelow400&&"25%")||(forBelow600&&"20%")||"15%",maxHeight:"85vh",overflowY:"scroll"}}>
+          <Grid item xs={12} style={{paddingTop:(forBelow400&&"25%")||(forBelow600&&"20%")||"15%",maxHeight:"85%",overflowY:"scroll"}}>
             <HomeCard />
           </Grid>
               <Grid item xs={12} className={classes.MenuFooterMobile}>

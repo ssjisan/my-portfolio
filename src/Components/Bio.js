@@ -81,6 +81,7 @@ export default function Bio() {
                   position: "fixed",
                   bottom: 0,
                   maxHeight: "10vh",
+                  
                 }}
               >
                 <MenuFooterMobile pages={4} />
