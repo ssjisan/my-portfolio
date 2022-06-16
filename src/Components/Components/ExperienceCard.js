@@ -23,6 +23,7 @@ export default function ExperienceCard() {
                   backgroundColor: "#fff",
                   borderRadius: "50%",
                   margin: "auto",
+                  objectFit: "fill",
                 }}
                 src={
                   data.companyLogo && data.companyLogo.length

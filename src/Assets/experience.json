@@ -1,38 +1,81 @@
 [
     {
         "id": 1,
-        "companyName": "Tech Hack Limited",
-        "companyLogo":"https://i.ibb.co/BqFm8rf/techhack.png",
+        "companyName": "BYSL Global Technology Group",
+        "companyLogo": "https://i.ibb.co/2SZrpCj/bysl.png",
         "position": "Front-end Developer",
-        "start":"September,2021",
-        "end":"present",
-        "responsibilities":["Developing UX with Figma","User flow and prototyping","Converting UX to UI with React.js and Material ui","Creating useable components for future use"]
+        "start": "February,2022",
+        "end": "present",
+        "responsibilities": [
+            "Developing UX with Figma",
+            "User flow and prototyping",
+            "Converting UX to UI with React.js and Material ui",
+            "Creating useable components for future use"
+        ]
+    },
+    {
+        "id": 1,
+        "companyName": "Tech Hack Limited",
+        "companyLogo": "https://i.ibb.co/BqFm8rf/techhack.png",
+        "position": "Front-end Developer",
+        "start": "September,2021",
+        "end": "February,2022",
+        "responsibilities": [
+            "Developing UX with Figma",
+            "User flow and prototyping",
+            "Converting UX to UI with React.js and Material ui",
+            "Creating useable components for future use"
+        ]
     },
     {
         "id": 2,
         "companyName": "Eric Frank India",
-        "companyLogo":"",
+        "companyLogo": "",
         "position": "Front-end Developer, Intern",
-        "start":"December,2020",
-        "end":"January,2021",
-        "responsibilities":["Developed UX with figma","Developed UI with ReactJS and React BootStrap","Collaborate with Backend Team"]
+        "start": "December,2020",
+        "end": "January,2021",
+        "responsibilities": [
+            "Developed UX with figma",
+            "Developed UI with ReactJS and React BootStrap",
+            "Collaborate with Backend Team"
+        ]
     },
     {
         "id": 3,
         "companyName": "Antaranga Dot Com Ltd.",
-        "companyLogo":"https://i.ibb.co/X2jcbNp/antbd.png",
+        "companyLogo": "https://i.ibb.co/X2jcbNp/antbd.png",
         "position": "NOC Engineer",
-        "start":"November,2020",
-        "end":"September,2021",
-        "responsibilities":["Working with FTTH network","Maintain BDCOM & Huawei OLT", "Configure OLT and ONU", "Troubleshooting OLT and ONU based problem", "Mikrotik router configure", "Cisco Switch monitoring", "VLAN configure", "Client site support", "Bandwidth management", "Maintain and monitoring network via NMS, MRTG, DUDE"]
+        "start": "November,2020",
+        "end": "September,2021",
+        "responsibilities": [
+            "Working with FTTH network",
+            "Maintain BDCOM & Huawei OLT",
+            "Configure OLT and ONU",
+            "Troubleshooting OLT and ONU based problem",
+            "Mikrotik router configure",
+            "Cisco Switch monitoring",
+            "VLAN configure",
+            "Client site support",
+            "Bandwidth management",
+            "Maintain and monitoring network via NMS, MRTG, DUDE"
+        ]
     },
     {
         "id": 4,
         "companyName": "Antaranga Dot Com Ltd.",
-        "companyLogo":"https://i.ibb.co/X2jcbNp/antbd.png",
+        "companyLogo": "https://i.ibb.co/X2jcbNp/antbd.png",
         "position": "Support Engineer",
-        "start":"December,2018",
-        "end":"November,2020",
-        "responsibilities":["Works with FTP server (File Upload)", "Maintain ERP","Configure different types of wireless router", "AP configure", "Work with VM", "DVR configure", "Maintain local support team", "Customer support via phone either visiting home"]
+        "start": "December,2018",
+        "end": "November,2020",
+        "responsibilities": [
+            "Works with FTP server (File Upload)",
+            "Maintain ERP",
+            "Configure different types of wireless router",
+            "AP configure",
+            "Work with VM",
+            "DVR configure",
+            "Maintain local support team",
+            "Customer support via phone either visiting home"
+        ]
     }
 ]
