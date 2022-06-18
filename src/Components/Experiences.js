@@ -7,75 +7,63 @@ import MenuForMobile from "./Menu/MenuForMobile";
 import MenuFooterMobile from "./Menu/MenuFooterMobile";
 import Lottie from "lottie-web";
 export default function Experiences() {
-  const fontForMobile = useMediaQuery("(max-width:900px)");
-  const [loading, setLoading] = useState(true);
-  const container = useRef(null);
-  useEffect(() => {
-    Lottie.loadAnimation({
-      container: container.current,
-      renderer: "svg",
-      loop: true,
-      autoPlay: true,
-      animationData: require("../Assets/anime.json"),
-    });
-  }, []);
-  setTimeout(() => {
-    setLoading(false);
-  }, 2500);
-  return (
-    <Box className="experiences-body">
-      {loading ? (
-        <Box
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            height: "100vh",
-          }}
-        >
-          <Box ref={container} style={{ width: "250px" }}></Box>
+    const fontForMobile = useMediaQuery("(max-width:900px)");
+    const [loading, setLoading] = useState(true);
+    const container = useRef(null);
+    useEffect(() => {
+        Lottie.loadAnimation({
+            container: container.current,
+            renderer: "svg",
+            loop: true,
+            autoPlay: true,
+            animationData: require("../Assets/anime.json"),
+        });
+    }, []);
+    setTimeout(() => {
+        setLoading(false);
+    }, 2500);
+    return (
+        <Box className="experiences-body">
+            {loading ? (
+                <Box
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        height: "100vh",
+                    }}
+                >
+                    <Box ref={container} style={{ width: "250px" }}></Box>
+                </Box>
+            ) : (
+                <Box>
+                    {!fontForMobile && (
+                        <Grid container>
+                            <Grid
+                                item
+                                md={10}
+                                className="scroll"
+                                style={{
+                                    padding: "5%",
+                                    maxHeight: "85vh",
+                                    overflowY: "scroll",
+                                }}
+                            >
+                                <ExperienceCard />
+                            </Grid>
+                            <Grid item md={2}>
+                                <Menu pages={4} />
+                            </Grid>
+                        </Grid>
+                    )}
+                    {fontForMobile && (
+                        <div>
+                            <ExperienceCard />
+                            <MenuForMobile />
+                        </div>
+                    )}
+                </Box>
+            )}
         </Box>
-      ) : (
-        <Box>
-          {!fontForMobile && (
-            <Grid container>
-              <Grid
-                item
-                md={10}
-                className="scroll"
-                style={{
-                  padding: "5%",
-                  maxHeight: "85vh",
-                  overflowY: "scroll",
-                }}
-              >
-                <ExperienceCard />
-              </Grid>
-              <Grid item md={2}>
-                <Menu pages={4} />
-              </Grid>
-            </Grid>
-          )}
-          {fontForMobile && (
-            <Grid
-              container
-              style={{ display: "flex", justifyContent: "space-between" }}
-            >
-              <Grid
-                item
-                xs={12}
-                style={{
-                  padding: "5%",
-                  overflowY: "hidden",
-                }}
-              >
-                <ExperienceCard />
-              </Grid>
-              <MenuForMobile />
-            </Grid>
-          )}
-        </Box>
-      )}
-    </Box>
-  );
+    );
 }
