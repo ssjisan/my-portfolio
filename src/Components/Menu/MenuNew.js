@@ -1,4 +1,10 @@
-import { Box, List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
+import {
+    Box,
+    List,
+    ListItem,
+    ListItemIcon,
+    Typography,
+} from "@mui/material";
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../../Assets/Logo.png";
@@ -6,7 +12,6 @@ import menuItem from "./MenuItem";
 export default function MenuNew() {
     const linkStyle = {
         textDecoration: "none",
-        borderRadius: "10px",
         color: "white",
     };
     const { pathname } = useLocation();
@@ -43,13 +48,14 @@ export default function MenuNew() {
                                         flexDirection: "column",
                                         justifyContent: "center",
                                         alignItems: "center",
-                                        mb: item.id - menuItem.length && "16px",
+                                        mb: item.id - menuItem.length && "24px",
                                         width: "70px",
                                         background:
                                             pathname === item.link &&
                                             "rgba(255, 255, 255, 0.1)",
                                         borderRadius: "8px",
                                         p: "4px",
+                                        fontSize: "14px",
                                     }}
                                 >
                                     <ListItemIcon
@@ -61,7 +67,16 @@ export default function MenuNew() {
                                     >
                                         {item.icon}
                                     </ListItemIcon>
-                                    <ListItemText primary={item.title} />
+                                    <Typography
+                                        sx={{
+                                            fontSize: "14px",
+                                            fontWeight:
+                                                pathname === item.link && "700",
+                                        }}
+                                    >
+                                        {" "}
+                                        {item.title}
+                                    </Typography>
                                 </ListItem>
                             </Link>
                         </>
