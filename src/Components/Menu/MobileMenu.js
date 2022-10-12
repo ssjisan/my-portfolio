@@ -7,7 +7,7 @@ import {
     ListItemIcon,
     Typography,
 } from "@mui/material";
-import menuItem from "./MenuItem";
+import { menuItem } from "./MenuItem";
 import { Link, useLocation } from "react-router-dom";
 
 export default function MobileMenu() {

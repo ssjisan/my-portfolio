@@ -1,14 +1,8 @@
-import {
-    Box,
-    List,
-    ListItem,
-    ListItemIcon,
-    Typography,
-} from "@mui/material";
+import { Box, List, ListItem, ListItemIcon, Typography } from "@mui/material";
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../../Assets/Logo.png";
-import menuItem from "./MenuItem";
+import { menuItem, socialMedia } from "./MenuItem";
 export default function MenuNew() {
     const linkStyle = {
         textDecoration: "none",
@@ -84,7 +78,36 @@ export default function MenuNew() {
                 </List>
             </Box>
             <Box>
-                <img src={Logo} alt="logo" />
+                {socialMedia.map((item) => {
+                    return (
+                        <>
+                            <a
+                                href={item.link}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <ListItem
+                                    sx={{
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                    }}
+                                >
+                                    <ListItemIcon
+                                        sx={{
+                                            display: "flex",
+                                            justifyContent: "center",
+                                            alignItems: "center",
+                                        }}
+                                    >
+                                        {item.icon}
+                                    </ListItemIcon>
+                                </ListItem>
+                            </a>
+                        </>
+                    );
+                })}
             </Box>
         </Box>
     );
