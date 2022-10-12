@@ -1,11 +1,9 @@
-import { Grid, Typography, useMediaQuery } from "@mui/material";
-import { red } from "@mui/material/colors";
+import { useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/MenuStyles.css";
 import menuData from "../../Assets/Menu.json";
-import home from "../../Assets/Icon/home.png";
 import "../Styles/MenuStyles.css";
 
 export default function Menu({ pages, handleClick }) {

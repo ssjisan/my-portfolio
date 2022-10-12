@@ -4,7 +4,6 @@ import Menu from "./Menu/Menu";
 import "./Styles/Experience.css";
 import ExperienceCard from "./Components/ExperienceCard";
 import MenuForMobile from "./Menu/MenuForMobile";
-import MenuFooterMobile from "./Menu/MenuFooterMobile";
 import Lottie from "lottie-web";
 export default function Experiences() {
     const fontForMobile = useMediaQuery("(max-width:900px)");

@@ -7,6 +7,7 @@ import Contact from "./Components/Contact";
 import Bio from "./Components/Bio";
 import SingleBlog from "./Components/SingleBlog";
 import NotFound from "./Components/NotFound";
+import Test from "./Components/Test";
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
         <Route path="contact" element={<Contact/>} />
         <Route path="blogDetails/:id" element={<SingleBlog/>} />
         <Route path="*" element={<NotFound/>} />
+        <Route path="/test" element={<Test/>} />
       </Routes>
       </BrowserRouter>
     </div>
