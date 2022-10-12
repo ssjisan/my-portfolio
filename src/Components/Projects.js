@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Grid, useMediaQuery } from "@mui/material";
-import Menu from "./Menu/Menu";
 import "./Styles/Projects.css";
 import ProjectCard from "./Components/ProjectCard";
 import { Box } from "@mui/system";
 import MenuFooterMobile from "./Menu/MenuFooterMobile";
 import MenuHeaderMobile from "./Menu/MenuHeaderMobile";
 import Lottie from "lottie-web";
+import MenuNew from "./Menu/MenuNew";
 
 export default function Projects({ pages }) {
   const fontForMobile = useMediaQuery("(max-width:900px)");
@@ -42,15 +42,24 @@ export default function Projects({ pages }) {
           <Grid container>
             <Grid
               item
-              md={10}
+              md={11}
               className="scroll"
               style={{ padding: "5%", maxHeight: "85vh", overflowY: "scroll" }}
             >
               <ProjectCard />
             </Grid>
-            <Grid item md={2}>
-              <Menu pages={3} />
-            </Grid>
+            <Grid
+                                item
+                                md={1}
+                                sx={{
+                                    height: "100vh",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                }}
+                            >
+                                <MenuNew />
+                            </Grid>
           </Grid>
         )}
         {fontForMobile && (

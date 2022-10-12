@@ -3,9 +3,9 @@ import { Box } from "@mui/system";
 import Lottie from "lottie-web";
 import React, { useEffect, useRef, useState } from "react";
 import BioCard from "./Components/BioCard";
-import Menu from "./Menu/Menu";
 import MenuFooterMobile from "./Menu/MenuFooterMobile";
 import MenuHeaderMobile from "./Menu/MenuHeaderMobile";
+import MenuNew from "./Menu/MenuNew";
 import "./Styles/AboutMe.css";
 export default function Bio() {
   const fontForMobile = useMediaQuery("(max-width:900px)");
@@ -33,12 +33,21 @@ export default function Bio() {
         <Box>
           {!fontForMobile && (
             <Grid container>
-              <Grid item md={10} style={{ padding: "5%" }}>
+              <Grid item md={11} style={{ padding: "5%" }}>
                 <BioCard />
               </Grid>
-              <Grid item md={2}>
-                <Menu pages={2} />
-              </Grid>
+              <Grid
+                                item
+                                md={1}
+                                sx={{
+                                    height: "100vh",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                }}
+                            >
+                                <MenuNew />
+                            </Grid>
             </Grid>
           )}
           {fontForMobile && (

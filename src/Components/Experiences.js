@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Box, Grid, useMediaQuery } from "@mui/material";
-import Menu from "./Menu/Menu";
 import "./Styles/Experience.css";
 import ExperienceCard from "./Components/ExperienceCard";
 import MenuForMobile from "./Menu/MenuForMobile";
 import Lottie from "lottie-web";
+import MenuNew from "./Menu/MenuNew";
 export default function Experiences() {
     const fontForMobile = useMediaQuery("(max-width:900px)");
     const [loading, setLoading] = useState(true);
@@ -40,7 +40,7 @@ export default function Experiences() {
                         <Grid container>
                             <Grid
                                 item
-                                md={10}
+                                md={11}
                                 className="scroll"
                                 style={{
                                     padding: "5%",
@@ -50,8 +50,17 @@ export default function Experiences() {
                             >
                                 <ExperienceCard />
                             </Grid>
-                            <Grid item md={2}>
-                                <Menu pages={4} />
+                            <Grid
+                                item
+                                md={1}
+                                sx={{
+                                    height: "100vh",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                }}
+                            >
+                                <MenuNew />
                             </Grid>
                         </Grid>
                     )}

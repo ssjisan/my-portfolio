@@ -1,9 +1,15 @@
-import { Box } from "@mui/material";
+import { Box, List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../../Assets/Logo.png";
 import menuItem from "./MenuItem";
-
 export default function MenuNew() {
+    const linkStyle = {
+        textDecoration: "none",
+        borderRadius: "10px",
+        color: "white",
+    };
+    const { pathname } = useLocation();
     return (
         <Box
             sx={{
@@ -23,9 +29,44 @@ export default function MenuNew() {
                 <img src={Logo} alt="logo" />
             </Box>
             <Box>
-                {menuItem.map((data) => {
-                    return <Box>{data.title}</Box>;
-                })}
+                <List>
+                    {menuItem.map((item) => (
+                        <>
+                            <Link
+                                to={item.link}
+                                key={item.id}
+                                style={linkStyle}
+                            >
+                                <ListItem
+                                    sx={{
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                        mb: item.id - menuItem.length && "16px",
+                                        width: "70px",
+                                        background:
+                                            pathname === item.link &&
+                                            "rgba(255, 255, 255, 0.1)",
+                                        borderRadius: "8px",
+                                        p: "4px",
+                                    }}
+                                >
+                                    <ListItemIcon
+                                        sx={{
+                                            display: "flex",
+                                            justifyContent: "center",
+                                            alignItems: "center",
+                                        }}
+                                    >
+                                        {item.icon}
+                                    </ListItemIcon>
+                                    <ListItemText primary={item.title} />
+                                </ListItem>
+                            </Link>
+                        </>
+                    ))}
+                </List>
             </Box>
             <Box>
                 <img src={Logo} alt="logo" />

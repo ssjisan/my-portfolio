@@ -40,6 +40,6 @@ const menuItem = [
         title: "Contact",
         link: "/contact",
         icon: <Contact />,
-    },
+    }
 ];
 export default menuItem;
