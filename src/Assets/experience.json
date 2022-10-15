@@ -3,15 +3,11 @@
         "id": 1,
         "companyName": "BYSL Global Technology Group",
         "companyLogo": "https://i.ibb.co/2SZrpCj/bysl.png",
-        "position": "Front-end Developer",
+        "position": "UI/UX Developer",
         "start": "February,2022",
         "end": "present",
-        "responsibilities": [
-            "Developing UX with Figma",
-            "User flow and prototyping",
-            "Converting UX to UI with React.js and Material ui",
-            "Creating useable components for future use"
-        ]
+        "location": "Dhaka,Bangladesh",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
     },
     {
         "id": 1,
@@ -20,12 +16,8 @@
         "position": "Front-end Developer",
         "start": "September,2021",
         "end": "February,2022",
-        "responsibilities": [
-            "Developing UX with Figma",
-            "User flow and prototyping",
-            "Converting UX to UI with React.js and Material ui",
-            "Creating useable components for future use"
-        ]
+        "location": "Dhaka,Bangladesh",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
     },
     {
         "id": 2,
@@ -34,11 +26,8 @@
         "position": "Front-end Developer, Intern",
         "start": "December,2020",
         "end": "January,2021",
-        "responsibilities": [
-            "Developed UX with figma",
-            "Developed UI with ReactJS and React BootStrap",
-            "Collaborate with Backend Team"
-        ]
+        "location": "Dhaka,Bangladesh",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
     },
     {
         "id": 3,
@@ -47,18 +36,8 @@
         "position": "NOC Engineer",
         "start": "November,2020",
         "end": "September,2021",
-        "responsibilities": [
-            "Working with FTTH network",
-            "Maintain BDCOM & Huawei OLT",
-            "Configure OLT and ONU",
-            "Troubleshooting OLT and ONU based problem",
-            "Mikrotik router configure",
-            "Cisco Switch monitoring",
-            "VLAN configure",
-            "Client site support",
-            "Bandwidth management",
-            "Maintain and monitoring network via NMS, MRTG, DUDE"
-        ]
+        "location": "Dhaka,Bangladesh",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
     },
     {
         "id": 4,
@@ -67,15 +46,7 @@
         "position": "Support Engineer",
         "start": "December,2018",
         "end": "November,2020",
-        "responsibilities": [
-            "Works with FTP server (File Upload)",
-            "Maintain ERP",
-            "Configure different types of wireless router",
-            "AP configure",
-            "Work with VM",
-            "DVR configure",
-            "Maintain local support team",
-            "Customer support via phone either visiting home"
-        ]
+        "location": "Dhaka,Bangladesh",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
     }
 ]

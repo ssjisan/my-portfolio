@@ -9,42 +9,40 @@ export default function Experiences() {
 
     return (
         <Box className="experiences-body">
-            <Box>
-                {!fontForMobile && (
-                    <Grid container>
-                        <Grid
-                            item
-                            md={11}
-                            className="scroll"
-                            sx={{
-                                padding: "5%",
-                                maxHeight: "100vh",
-                                overflowY: "scroll",
-                            }}
-                        >
-                            <ExperienceCard />
-                        </Grid>
-                        <Grid
-                            item
-                            md={1}
-                            sx={{
-                                height: "100vh",
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                            }}
-                        >
-                            <Menu />
-                        </Grid>
-                    </Grid>
-                )}
-                {fontForMobile && (
-                    <Box sx={{ pb: 10 }}>
+            {!fontForMobile && (
+                <Grid container>
+                    <Grid
+                        item
+                        md={11}
+                        className="scroll"
+                        sx={{
+                            p: 5,
+                            maxHeight: "100vh",
+                            overflowY: "scroll",
+                        }}
+                    >
                         <ExperienceCard />
-                        <MobileMenu />
-                    </Box>
-                )}
-            </Box>
+                    </Grid>
+                    <Grid
+                        item
+                        md={1}
+                        sx={{
+                            height: "100vh",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
+                    >
+                        <Menu />
+                    </Grid>
+                </Grid>
+            )}
+            {fontForMobile && (
+                <Box sx={{ pb: 10 }}>
+                    <ExperienceCard />
+                    <MobileMenu />
+                </Box>
+            )}
         </Box>
     );
 }

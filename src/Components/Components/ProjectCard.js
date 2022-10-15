@@ -37,7 +37,7 @@ export default function ProjectCard() {
     setExpanded(expanded === id ? false : id);
   };
   return (
-    <Grid container spacing={1}>
+    <Grid container spacing={5}>
       {project.map((data) => (
         <Grid item lg={4} md={6} sm={6} key={data.id}>
           <Card>
