@@ -31,10 +31,10 @@ export default function Bio() {
                     </Grid>
                 )}
                 {fontForMobile && (
-                    <>
+                    <Box sx={{ pb: 10 }}>
                         <BioCard />
                         <MobileMenu />
-                    </>
+                    </Box>
                 )}
             </Box>
         </Box>

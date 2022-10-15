@@ -18,9 +18,9 @@ export default function Projects() {
                             item
                             md={11}
                             className="scroll"
-                            style={{
+                            sx={{
                                 padding: "5%",
-                                maxHeight: "85vh",
+                                maxHeight: "100vh",
                                 overflowY: "scroll",
                             }}
                         >
@@ -41,10 +41,10 @@ export default function Projects() {
                     </Grid>
                 )}
                 {fontForMobile && (
-                    <>
+                    <Box sx={{ pb: 10 }}>
                         <ProjectCard />
                         <MobileMenu />
-                    </>
+                    </Box>
                 )}
             </Box>
         </Box>
