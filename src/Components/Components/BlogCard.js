@@ -34,7 +34,6 @@ export default function BlogCard() {
     return (
         <Box
             sx={{
-                height: "700px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
