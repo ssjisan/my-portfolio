@@ -1,122 +1,114 @@
-import { Grid, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Box, List, ListItem, ListItemIcon, Typography } from "@mui/material";
 import React from "react";
-import { Link } from "react-router-dom";
-import "../Styles/MenuStyles.css"
-
-export default function Menu({ pages,handleClick}) {
-  return (
-    <Box>
-      <Grid
-        container
-        flexDirection="column"
-        alignItems="flex-end"
-        spacing={5}
-        style={{ paddingRight: "20px" }}
-      >
-        <Grid item>
-          <Link to="/" className="Link">
-            <Typography
-              className="item"
-              variant="h6"
-              style={{
-                fontSize: pages === 1 ? "24px" : "20px",
-                fontWeight: pages === 1 ? "bold" : "",
-                color: "#444",
-                textShadow: "15px 0px 20px rgba(0,0,0,0.66)",
-                padding: pages === 1 ? 20 : 10,
-              }}
-            >
-              Home
-            </Typography>
-          </Link>
-        </Grid>
-        <Grid item>
-          <Link to="/about" className="Link" >
-            <Typography
-              className="item"
-              variant="h6"
-              style={{
-                fontSize: pages === 2 ? "24px" : "20px",
-                fontWeight: pages === 2 ? "bold" : "",
-                color: "#444",
-                textShadow: "15px 0px 20px rgba(0,0,0,0.66)",
-                padding: pages === 2 ? 20 : 10,
-              }}
-            >
-             Bio
-            </Typography>
-          </Link>
-        </Grid>
-        <Grid item>
-          <Link to="/projects" className="Link">
-            <Typography
-              className="item"
-              variant="h6"
-              style={{
-                fontSize: pages === 3 ? "24px" : "20px",
-                fontWeight: pages === 3 ? "bold" : "",
-                color: "#444",
-                textShadow: "15px 0px 20px rgba(0,0,0,0.66)",
-                padding: pages === 3 ? 20 : 10,
-              }}
-            >
-              Projects
-            </Typography>
-          </Link>
-        </Grid>
-        <Grid item>
-          <Link to="/experience" className="Link">
-            <Typography
-              className="item"
-              variant="h6"
-              style={{
-                fontSize: pages === 4 ? "24px" : "20px",
-                fontWeight: pages === 4 ? "bold" : "",
-                color: "#444",
-                textShadow: "15px 0px 20px rgba(0,0,0,0.66)",
-                padding: pages === 4 ? 20 : 10,
-              }}
-            >
-              Experience
-            </Typography>
-          </Link>
-        </Grid>
-        <Grid item>
-          <Link to="/blog" className="Link">
-            <Typography
-              className="item"
-              variant="h6"
-              style={{
-                fontSize: pages === 5 ? "24px" : "20px",
-                fontWeight: pages === 5 ? "bold" : "",
-                color: "#444",
-                textShadow: "15px 0px 20px rgba(0,0,0,0.66)",
-                padding: pages === 5 ? 20 : 10,
-              }}
-            >
-              Blog
-            </Typography>
-          </Link>
-        </Grid>
-        <Grid item>
-          <Link to="/contact" className="Link">
-            <Typography
-              className="item"
-              variant="h6"
-              style={{
-                fontSize: pages === 6 ? "24px" : "20px",
-                fontWeight: pages === 6 ? "bold" : "",
-                color: "#444",
-                textShadow: "15px 0px 20px rgba(0,0,0,0.66)",
-                padding: pages === 6 ? 20 : 10,
-              }}
-            >
-              Contact
-            </Typography>
-          </Link>
-        </Grid>
-      </Grid>
-    </Box>
-  );
+import { Link, useLocation } from "react-router-dom";
+import Logo from "../../Assets/Logo.png";
+import { menuItem, socialMedia } from "./MenuItem";
+export default function Menu() {
+    const linkStyle = {
+        textDecoration: "none",
+        color: "white",
+    };
+    const { pathname } = useLocation();
+    return (
+        <Box
+            sx={{
+                width: "80px",
+                height: "94vh",
+                background:
+                    "linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.8) 100%)",
+                padding: "20px 00px 20px 00px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                borderRadius: "10px",
+                alignItems: "center",
+            }}
+        >
+            <Box>
+                <img src={Logo} alt="logo" />
+            </Box>
+            <Box>
+                <List>
+                    {menuItem.map((item) => (
+                        <>
+                            <Link
+                                to={item.link}
+                                key={item.id}
+                                style={linkStyle}
+                            >
+                                <ListItem
+                                    sx={{
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                        mb: item.id - menuItem.length && "24px",
+                                        width: "70px",
+                                        background:
+                                            pathname === item.link &&
+                                            "rgba(255, 255, 255, 0.1)",
+                                        borderRadius: "8px",
+                                        p: "4px",
+                                        fontSize: "14px",
+                                    }}
+                                >
+                                    <ListItemIcon
+                                        sx={{
+                                            display: "flex",
+                                            justifyContent: "center",
+                                            alignItems: "center",
+                                        }}
+                                    >
+                                        {item.icon}
+                                    </ListItemIcon>
+                                    <Typography
+                                        sx={{
+                                            fontSize: "14px",
+                                            fontWeight:
+                                                pathname === item.link && "700",
+                                        }}
+                                    >
+                                        {" "}
+                                        {item.title}
+                                    </Typography>
+                                </ListItem>
+                            </Link>
+                        </>
+                    ))}
+                </List>
+            </Box>
+            <Box>
+                {socialMedia.map((item) => {
+                    return (
+                        <>
+                            <a
+                                href={item.link}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <ListItem
+                                    sx={{
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        justifyContent: "center",
+                                        alignItems: "center",
+                                    }}
+                                >
+                                    <ListItemIcon
+                                        sx={{
+                                            display: "flex",
+                                            justifyContent: "center",
+                                            alignItems: "center",
+                                        }}
+                                    >
+                                        {item.icon}
+                                    </ListItemIcon>
+                                </ListItem>
+                            </a>
+                        </>
+                    );
+                })}
+            </Box>
+        </Box>
+    );
 }

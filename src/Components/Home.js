@@ -2,9 +2,8 @@ import { Grid, useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import HomeCard from "./Components/HomeCard";
-
 import useStyles from "./Styles/HomeStyle";
-import MenuNew from "./Menu/MenuNew";
+import Menu from "./Menu/Menu";
 import MobileMenu from "./Menu/MobileMenu";
 
 export default function Home() {
@@ -29,7 +28,7 @@ export default function Home() {
                                 alignItems: "center",
                             }}
                         >
-                            <MenuNew />
+                            <Menu />
                         </Grid>
                     </Grid>
                 )}

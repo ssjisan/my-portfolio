@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, useMediaQuery, Box } from "@mui/material";
 import "./Styles/contact.css";
 import ContactCard from "./Components/ContactCard";
-import MenuNew from "./Menu/MenuNew";
+import Menu from "./Menu/Menu";
 import MobileMenu from "./Menu/MobileMenu";
 export default function Contact() {
     const fontForMobile = useMediaQuery("(max-width:900px)");
@@ -25,7 +25,7 @@ export default function Contact() {
                                 alignItems: "center",
                             }}
                         >
-                            <MenuNew />
+                            <Menu />
                         </Grid>
                     </Grid>
                 )}

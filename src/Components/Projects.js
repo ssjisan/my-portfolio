@@ -3,8 +3,9 @@ import { Grid, useMediaQuery } from "@mui/material";
 import "./Styles/Projects.css";
 import ProjectCard from "./Components/ProjectCard";
 import { Box } from "@mui/system";
-import MenuNew from "./Menu/MenuNew";
+import Menu from "./Menu/Menu";
 import MobileMenu from "./Menu/MobileMenu";
+
 
 export default function Projects() {
     const fontForMobile = useMediaQuery("(max-width:900px)");
@@ -36,7 +37,7 @@ export default function Projects() {
                                 alignItems: "center",
                             }}
                         >
-                            <MenuNew />
+                            <Menu />
                         </Grid>
                     </Grid>
                 )}

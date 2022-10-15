@@ -3,7 +3,7 @@ import { Grid, useMediaQuery } from "@mui/material";
 import "./Styles/Blog.css";
 import { Box } from "@mui/system";
 import BlogCard from "./Components/BlogCard";
-import MenuNew from "./Menu/MenuNew";
+import Menu from "./Menu/Menu";
 import MobileMenu from "./Menu/MobileMenu";
 
 export default function Blog() {
@@ -36,7 +36,7 @@ export default function Blog() {
                                 alignItems: "center",
                             }}
                         >
-                            <MenuNew />
+                            <Menu />
                         </Grid>
                     </Grid>
                 )}

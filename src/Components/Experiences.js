@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Grid, useMediaQuery } from "@mui/material";
 import "./Styles/Experience.css";
 import ExperienceCard from "./Components/ExperienceCard";
-import MenuNew from "./Menu/MenuNew";
+import Menu from "./Menu/Menu";
 import MobileMenu from "./Menu/MobileMenu";
 export default function Experiences() {
     const fontForMobile = useMediaQuery("(max-width:900px)");
@@ -34,12 +34,12 @@ export default function Experiences() {
                                 alignItems: "center",
                             }}
                         >
-                            <MenuNew />
+                            <Menu />
                         </Grid>
                     </Grid>
                 )}
                 {fontForMobile && (
-                    <Box sx={{pb:10}}>
+                    <Box sx={{ pb: 10 }}>
                         <ExperienceCard />
                         <MobileMenu />
                     </Box>

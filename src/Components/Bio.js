@@ -2,7 +2,7 @@ import { Grid, useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import BioCard from "./Components/BioCard";
-import MenuNew from "./Menu/MenuNew";
+import MenuNew from "./Menu/Menu";
 import MobileMenu from "./Menu/MobileMenu";
 import "./Styles/AboutMe.css";
 export default function Bio() {
