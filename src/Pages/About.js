@@ -1,12 +1,11 @@
-import React from "react";
 import { Grid, useMediaQuery } from "@mui/material";
-import "./Styles/Blog.css";
 import { Box } from "@mui/system";
-import BlogCard from "./Components/BlogCard";
-import Menu from "./Menu/Menu";
-import MobileMenu from "./Menu/MobileMenu";
-
-export default function Blog() {
+import React from "react";
+import BioCard from "../Components/About/BioCard";
+import MenuNew from "../Components/Menu/Menu";
+import MobileMenu from "../Components/Menu/MobileMenu";
+import "../Components/Styles/AboutMe.css";
+export default function About() {
     const fontForMobile = useMediaQuery("(max-width:900px)");
 
     return (
@@ -14,17 +13,8 @@ export default function Blog() {
             <Box>
                 {!fontForMobile && (
                     <Grid container>
-                        <Grid
-                            item
-                            md={11}
-                            className="scroll"
-                            style={{
-                                padding: "5%",
-                                maxHeight: "100vh",
-                                overflowY: "scroll",
-                            }}
-                        >
-                            <BlogCard />
+                        <Grid item md={11} style={{ padding: "5%" }}>
+                            <BioCard />
                         </Grid>
                         <Grid
                             item
@@ -36,15 +26,15 @@ export default function Blog() {
                                 alignItems: "center",
                             }}
                         >
-                            <Menu />
+                            <MenuNew />
                         </Grid>
                     </Grid>
                 )}
                 {fontForMobile && (
-                    <>
-                        <BlogCard />
+                    <Box sx={{ pb: 10 }}>
+                        <BioCard />
                         <MobileMenu />
-                    </>
+                    </Box>
                 )}
             </Box>
         </Box>

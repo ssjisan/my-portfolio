@@ -1,20 +1,19 @@
-import { Grid, useMediaQuery } from "@mui/material";
-import { Box } from "@mui/system";
 import React from "react";
-import BioCard from "./Components/BioCard";
-import MenuNew from "./Menu/Menu";
-import MobileMenu from "./Menu/MobileMenu";
-import "./Styles/AboutMe.css";
-export default function Bio() {
+import { Grid, useMediaQuery, Box } from "@mui/material";
+import "../Components/Styles/contact.css";
+import ContactCard from "../Components/Contact/ContactCard";
+import Menu from "../Components/Menu/Menu";
+import MobileMenu from "../Components/Menu/MobileMenu";
+export default function Contact() {
     const fontForMobile = useMediaQuery("(max-width:900px)");
 
     return (
-        <Box className="bio-body">
+        <Box className="contact-body">
             <Box>
                 {!fontForMobile && (
                     <Grid container>
                         <Grid item md={11} style={{ padding: "5%" }}>
-                            <BioCard />
+                            <ContactCard />
                         </Grid>
                         <Grid
                             item
@@ -26,13 +25,13 @@ export default function Bio() {
                                 alignItems: "center",
                             }}
                         >
-                            <MenuNew />
+                            <Menu />
                         </Grid>
                     </Grid>
                 )}
                 {fontForMobile && (
                     <Box sx={{ pb: 10 }}>
-                        <BioCard />
+                        <ContactCard />
                         <MobileMenu />
                     </Box>
                 )}

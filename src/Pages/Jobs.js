@@ -1,10 +1,10 @@
 import React from "react";
 import { Box, Grid, useMediaQuery } from "@mui/material";
-import "./Styles/Experience.css";
-import ExperienceCard from "./Components/ExperienceCard";
-import Menu from "./Menu/Menu";
-import MobileMenu from "./Menu/MobileMenu";
-export default function Experiences() {
+import "../Components/Styles/Experience.css";
+import ExperienceCard from "../Components/Jobs/ExperienceCard";
+import Menu from "../Components/Menu/Menu";
+import MobileMenu from "../Components/Menu/MobileMenu";
+export default function Jobs() {
     const fontForMobile = useMediaQuery("(max-width:900px)");
 
     return (

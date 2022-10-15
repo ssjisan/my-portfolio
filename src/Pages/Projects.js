@@ -1,11 +1,10 @@
 import React from "react";
 import { Grid, useMediaQuery } from "@mui/material";
-import "./Styles/Projects.css";
-import ProjectCard from "./Components/ProjectCard";
+import "../Components/Styles/Projects.css";
+import ProjectCard from "../Components/Projects/ProjectCard";
 import { Box } from "@mui/system";
-import Menu from "./Menu/Menu";
-import MobileMenu from "./Menu/MobileMenu";
-
+import Menu from "../Components/Menu/Menu";
+import MobileMenu from "../Components/Menu/MobileMenu";
 
 export default function Projects() {
     const fontForMobile = useMediaQuery("(max-width:900px)");

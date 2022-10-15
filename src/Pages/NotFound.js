@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import {
   Typography,
 } from "@mui/material";
-import "./Styles/AboutMe.css";
+import "../Components/Styles/AboutMe.css";
 import { Box } from "@mui/system";
 import Lottie from "lottie-web";
 export default function NotFound({ pages }) {

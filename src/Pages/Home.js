@@ -1,10 +1,10 @@
 import { Grid, useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import HomeCard from "./Components/HomeCard";
-import useStyles from "./Styles/HomeStyle";
-import Menu from "./Menu/Menu";
-import MobileMenu from "./Menu/MobileMenu";
+import HomeCard from "../Components/Home/HomeCard";
+import useStyles from "../Components/Styles/HomeStyle";
+import Menu from "../Components/Menu/Menu";
+import MobileMenu from "../Components/Menu/MobileMenu";
 
 export default function Home() {
     const classes = useStyles();

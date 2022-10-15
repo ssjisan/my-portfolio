@@ -1,19 +1,11 @@
 import {
     Box,
-    Button,
-    Card,
-    CardContent,
-    CardMedia,
-    Grid,
-    Typography,
-    useMediaQuery,
 } from "@mui/material";
 import React from "react";
 import "../Styles/AboutMe.css";
 import blogData from "../../Assets/blogData.json";
 import { useState } from "react";
 import "../Styles/AboutMe.css";
-import { Link } from "react-router-dom";
 import { useRef } from "react";
 import { useEffect } from "react";
 import Lottie from "lottie-web";

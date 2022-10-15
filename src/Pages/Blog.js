@@ -1,19 +1,30 @@
 import React from "react";
-import { Grid, useMediaQuery, Box } from "@mui/material";
-import "./Styles/contact.css";
-import ContactCard from "./Components/ContactCard";
-import Menu from "./Menu/Menu";
-import MobileMenu from "./Menu/MobileMenu";
-export default function Contact() {
+import { Grid, useMediaQuery } from "@mui/material";
+import "../Components/Styles/Blog.css";
+import { Box } from "@mui/system";
+import BlogCard from "../Components/Blog/BlogCard";
+import Menu from "../Components/Menu/Menu";
+import MobileMenu from "../Components/Menu/MobileMenu";
+
+export default function Blog() {
     const fontForMobile = useMediaQuery("(max-width:900px)");
 
     return (
-        <Box className="contact-body">
+        <Box className="bio-body">
             <Box>
                 {!fontForMobile && (
                     <Grid container>
-                        <Grid item md={11} style={{ padding: "5%" }}>
-                            <ContactCard />
+                        <Grid
+                            item
+                            md={11}
+                            className="scroll"
+                            style={{
+                                padding: "5%",
+                                maxHeight: "100vh",
+                                overflowY: "scroll",
+                            }}
+                        >
+                            <BlogCard />
                         </Grid>
                         <Grid
                             item
@@ -30,10 +41,10 @@ export default function Contact() {
                     </Grid>
                 )}
                 {fontForMobile && (
-                    <Box sx={{ pb: 10 }}>
-                        <ContactCard />
+                    <>
+                        <BlogCard />
                         <MobileMenu />
-                    </Box>
+                    </>
                 )}
             </Box>
         </Box>
