@@ -38,7 +38,7 @@ export default function Experiences() {
                 </Grid>
             )}
             {fontForMobile && (
-                <Box sx={{ pb: 10 }}>
+                <Box sx={{ padding: "20px 16px 80px 16px" }}>
                     <ExperienceCard />
                     <MobileMenu />
                 </Box>

@@ -11,9 +11,9 @@ export default function ExperienceCard() {
     // eslint-disable-next-line
     const forBelow900 = useMediaQuery("(max-width:900px)");
     return (
-        <Grid container spacing={5}>
+        <Grid container spacing={4}>
             {experience.map((data) => (
-                <Grid item lg={4} md={6} sm={6} key={data.id}>
+                <Grid item lg={4} md={6} sm={12} key={data.id}>
                     <Box
                         sx={{
                             borderRadius: "40px 10px",
