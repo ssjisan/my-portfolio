@@ -63,7 +63,7 @@ export default function MobileMenu() {
                             >
                                 <ListItemIcon
                                     sx={{
-                                        width: forBelow576 ? "50px" : "56px" ,
+                                        minWidth: forBelow456 ? "36px" : forBelow576 ? "50px" : "56px" ,
                                         display: "flex",
                                         justifyContent: "center",
                                         alignItems: "center",

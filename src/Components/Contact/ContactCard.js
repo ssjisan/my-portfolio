@@ -1,14 +1,13 @@
 import {
   Alert,
   Button,
-  Card,
   Divider,
   Grid,
   Snackbar,
   TextField,
   Typography,
+  Box
 } from "@mui/material";
-import { Box } from "@mui/system";
 import React from "react";
 import "../Styles/AboutMe.css";
 import { BsFacebook, BsGithub, BsLinkedin,BsFillTelephoneFill,BsEnvelopeFill } from "react-icons/bs";
@@ -37,10 +36,10 @@ export default function ContactCard() {
 
   return (
     <Box>
-      <Card>
+      <Box>
         <Grid
           container
-          spacing={1}
+          spacing={3}
           justifyContent="center"
           alignItems="center"
           alignContent="center"
@@ -49,7 +48,7 @@ export default function ContactCard() {
           <Grid
             item
             xs={12}
-            md={6}
+            md={4}
             style={{ display: "flex", justifyContent: "center" }}
           >
             <img
@@ -58,7 +57,7 @@ export default function ContactCard() {
               alt=""
             />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={8}>
             <Box
               style={{
                 display: "flex",
@@ -154,7 +153,7 @@ export default function ContactCard() {
           Thanks for your message! 
         </Alert>
       </Snackbar>
-      </Card>
+      </Box>
     </Box>
   );
 }
