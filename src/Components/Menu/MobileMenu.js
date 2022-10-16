@@ -11,7 +11,6 @@ export default function MobileMenu() {
     const { pathname } = useLocation();
     const forBelow576 = useMediaQuery("(max-width:576px)");
     const forBelow667 = useMediaQuery("(max-width:667px)");
-    // eslint-disable-next-line
     const forBelow456 = useMediaQuery("(max-width:456px)");
 
     return (

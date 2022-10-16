@@ -49,7 +49,7 @@ export default function ContactCard() {
             item
             xs={12}
             md={4}
-            style={{ display: "flex", justifyContent: "center" }}
+            style={{ display: "flex", justifyContent: "center", border:"1px solid"}}
           >
             <img
               src="https://i.ibb.co/88Y6pdZ/contact.png"
