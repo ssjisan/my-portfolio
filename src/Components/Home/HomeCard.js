@@ -36,7 +36,7 @@ export default function HomeCard() {
         justifyContent="center"
         alignItems="center"
         alignContent="center"
-        style={{ padding: forBelow900 ? "20px" : "" }}
+        style={{ padding: forBelow900 && "20px" }}
       >
         <Grid item xs={12} md={6}>
           <Typography variant={forBelow900 ? "body1" : "h4"}>

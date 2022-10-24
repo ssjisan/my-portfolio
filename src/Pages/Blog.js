@@ -14,16 +14,7 @@ export default function Blog() {
             <Box>
                 {!fontForMobile && (
                     <Grid container>
-                        <Grid
-                            item
-                            md={11}
-                            className="scroll"
-                            style={{
-                                padding: "5%",
-                                maxHeight: "100vh",
-                                overflowY: "scroll",
-                            }}
-                        >
+                        <Grid item md={11} style={{ padding: "5%" }}>
                             <BlogCard />
                         </Grid>
                         <Grid
@@ -41,10 +32,10 @@ export default function Blog() {
                     </Grid>
                 )}
                 {fontForMobile && (
-                    <>
+                    <Box sx={{ pb: 10 }}>
                         <BlogCard />
                         <MobileMenu />
-                    </>
+                    </Box>
                 )}
             </Box>
         </Box>

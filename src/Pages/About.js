@@ -2,7 +2,7 @@ import { Grid, useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import BioCard from "../Components/About/BioCard";
-import MenuNew from "../Components/Menu/Menu";
+import Menu from "../Components/Menu/Menu";
 import MobileMenu from "../Components/Menu/MobileMenu";
 import "../Components/Styles/AboutMe.css";
 export default function About() {
@@ -26,7 +26,7 @@ export default function About() {
                                 alignItems: "center",
                             }}
                         >
-                            <MenuNew />
+                            <Menu />
                         </Grid>
                     </Grid>
                 )}
