@@ -15,7 +15,15 @@ export default function HomeCard() {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        paddingTop: forBelow900 && "80px",
+        paddingTop: forBelow416
+        ? "180px"
+        : forBelow667
+        ? "160px"
+        : forBelow767
+        ? "120px"
+        : forBelow900
+        ? "96px"
+        : "64px",
       }}
     >
       <Typography
