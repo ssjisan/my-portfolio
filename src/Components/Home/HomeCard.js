@@ -1,7 +1,6 @@
 import React from "react";
 import { Typography, useMediaQuery, Box } from "@mui/material";
 import TypeAnimation from "./TypeAnimations";
-
 export default function HomeCard() {
   const forBelow667 = useMediaQuery("(max-width:667px)");
   const forBelow767 = useMediaQuery("(max-width:767px)");
@@ -27,23 +26,10 @@ export default function HomeCard() {
             ? "76px"
             : "86px",
           fontWeight: 700,
+          textAlign: "center",
         }}
       >
-        Hello I'm
-      </Typography>
-      <Typography
-        sx={{
-          fontSize: forBelow667
-            ? "48px"
-            : forBelow767
-            ? "64px"
-            : forBelow999
-            ? "76px"
-            : "86px",
-          fontWeight: 700,
-        }}
-      >
-        Sadman Sakib Jisan
+        Hello I'm <br /> Sadman Sakib Jisan
       </Typography>
       <Typography sx={{ fontSize: "20px", color: "#5F656F", fontWeight: 350 }}>
         <TypeAnimation />

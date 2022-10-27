@@ -34,7 +34,7 @@ const menuItem = [
     {
         id: 5,
         title: "Blog",
-        link: "/",
+        link: "",
         icon: <Blog />,
     },
     {
