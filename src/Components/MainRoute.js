@@ -13,7 +13,7 @@ export default function MainRoute() {
         <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="projects" element={<Projects />} />
+            <Route path="work" element={<Projects />} />
             <Route path="jobs" element={<Jobs />} />
             <Route path="blog" element={<Blog />} />
             <Route path="contact" element={<Contact />} />

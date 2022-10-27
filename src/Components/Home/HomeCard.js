@@ -16,14 +16,14 @@ export default function HomeCard() {
         justifyContent: "center",
         alignItems: "center",
         paddingTop: forBelow416
-        ? "180px"
-        : forBelow667
-        ? "160px"
-        : forBelow767
-        ? "120px"
-        : forBelow900
-        ? "96px"
-        : "64px",
+          ? "180px"
+          : forBelow667
+          ? "160px"
+          : forBelow767
+          ? "120px"
+          : forBelow900
+          ? "96px"
+          : "64px",
       }}
     >
       <Typography
@@ -43,7 +43,13 @@ export default function HomeCard() {
       >
         Hello I'm <br /> Sadman Sakib Jisan
       </Typography>
-      <Typography sx={{ fontSize: forBelow667 ? "16px" : "20px", color: "#5F656F", fontWeight: 350 }}>
+      <Typography
+        sx={{
+          fontSize: forBelow667 ? "16px" : "20px",
+          color: "#5F656F",
+          fontWeight: 350,
+        }}
+      >
         <TypeAnimation />
       </Typography>
     </Box>

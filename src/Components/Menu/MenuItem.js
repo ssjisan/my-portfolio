@@ -27,8 +27,8 @@ const menuItem = [
     },
     {
         id: 4,
-        title: "Projects",
-        link: "/projects",
+        title: "Work",
+        link: "/work",
         icon: <Projects />,
     },
     {
