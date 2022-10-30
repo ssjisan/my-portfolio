@@ -12,7 +12,7 @@ export default function CodeBlock() {
         width: "960px",
         borderRadius: "10px",
         overflow: "hidden",
-        border:"1px solid rgba(0, 0, 0, 0.2)",
+        border: "1px solid rgba(0, 0, 0, 0.2)",
       }}
     >
       <Box
