@@ -1,13 +1,13 @@
 import React from "react";
 import { Typography, useMediaQuery, Box } from "@mui/material";
 import TypeAnimation from "./TypeAnimations";
+import CodeBlock from "./CodeBlock";
 export default function HomeCard() {
   const forBelow416 = useMediaQuery("(max-width:416px)");
   const forBelow667 = useMediaQuery("(max-width:667px)");
   const forBelow767 = useMediaQuery("(max-width:767px)");
   const forBelow900 = useMediaQuery("(max-width:900px)");
   const forBelow999 = useMediaQuery("(max-width:999px)");
-
   return (
     <Box
       sx={{
@@ -52,6 +52,7 @@ export default function HomeCard() {
       >
         <TypeAnimation />
       </Typography>
+      <CodeBlock />
     </Box>
   );
 }
