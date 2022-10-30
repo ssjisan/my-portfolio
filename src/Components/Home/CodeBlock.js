@@ -3,6 +3,7 @@ import { Box } from "@mui/system";
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import tomorrow from "react-syntax-highlighter/dist/esm/styles/hljs/tomorrow";
+import Close from "../../Assets/Icon/Close";
 import TypeScript from "../../Assets/Icon/TypeScript";
 
 export default function CodeBlock() {
@@ -15,26 +16,27 @@ export default function CodeBlock() {
         border: "1px solid rgba(0, 0, 0, 0.2)",
       }}
     >
-      <Box
-        sx={{
-          display: "flex",
-          gap: 1,
-          p: 1,
-          justifyContent: "flex-start",
-          alignItems: "center",
-          backgroundColor: "#C7D8FF",
-        }}
-      >
-        <Box sx={{ height: "16px", width: "16px" }}>
-          <TypeScript />
-        </Box>
-        <Typography
-          sx={{ fontSize: "14px", fontWeight: 400, color: "#5F656F" }}
+      <Box sx={{ backgroundColor: "#C7D8FF", border: "1px solid red" }}>
+        <Box
+          sx={{
+            display: "flex",
+            gap: 1,
+            p: 1,
+            justifyContent: "flex-start",
+            alignItems: "center",
+          }}
         >
-          readme.js
-        </Typography>
-        <Box sx={{ height: "16px", width: "16px" }}>
-          <TypeScript />
+          <Box sx={{ height: "16px", width: "16px" }}>
+            <TypeScript />
+          </Box>
+          <Typography
+            sx={{ fontSize: "14px", fontWeight: 400, color: "#5F656F" }}
+          >
+            readme.js
+          </Typography>
+          <Box sx={{ height: "16px", width: "16px" }}>
+            <Close />
+          </Box>
         </Box>
       </Box>
       <Box>
@@ -51,7 +53,7 @@ export default function CodeBlock() {
             fontSize: "18px",
           }}
         >
-          {`Im Sadman Sakib Jisan, a UI/UX Design & Developer.
+          {`I’m Sadman Sakib Jisan, a UI/UX Design & Developer.
 
 I’m currently working at Priffle: The digital agency that harness the power of 
 brands. At Priffle we work with start-ups as well as established brands, crafting 

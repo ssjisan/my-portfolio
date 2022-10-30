@@ -3,23 +3,21 @@ import React from "react";
 export default function Close() {
   return (
     <svg
-      width="16"
-      height="16"
-      viewBox="0 0 16 16"
+      width="17"
+      height="17"
+      viewBox="0 0 17 17"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M25.0085 7.37978L7.00854 25.3798"
+        d="M13.4386 3.70581L4.4386 12.7058"
         stroke="black"
-        stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
-        d="M25.0085 25.3798L7.00854 7.37978"
+        d="M13.4386 12.7058L4.4386 3.70581"
         stroke="black"
-        stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
