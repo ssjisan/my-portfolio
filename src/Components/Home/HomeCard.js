@@ -46,8 +46,9 @@ export default function HomeCard() {
       <Typography
         sx={{
           fontSize: forBelow667 ? "16px" : "20px",
-          color: "#5F656F",
-          fontWeight: 350,
+          opacity: 0.6,
+          fontWeight: 400,
+          pb:4
         }}
       >
         <TypeAnimation />
