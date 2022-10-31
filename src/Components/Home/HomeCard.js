@@ -16,7 +16,7 @@ export default function HomeCard() {
         justifyContent: "center",
         alignItems: "center",
         paddingTop: forBelow416
-          ? "180px"
+          ? "150px"
           : forBelow667
           ? "160px"
           : forBelow767

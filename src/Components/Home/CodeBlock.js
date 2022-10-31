@@ -47,7 +47,7 @@ export default function CodeBlock() {
           <Typography
             sx={{ fontSize: "14px", fontWeight: 400, color: "#5F656F" }}
           >
-            readme.js
+            Intro.js
           </Typography>
           <Box sx={{ height: "16px", width: "16px" }}>
             <Close />
@@ -63,22 +63,38 @@ export default function CodeBlock() {
             width: "100%",
             margin: 0,
             paddingTop: forBelow667 ? "16px" : forBelow767 ? "32px" : "48px",
-            paddingBottom: "48px",
+            paddingBottom: forBelow667 ? "16px" : forBelow767 ? "32px" : "48px",
             paddingLeft: forBelow767 ? "0px" : "16px",
             paddingRight: "48px",
             fontSize: forBelow767 ? "14px" : "18px",
           }}
         >
-          {`I’m Sadman Sakib Jisan, a UI/UX Design & Developer.
+          {forBelow767
+            ? `const Intro = [
+{
+    name: "Sadman Sakib Jisan",
+    email: "ssjisan.dev@gmail.com",
+    phone: "+8801675893967",
+    passion: [
+      "Front end Developer",
+      "UI/UX Developer",
+      "UI/UX Designer",
+      "UX Research"
+    ],
+  },
+];
 
-I’m currently working at Priffle: The digital agency that harness the power of 
-brands. At Priffle we work with start-ups as well as established brands, crafting 
-phenomenal digital products to help bring brands stand out in the crowd.
-
-During my "spare" time, Im also working on Aezthetics app. This new fitness app 
-helps you to reach your goals and stay on track with a sleek interface. It has 
-everything from workout plans, food diary tools or even fasting tracker so there is 
-no need for multiple apps anymore.`}
+export default Intro;`
+            : `const Intro = [
+  {
+      name: "Sadman Sakib Jisan",
+      email: "ssjisan.dev@gmail.com",
+      phone: "+8801675893967",
+      passion: ["Front end Developer","UI/UX Developer","UI/UX Designer","UX Research"],
+    },
+  ];
+  
+  export default Intro;`}
         </SyntaxHighlighter>
       </Box>
     </Box>
