@@ -76,9 +76,9 @@ export default function CodeBlock() {
     email: "ssjisan.dev@gmail.com",
     phone: "+8801675893967",
     passion: [
-      "Front end Developer",
-      "UI/UX Developer",
-      "UI/UX Designer",
+      "Front end Development",
+      "UI/UX Development",
+      "UI/UX Design",
       "UX Research"
     ],
   },
@@ -90,7 +90,7 @@ export default Intro;`
       name: "Sadman Sakib Jisan",
       email: "ssjisan.dev@gmail.com",
       phone: "+8801675893967",
-      passion: ["Front end Developer","UI/UX Developer","UI/UX Designer","UX Research"],
+      passion: ["Front end Development","UI/UX Development","UI/UX Design","UX Research"]
     },
   ];
   
