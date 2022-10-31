@@ -45,7 +45,7 @@ export default function HomeCard() {
       </Typography>
       <Typography
         sx={{
-          fontSize: forBelow667 ? "16px" : "20px",
+          fontSize: forBelow667 ? "14px" : "20px",
           opacity: 0.6,
           fontWeight: 400,
           pb:4
