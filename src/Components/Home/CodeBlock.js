@@ -2,7 +2,7 @@ import { Typography, useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import tomorrow from "react-syntax-highlighter/dist/esm/styles/hljs/tomorrow";
+import idea from "react-syntax-highlighter/dist/esm/styles/hljs/idea";
 import Close from "../../Assets/Icon/Close";
 import TypeScript from "../../Assets/Icon/TypeScript";
 
@@ -57,7 +57,7 @@ export default function CodeBlock() {
       <Box>
         <SyntaxHighlighter
           showLineNumbers
-          style={tomorrow}
+          style={idea}
           language="typescript"
           customStyle={{
             width: "100%",
@@ -94,7 +94,7 @@ export default Intro;`
     },
   ];
   
-  export default Intro;`}
+export default Intro;`}
         </SyntaxHighlighter>
       </Box>
     </Box>

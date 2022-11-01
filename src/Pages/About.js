@@ -7,6 +7,7 @@ import MobileMenu from "../Components/Menu/MobileMenu";
 import "../Components/Styles/AboutMe.css";
 export default function About() {
   const fontForMobile = useMediaQuery("(max-width:900px)");
+  const forBelow999 = useMediaQuery("(max-width:999px)");
 
   return (
     <Box className="bio-body">
@@ -17,8 +18,11 @@ export default function About() {
               item
               md={11}
               sx={{
-                p: 5
-             }}
+                p: forBelow999 ? 2 : 5,
+                maxHeight: "100vh",
+                overflowY: "scroll",
+              }}
+              className="scroll"
             >
               <AboutMe />
             </Grid>
