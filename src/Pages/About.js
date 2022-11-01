@@ -41,7 +41,7 @@ export default function About() {
           </Grid>
         )}
         {fontForMobile && (
-          <Box sx={{ p: 2 }}>
+          <Box sx={{ padding: "20px 32px 80px 32px" }}>
             <AboutMe />
             <MobileMenu />
           </Box>

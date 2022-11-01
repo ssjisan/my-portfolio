@@ -10,7 +10,7 @@ export default function InfoCard() {
   return (
     <Box
       sx={{
-        maxWidth: forBelow899 ? "240px" : "280px",
+        width: "280px",
         p: 4,
         backgroundColor: "#FAFCFF",
         border: "1px solid rgba(0, 0, 0, 0.2)",
