@@ -89,7 +89,7 @@ export default function InfoCard() {
         ))}
       </Box>
       <Divider sx={{ width: "100%" }} />
-      <Button variant="outlined" sx={{ width: "150px" }}>
+      <Button variant="contained" sx={{ width: "150px" }} color="new">
         <Download />
         &nbsp;&nbsp; Resume
       </Button>

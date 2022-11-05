@@ -1,19 +1,15 @@
-import { createTheme, ThemeProvider } from "@mui/material";
 import { BrowserRouter } from "react-router-dom";
 import MainRoute from "./Components/MainRoute";
+import Theme from "./Components/Theme/Theme";
 
 function App() {
-  const theme = createTheme({
-    typography: {
-      fontFamily: "Noto Sans",
-    },
-  });
+
   return (
-    <ThemeProvider theme={theme}>
+    <Theme>
       <BrowserRouter>
         <MainRoute />
       </BrowserRouter>
-    </ThemeProvider>
+    </Theme>
   );
 }
 
