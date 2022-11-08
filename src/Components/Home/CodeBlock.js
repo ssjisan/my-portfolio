@@ -1,11 +1,13 @@
 import { Typography, useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import idea from "react-syntax-highlighter/dist/esm/styles/hljs/idea";
 import Close from "../../Assets/Icon/Close";
 import TypeScript from "../../Assets/Icon/TypeScript";
+import { LightAsync as SyntaxHighlighter } from 'react-syntax-highlighter';
+import js from 'react-syntax-highlighter/dist/esm/languages/hljs/javascript';
+import github from "react-syntax-highlighter/dist/esm/styles/hljs/github";
 
+SyntaxHighlighter.registerLanguage('javascript', js);
 export default function CodeBlock() {
   const forBelow667 = useMediaQuery("(max-width:667px)");
   const forBelow767 = useMediaQuery("(max-width:767px)");
@@ -57,8 +59,8 @@ export default function CodeBlock() {
       <Box>
         <SyntaxHighlighter
           showLineNumbers
-          style={idea}
-          language="typescript"
+          style={github}
+          language="javascript"
           customStyle={{
             width: "100%",
             margin: 0,

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Grid, useMediaQuery } from "@mui/material";
 import "../Components/Styles/Experience.css";
-import ExperienceCard from "../Components/Jobs/ExperienceCard";
+import JobDetailsCard from "../Components/Jobs/JobDetailsCard";
 import Menu from "../Components/Menu/Menu";
 import MobileMenu from "../Components/Menu/MobileMenu";
 export default function Jobs() {
@@ -19,9 +19,12 @@ export default function Jobs() {
               p: 5,
               maxHeight: "100vh",
               overflowY: "scroll",
+              display:"flex",
+              justifyContent:"center",
+              alignItems:"flex-start"
             }}
           >
-            <ExperienceCard />
+            <JobDetailsCard />
           </Grid>
           <Grid
             item
@@ -39,7 +42,7 @@ export default function Jobs() {
       )}
       {fontForMobile && (
         <Box sx={{ padding: "20px 32px 80px 32px" }}>
-          <ExperienceCard />
+          <JobDetailsCard />
           <MobileMenu />
         </Box>
       )}

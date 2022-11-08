@@ -1,5 +1,5 @@
-import { Typography, Box, Divider, Button, useMediaQuery } from "@mui/material";
 import React from "react";
+import { Typography, Box, Divider, Button, useMediaQuery } from "@mui/material";
 import Download from "../../Assets/Icon/Download";
 import Arrow from "../../Assets/Icon/Arrow";
 import "../Styles/AboutMe.css";
@@ -63,36 +63,41 @@ export default function InfoCard() {
           width: "100%",
         }}
       >
-        {socialConnection.map((data) => (
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              width: "100%",
-            }}
-            key={data.id}
-          >
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                gap: 2,
-              }}
+        {socialConnection.map((data, i) => (
+          // eslint-disable-next-line          
+          <a href={data.link} style={{ width: "100%", cursor:"pointer", textDecoration:"none", color:"#000000"}} target="_blank"><Box
+          sx = {{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          width: "100%",
+        }}
+        key={data.id}
             >
-              {data.icon}
-              {data.title}
-            </Box>{" "}
-            <Arrow />
-          </Box>
-        ))}
-      </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: 2,
+          }}
+        >
+          {data.icon}
+          {data.title}
+        </Box>{" "}
+        <Arrow />
+      </Box> </a>
+  ))
+}
+      </Box >
       <Divider sx={{ width: "100%" }} />
-      <Button variant="contained" sx={{ width: "150px" }} color="new">
+      <Button variant="contained" sx={{
+        width: "150px", background:
+          "linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.8) 100%)",
+      }}>
         <Download />
         &nbsp;&nbsp; Resume
       </Button>
-    </Box>
+    </Box >
   );
 }

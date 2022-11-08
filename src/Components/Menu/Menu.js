@@ -30,10 +30,9 @@ export default function Menu() {
             <Box>
                 <List>
                     {menuItem.map((item) => (
-                        <>
+                        <Box key={item.id}>
                             <Link
                                 to={item.link}
-                                key={item.id}
                                 style={linkStyle}
                             >
                                 <ListItem
@@ -73,14 +72,14 @@ export default function Menu() {
                                     </Typography>
                                 </ListItem>
                             </Link>
-                        </>
+                        </Box>
                     ))}
                 </List>
             </Box>
             <Box>
                 {socialMedia.map((item) => {
                     return (
-                        <>
+                        <Box key={item.id}>
                             <a
                                 href={item.link}
                                 target="_blank"
@@ -105,7 +104,7 @@ export default function Menu() {
                                     </ListItemIcon>
                                 </ListItem>
                             </a>
-                        </>
+                        </Box>
                     );
                 })}
             </Box>

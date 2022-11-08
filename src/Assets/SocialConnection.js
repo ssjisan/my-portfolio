@@ -6,13 +6,13 @@ const socialConnection = [
   {
     id: 1,
     title: "Github",
-    link: "",
+    link: "https://github.com/ssjisan",
     icon: <Github />,
   },
   {
     id: 2,
     title: "Linked In",
-    link: "",
+    link: "https://www.linkedin.com/in/ssjisan/",
     icon: <Linkedin />,
   },
   {
