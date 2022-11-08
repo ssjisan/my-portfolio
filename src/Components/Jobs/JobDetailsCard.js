@@ -9,12 +9,13 @@ export default function JobDetailsCard() {
     // eslint-disable-next-line
     const [experience, setExperience] = useState(job);
     // eslint-disable-next-line
-    const forBelow900 = useMediaQuery("(max-width:900px)");
+    const forBelow567 = useMediaQuery("(max-width:567px)");
+    const forBelow999 = useMediaQuery("(max-width:999px)");
     return (
-        <Box sx={{ display: "flex", flexDirection: "column", width: "1024px", }}>
+        <Box sx={{ display: "flex", flexDirection: "column", width: forBelow999 ? "100%" : "1024px", }}>
             {experience.map((data, i) => {
                 return (
-                    <Box key={data.id}><Box sx={{ display: "flex", gap: 2 }}>
+                    <Box key={data.id}><Box sx={{ display: "flex", gap: 2, flexDirection: forBelow567 && "column", justifyContent:"flex-start", alignItems:"flex-start"}}>
                         <Box>
                             <Avatar
                                 style={{
@@ -79,7 +80,7 @@ export default function JobDetailsCard() {
                                 <Typography variant="body2">• &nbsp; {data}</Typography>)}
                         </Box>
                     </Box>
-                        {i!==experience.length-1 && <Divider sx={{ width: "100%", mt: 4, mb: 4 }} />}
+                        {i !== experience.length - 1 && <Divider sx={{ width: "100%", mt: 4, mb: 4 }} />}
                     </Box>
                 )
             })}
