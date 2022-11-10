@@ -1,33 +1,50 @@
+import React, { useState } from "react";
 import {
   Alert,
   Button,
-  Divider,
   Grid,
   Snackbar,
   TextField,
   Typography,
-  Box
+  Box,
+  useMediaQuery,
 } from "@mui/material";
-import React from "react";
 import "../Styles/AboutMe.css";
-import { BsFacebook, BsGithub, BsLinkedin,BsFillTelephoneFill,BsEnvelopeFill } from "react-icons/bs";
+import {
+  BsFacebook,
+  BsGithub,
+  BsLinkedin,
+  BsFillTelephoneFill,
+  BsEnvelopeFill,
+} from "react-icons/bs";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import emailjs from 'emailjs-com';
-
+import emailjs from "emailjs-com";
+import Image from "../../Assets/contact-bg.png";
 export default function ContactCard() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  const forBelow667 = useMediaQuery("(max-width:667px)");
+
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('portfolio_mail', 'portfolio_mail', e.target, 'user_mtQO7Imxg03OwEfEUDR1n')
-      .then((result) => {
-        setOpen(true);
-      }, (error) => {
+    emailjs
+      .sendForm(
+        "portfolio_mail",
+        "portfolio_mail",
+        e.target,
+        "user_mtQO7Imxg03OwEfEUDR1n"
+      )
+      .then(
+        (result) => {
+          setOpen(true);
+        },
+        (error) => {
           console.log(error.text);
-      });
-      e.target.reset()
+        }
+      );
+    e.target.reset();
   };
   const handleClose = (event, reason) => {
-    if (reason === 'clickaway') {
+    if (reason === "clickaway") {
       return;
     }
 
@@ -35,124 +52,160 @@ export default function ContactCard() {
   };
 
   return (
-    <Box>
-      <Box>
-        <Grid
-          container
-          spacing={3}
-          justifyContent="center"
-          alignItems="center"
-          alignContent="center"
-          style={{ padding: "50px" }}
-        >
-          <Grid
-            item
-            xs={12}
-            md={4}
-            style={{ display: "flex", justifyContent: "center", border:"1px solid"}}
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Box
+        sx={{
+          width: "760px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignContent: "center",
+        }}
+      >
+        <Box>
+          <Typography
+            sx={{ fontWeight: 700, fontSize: "24px", textAlign: "center" }}
           >
-            <img
-              src="https://i.ibb.co/88Y6pdZ/contact.png"
-              style={{ maxWidth: "100%" }}
-              alt=""
-            />
-          </Grid>
-          <Grid item xs={12} md={8}>
-            <Box
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Typography variant="h4" style={{ fontWeight: "bold",marginBottom:"20px"}}>
-                Lets's get in touch
+            Get in touch!
+          </Typography>
+          <Typography
+            sx={{
+              fontWeight: 500,
+              fontSize: "16px",
+              color: "rgba(0, 0, 0, 0.6)",
+              textAlign: "center",
+            }}
+          >
+            Contact with me for any project or any idea
+          </Typography>
+        </Box>
+        <Box sx={{ mt: 6 }}>
+          <Grid container>
+            <Grid xs={12} sm={4} md={4}>
+              <Typography>
+                <BsFillTelephoneFill /> &nbsp; +88 01675 89 39 67
               </Typography>
-              <Box>
-                <a
-                  href="https://www.linkedin.com/in/ssjisan/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <BsLinkedin style={{ fontSize: "30px", color: "#0077b5", padding:"10px"}} />
-                </a>
-                <a
-                  href="https://github.com/ssjisan"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <BsGithub style={{ fontSize: "30px", color: "#171515", padding:"10px" }} />
-                </a>
-                <a
-                  href="https://www.facebook.com/userjisan/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <BsFacebook style={{ fontSize: "30px", color: "#3b5998", padding:"10px" }} />
-                </a>
-              </Box>
-
-              <Divider style={{margin:"10px", width:"100%"}}>
-                {" "}
-                <Typography>OR</Typography>
-              </Divider>
-              <Box style={{display:"flex",flexDirection:"column"}}>
-                <Typography><BsFillTelephoneFill/> &nbsp; +88 01675 89 39 67</Typography>
-                <Typography><BsEnvelopeFill/> &nbsp; ssjisan.dev@gmail.com</Typography>
-                <Typography><FaMapMarkerAlt/> &nbsp; Khilkhet,Dhaka</Typography>
-              </Box>
-              <Divider style={{margin:"10px", width:"100%"}}>
-                {" "}
-                <Typography>OR</Typography>
-              </Divider>
-              <form onSubmit={sendEmail}>
-              <TextField
-              required
-                label="Name"
-                name="name"
-                variant="outlined"
-                style={{
-                  borderRadius: "20px",
-                  marginBottom: "20px",
-                  width: "100%",
-                }}
-              />
-              <TextField
-              required
-                label="E-mail"
-                variant="outlined"
-                type="email"
-                name="email"
-                style={{
-                  borderRadius: "20px",
-                  marginBottom: "20px",
-                  width: "100%",
-                }}
-              />
-              <TextField
-              required
-                label="Message"
-                name="message"
-                variant="outlined"
-                multiline
-                rows={3}
-                style={{
-                  borderRadius: "20px",
-                  marginBottom: "20px",
-                  width: "100%",
-                }}
-              />
-              <Button variant="contained" type="submit">Send</Button>
-              </form>
-            </Box>
+            </Grid>
+            <Grid xs={12} sm={4} md={4}>
+              <Typography>
+                <BsFillTelephoneFill /> &nbsp; +88 01675 89 39 67
+              </Typography>
+            </Grid>
+            <Grid xs={12} sm={4} md={4}>
+              <Typography>
+                <BsFillTelephoneFill /> &nbsp; +88 01675 89 39 67
+              </Typography>
+            </Grid>
           </Grid>
-        </Grid>
-        <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-        <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-          Thanks for your message! 
-        </Alert>
-      </Snackbar>
+        </Box>
+        <Box
+          sx={{
+            boxShadow: "0px 20px 40px rgba(0, 0, 0, 0.08)",
+            borderRadius: "12px",
+            p: 4,
+            mt: 4,
+          }}
+        >
+          <Typography
+            sx={{
+              fontWeight: 500,
+              fontSize: "16px",
+            }}
+          >
+            Contact form
+          </Typography>
+          <form onSubmit={sendEmail}>
+            <Grid container spacing={4}>
+              <Grid item xs={12} md={6}>
+                <TextField
+                  required
+                  label="First Name"
+                  name="name"
+                  variant="standard"
+                  sx={{
+                    marginBottom: "20px",
+                    width: "100%",
+                  }}
+                />
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <TextField
+                  required
+                  label="Last Name"
+                  name="name"
+                  variant="standard"
+                  sx={{
+                    marginBottom: "20px",
+                    width: "100%",
+                  }}
+                />
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <TextField
+                  required
+                  label="Email"
+                  name="email"
+                  variant="standard"
+                  type="email"
+                  sx={{
+                    marginBottom: "20px",
+                    width: "100%",
+                  }}
+                />
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <TextField
+                  required
+                  label="Phone"
+                  name="name"
+                  variant="standard"
+                  sx={{
+                    marginBottom: "20px",
+                    width: "100%",
+                  }}
+                />
+              </Grid>
+              <Grid item xs={12} md={12}>
+                <TextField
+                  required
+                  label="Message"
+                  name="message"
+                  variant="standard"
+                  multiline
+                  rows={3}
+                  sx={{
+                    borderRadius: "20px",
+                    marginBottom: "20px",
+                    width: "100%",
+                  }}
+                />
+              </Grid>
+            </Grid>
+            <Box sx={{ display: "flex", justifyContent: "center" }}>
+              <Button
+                variant="contained"
+                type="submit"
+                sx={{
+                  borderRadius: "8px",
+                  marginBottom: "20px",
+                  width: "150px",
+                  height: "44px",
+                  background:
+                    "linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.8) 100%)",
+                }}
+              >
+                Send
+              </Button>
+            </Box>
+          </form>
+        </Box>
       </Box>
     </Box>
   );

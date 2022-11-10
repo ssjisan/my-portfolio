@@ -30,7 +30,7 @@ export default function Contact() {
                     </Grid>
                 )}
                 {fontForMobile && (
-                    <Box sx={{ pb: 10 }}>
+                    <Box sx={{ padding: "20px 32px 80px 32px" }}>
                         <ContactCard />
                         <MobileMenu />
                     </Box>
