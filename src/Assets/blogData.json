@@ -1,32 +1,56 @@
 [
   {
     "id": 1,
-    "Title": "Let’s Start a Journey With JavaScript",
-    "imgUrl": "https://i.ibb.co/9cRLSbh/js-journey.jpg",
-    "link": ""
+    "title": "Let’s Start a Journey With JavaScript",
+    "imgUrl": "https://i.ibb.co/b1K82HF/javascript-illustration.png",
+    "tags": "javascript",
+    "time": "5 mins to read",
+    "demo": "At the very first age, JavaScript was called LiveScript. An engineer named Brendan Eich",
+    "link": "https://sakibfset13.medium.com/lets-start-a-journey-with-javascript-ca4485adf2e3"
   },
   {
     "id": 2,
-    "Title": "JavaScript Essentials",
-    "imgUrl": "https://i.ibb.co/Wg1tb27/js-importent.jpg",
-    "link": ""
+    "title": "JavaScript Essentials",
+    "imgUrl": "https://i.ibb.co/QQSkffC/js-ess.jpg",
+    "tags": "javascript",
+    "time": "4 mins to read",
+    "demo": "Every language has some primitives types. And JavaScript also has some",
+    "link": "https://sakibfset13.medium.com/javascript-essentials-5415e89d8a25"
   },
   {
     "id": 3,
-    "Title": "Hello React",
-    "imgUrl": "https://i.ibb.co/qNSc6LQ/welcome-React.jpg",
-    "link": "https://sakibfset13.medium.com/hello-react-59b4dd2d46ff"
+    "title": "Simple Problem: Solution with JavaScript",
+    "imgUrl": "https://i.ibb.co/g6qv7Gq/js-problem-Solving.jpg",
+    "tags": "javascript",
+    "time": "4 mins to read",
+    "demo": "I try to solve some beginner level problem using JavaScript. Just for practice.",
+    "link": "https://medium.com/@sakibfset13/simple-problem-solution-with-javascript-de78478b54c9"
   },
   {
     "id": 4,
-    "Title": "Let's learn flexbox",
-    "imgUrl": "https://i.ibb.co/KxD8RK0/flexbox.jpg",
-    "link": ""
+    "title": "Hello React",
+    "imgUrl": "https://i.ibb.co/qNSc6LQ/welcome-React.jpg",
+    "tags": "react",
+    "time": "4 mins to read",
+    "demo": "Facebook recently launched their new interface. Which is nice and attractive.",
+    "link": "https://sakibfset13.medium.com/hello-react-59b4dd2d46ff"
   },
   {
     "id": 5,
-    "Title": "Netlify: Build & Deploy",
-    "imgUrl": "https://i.ibb.co/3pkQzCW/netlify.png",
+    "title": "Let's learn flexbox",
+    "imgUrl": "https://i.ibb.co/MV6ZvBJ/coming-soon.jpg",
+    "tags": "css",
+    "time": "",
+    "demo": "coming soon",
+    "link": ""
+  },
+  {
+    "id": 6,
+    "title": "Netlify: Build & Deploy",
+    "imgUrl": "https://i.ibb.co/MV6ZvBJ/coming-soon.jpg",
+    "tags": "deployment",
+    "time": "",
+    "demo": "coming soon",
     "link": ""
   }
 ]
