@@ -16,12 +16,25 @@
   },
   {
     "id": 4,
-    "title": "Skills",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-  },
-  {
-    "id": 5,
-    "title": "Tools",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    "title": "Tech Stack",
+    "language": [
+      { "id": 1, "title": "JavaScript", "img": "Assets/Images/js.png" },
+      { "id": 2, "title": "HTML5", "img": "Assets/Images/html5.jpg" },
+      { "id": 3, "title": "CSS3", "img": "Assets/Images/css3.webp" }
+    ],
+    "jsUi": [{ "id": 1, "title": "React Js", "img": "Assets/Images/react.png" }],
+    "frontEndFrameworks": [
+      { "id": 1, "title": "BootStrap", "img": "Assets/Images/bootstrap.png" },
+      { "id": 2, "title": "Material UI", "img": "Assets/Images/mui.png" }
+    ],
+    "uiux": [
+      { "id": 1, "title": "Figma", "img": "Assets/Images/figma.jpg" },
+      { "id": 2, "title": "Adobe XD", "img": "Assets/Images/xd.png" }
+    ],
+    "graphicDesign": [
+      { "id": 1, "title": "Adobe Photoshop", "img": "Assets/Images/ps.webp" },
+      { "id": 2, "title": "Adobe Illustrator", "img": "Assets/Images/illustrator.png" }
+    ],
+    "webHosting": [{ "id": 1, "title": "Netlify", "img": "Assets/Images/netlify.png" }]
   }
 ]
