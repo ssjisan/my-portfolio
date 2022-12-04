@@ -16,7 +16,7 @@ export default function HomeCard() {
         justifyContent: "center",
         alignItems: "center",
         paddingTop: forBelow416
-          ? "150px"
+          ? "48px"
           : forBelow667
           ? "160px"
           : forBelow767
@@ -29,7 +29,7 @@ export default function HomeCard() {
       <Typography
         sx={{
           fontSize: forBelow416
-            ? "30px"
+            ? "24px"
             : forBelow667
             ? "36px"
             : forBelow767

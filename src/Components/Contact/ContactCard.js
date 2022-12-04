@@ -1,28 +1,19 @@
 import React, { useState } from "react";
 import {
-  Alert,
   Button,
   Grid,
-  Snackbar,
   TextField,
   Typography,
   Box,
-  useMediaQuery,
 } from "@mui/material";
 import "../Styles/AboutMe.css";
 import {
-  BsFacebook,
-  BsGithub,
-  BsLinkedin,
   BsFillTelephoneFill,
-  BsEnvelopeFill,
 } from "react-icons/bs";
-import { FaMapMarkerAlt } from "react-icons/fa";
 import emailjs from "emailjs-com";
-import Image from "../../Assets/contact-bg.png";
 export default function ContactCard() {
+  // eslint-disable-next-line
   const [open, setOpen] = useState(false);
-  const forBelow667 = useMediaQuery("(max-width:667px)");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -43,6 +34,7 @@ export default function ContactCard() {
       );
     e.target.reset();
   };
+  // eslint-disable-next-line
   const handleClose = (event, reason) => {
     if (reason === "clickaway") {
       return;

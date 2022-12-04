@@ -6,7 +6,7 @@ import Menu from "../Components/Menu/Menu";
 import MobileMenu from "../Components/Menu/MobileMenu";
 export default function Jobs() {
   const fontForMobile = useMediaQuery("(max-width:900px)");
-
+  const forBelow416 = useMediaQuery("(max-width:416px)");
   return (
     <Box className="experiences-body">
       {!fontForMobile && (
@@ -41,7 +41,7 @@ export default function Jobs() {
         </Grid>
       )}
       {fontForMobile && (
-        <Box sx={{ padding: "20px 32px 80px 32px" }}>
+        <Box sx={{ padding: forBelow416? "20px 16px 80px 16px" : "20px 32px 80px 32px" }}>
           <JobDetailsCard />
           <MobileMenu />
         </Box>

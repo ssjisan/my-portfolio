@@ -8,6 +8,7 @@ import MobileMenu from "../Components/Menu/MobileMenu";
 
 export default function Blog() {
   const fontForMobile = useMediaQuery("(max-width:900px)");
+  const forBelow416 = useMediaQuery("(max-width:416px)");
 
   return (
     <Box>
@@ -44,7 +45,7 @@ export default function Blog() {
           </Grid>
         )}
         {fontForMobile && (
-        <Box sx={{ padding: "20px 32px 80px 32px" }}>
+        <Box sx={{ padding: forBelow416? "20px 16px 80px 16px" : "20px 32px 80px 32px" }}>
         <BlogCard />
             <MobileMenu />
           </Box>

@@ -8,6 +8,7 @@ import "../Components/Styles/AboutMe.css";
 export default function About() {
   const fontForMobile = useMediaQuery("(max-width:900px)");
   const forBelow999 = useMediaQuery("(max-width:999px)");
+  const forBelow416 = useMediaQuery("(max-width:416px)");
 
   return (
     <Box className="bio-body">
@@ -41,7 +42,7 @@ export default function About() {
           </Grid>
         )}
         {fontForMobile && (
-          <Box sx={{ padding: "20px 32px 80px 32px" }}>
+          <Box sx={{ padding: forBelow416? "20px 16px 80px 16px" : "20px 32px 80px 32px" }}>
             <AboutMe />
             <MobileMenu />
           </Box>

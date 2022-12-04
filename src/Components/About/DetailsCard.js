@@ -1,7 +1,8 @@
-import { Avatar, Box, Typography, useMediaQuery } from "@mui/material";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import details from "../../Assets/Intorduction.json";
 export default function DetailsCard() {
+  const forBelow416 = useMediaQuery("(max-width:416px)");
   const forBelow899 = useMediaQuery("(max-width:899px)");
   const forBelow999 = useMediaQuery("(max-width:999px)");
   return (
@@ -18,7 +19,7 @@ export default function DetailsCard() {
         <Box sx={{ mb: 5 }}>
           <Typography
             sx={{
-              fontSize: forBelow999 ? "32px" : "48px",
+              fontSize: forBelow416 ? "24px" : forBelow999 ? "32px" : "48px",
               fontWeight: 700,
               mb: 2,
             }}
@@ -84,6 +85,7 @@ export default function DetailsCard() {
                 >
                   <img
                     src={data.img}
+                    alt={data.title}
                     style={{
                       width: "24px",
                       height: "24px",
@@ -135,6 +137,7 @@ export default function DetailsCard() {
                       objectFit: "cover",
                       borderRadius: "4px",
                     }}
+                    alt={data.title}
                   />
                   <Typography
                     sx={{
@@ -179,6 +182,7 @@ export default function DetailsCard() {
                       objectFit: "cover",
                       borderRadius: "4px",
                     }}
+                    alt={data.title}
                   />
                   <Typography
                     sx={{
@@ -223,6 +227,7 @@ export default function DetailsCard() {
                       objectFit: "cover",
                       borderRadius: "4px",
                     }}
+                    alt={data.title}
                   />
                   <Typography
                     sx={{
@@ -267,6 +272,7 @@ export default function DetailsCard() {
                       objectFit: "cover",
                       borderRadius: "4px",
                     }}
+                    alt={data.title}
                   />
                   <Typography
                     sx={{
@@ -311,6 +317,7 @@ export default function DetailsCard() {
                       objectFit: "cover",
                       borderRadius: "4px",
                     }}
+                    alt={data.title}
                   />
                   <Typography
                     sx={{
