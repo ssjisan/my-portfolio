@@ -18,13 +18,13 @@ const socialConnection = [
   {
     id: 3,
     title: "Facebook",
-    link: "",
+    link: "https://www.facebook.com/userjisan/",
     icon: <Facebook />,
   },
   {
     id: 4,
     title: "Whatsapp",
-    link: "",
+    link: "https://wa.me/8801675893967",
     icon: <Whatsapp />,
   },
 ];
