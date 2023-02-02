@@ -1,10 +1,8 @@
 import React, { useRef, useEffect } from "react";
-import {
-  Typography,
-} from "@mui/material";
-import "../Components/Styles/AboutMe.css";
+import { Button, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Lottie from "lottie-web";
+import { Link } from "react-router-dom";
 export default function NotFound({ pages }) {
   const container = useRef(null);
   useEffect(() => {
@@ -17,20 +15,54 @@ export default function NotFound({ pages }) {
     });
   }, []);
   return (
-    <Box className="bio-body">
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignContent: "center",
+        alignItems: "center",
+        height: "100vh",
+      }}
+    >
       <Box
         style={{
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          height: "100vh",
+          width: "960px",
         }}
         ref={container}
+      ></Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          gap:2
+        }}
       >
-        <Box style={{margin:"30px"}}>
-          <Typography variant="h6" style={{fontWeight:"bold"}}>Go back to home page</Typography>
-        </Box>
+        <Typography sx={{ fontSize: "24px", fontWeight: 700 }}>
+          Looks like you are lost
+        </Typography>
+        <Typography
+          sx={{ fontSize: "16px", fontWeight: 500, color: "#A9AFB7" }}
+        >
+          The page your are looking for not available
+        </Typography>
+        <Link to="/">
+          <Button
+            variant="contained"
+            sx={{
+              background:
+                "linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.8) 100%)",
+            }}
+          >
+            Go back to Home
+          </Button>
+        </Link>
       </Box>
     </Box>
   );
