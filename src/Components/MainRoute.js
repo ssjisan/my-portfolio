@@ -5,7 +5,6 @@ import Jobs from "../Pages/Jobs";
 import Blog from "../Pages/Blog";
 import Home from "../Pages/Home";
 import NotFound from "../Pages/NotFound";
-import Test from "../Pages/Test";
 
 export default function MainRoute() {
     return (
@@ -16,7 +15,6 @@ export default function MainRoute() {
             <Route path="jobs" element={<Jobs />} />
             <Route path="blog" element={<Blog />} />
             <Route path="*" element={<NotFound />} />
-            <Route path="test" element={<Test />} />
         </Routes>
     );
 }

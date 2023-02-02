@@ -1,9 +1,7 @@
 import { Typography, Box, Avatar, useMediaQuery, Divider } from "@mui/material";
 import React from "react";
-import "../Styles/AboutMe.css";
 import job from "../../Assets/experience.json";
 import { useState } from "react";
-import "../Styles/Experience.css";
 
 export default function JobDetailsCard() {
   // eslint-disable-next-line
@@ -35,8 +33,8 @@ export default function JobDetailsCard() {
               <Box>
                 <Avatar
                   style={{
-                    width: forBelow416?"32px":"60px",
-                    height: forBelow416?"32px":"60px",
+                    width: forBelow416 ? "32px" : "60px",
+                    height: forBelow416 ? "32px" : "60px",
                     backgroundColor: "#fff",
                     margin: "auto",
                     boxShadow: "0px 0px 20px rgba(85, 98, 217, 0.1)",
@@ -54,7 +52,7 @@ export default function JobDetailsCard() {
                 <Typography
                   sx={{
                     fontWeight: 700,
-                    fontSize: forBelow416? "14px": "16px",
+                    fontSize: forBelow416 ? "14px" : "16px",
                   }}
                 >
                   {data.position}
@@ -62,7 +60,7 @@ export default function JobDetailsCard() {
                 <Typography
                   sx={{
                     fontWeight: 400,
-                    fontSize: forBelow416? "10px": "14px",
+                    fontSize: forBelow416 ? "10px" : "14px",
                     opacity: "0.6",
                   }}
                 >
@@ -70,7 +68,7 @@ export default function JobDetailsCard() {
                 </Typography>
                 <Typography
                   sx={{
-                    fontSize: forBelow416? "10px": "14px",
+                    fontSize: forBelow416 ? "10px" : "14px",
                     fontWeight: 400,
                     opacity: "0.6",
                   }}
@@ -79,29 +77,34 @@ export default function JobDetailsCard() {
                 </Typography>
                 <Typography
                   sx={{
-                    fontSize: forBelow416? "10px": "14px",
+                    fontSize: forBelow416 ? "10px" : "14px",
                     fontWeight: 400,
                     opacity: "0.6",
                   }}
                 >
                   {data.location}
                 </Typography>
-                <Typography variant="body2" sx={{ mt: 2,fontSize: forBelow416? "12px": "14px",}}>
+                <Typography
+                  variant="body2"
+                  sx={{ mt: 2, fontSize: forBelow416 ? "12px" : "14px" }}
+                >
                   {data.description}
                 </Typography>
                 <Typography
                   variant="body2"
                   sx={{
                     mt: 2,
-                    mb:1,
-                    fontSize: forBelow416? "14px": "16px",
+                    mb: 1,
+                    fontSize: forBelow416 ? "14px" : "16px",
                     fontWeight: 700,
                   }}
                 >
                   Responsibilities:
                 </Typography>
                 {data?.responsibilities.map((data) => (
-                  <Typography sx={{fontSize: forBelow416? "12px": "14px"}}>• &nbsp; {data}</Typography>
+                  <Typography sx={{ fontSize: forBelow416 ? "12px" : "14px" }}>
+                    • &nbsp; {data}
+                  </Typography>
                 ))}
               </Box>
             </Box>

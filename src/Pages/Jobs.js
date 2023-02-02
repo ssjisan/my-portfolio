@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Grid, useMediaQuery } from "@mui/material";
-import "../Components/Styles/Experience.css";
 import JobDetailsCard from "../Components/Jobs/JobDetailsCard";
 import Menu from "../Components/Menu/Menu";
 import MobileMenu from "../Components/Menu/MobileMenu";
@@ -8,7 +7,7 @@ export default function Jobs() {
   const fontForMobile = useMediaQuery("(max-width:900px)");
   const forBelow416 = useMediaQuery("(max-width:416px)");
   return (
-    <Box className="experiences-body">
+    <Box>
       {!fontForMobile && (
         <Grid container>
           <Grid

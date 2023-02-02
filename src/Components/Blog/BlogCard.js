@@ -7,7 +7,6 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import React from "react";
-import "../Styles/AboutMe.css";
 import blog from "../../Assets/blogData.json";
 export default function BlogCard() {
   const forBelow416 = useMediaQuery("(max-width:416px)");

@@ -4,14 +4,13 @@ import React from "react";
 import AboutMe from "../Components/About/AboutMe";
 import Menu from "../Components/Menu/Menu";
 import MobileMenu from "../Components/Menu/MobileMenu";
-import "../Components/Styles/AboutMe.css";
 export default function About() {
   const fontForMobile = useMediaQuery("(max-width:900px)");
   const forBelow999 = useMediaQuery("(max-width:999px)");
   const forBelow416 = useMediaQuery("(max-width:416px)");
 
   return (
-    <Box className="bio-body">
+    <Box>
       <Box>
         {!fontForMobile && (
           <Grid container>

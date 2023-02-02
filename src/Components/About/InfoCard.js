@@ -2,7 +2,6 @@ import React from "react";
 import { Typography, Box, Divider, Button, useMediaQuery } from "@mui/material";
 import Download from "../../Assets/Icon/Download";
 import Arrow from "../../Assets/Icon/Arrow";
-import "../Styles/AboutMe.css";
 import socialConnection from "../../Assets/SocialConnection";
 export default function InfoCard() {
   const forBelow416 = useMediaQuery("(max-width:416px)");

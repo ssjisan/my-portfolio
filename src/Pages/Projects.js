@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid, useMediaQuery } from "@mui/material";
-import "../Components/Styles/Projects.css";
 import ProjectCard from "../Components/Projects/ProjectCard";
 import { Box } from "@mui/system";
 import Menu from "../Components/Menu/Menu";
@@ -11,7 +10,7 @@ export default function Projects() {
   const forBelow416 = useMediaQuery("(max-width:416px)");
 
   return (
-    <Box className="bio-body">
+    <Box>
       <Box>
         {!fontForMobile && (
           <Grid container>

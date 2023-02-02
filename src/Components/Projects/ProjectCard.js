@@ -16,7 +16,6 @@ import { AiFillGithub } from "react-icons/ai";
 import { BsCaretDown } from "react-icons/bs";
 import { GoGlobe } from "react-icons/go";
 import projectData from "../../Assets/projects.json";
-import "../Styles/AboutMe.css";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
