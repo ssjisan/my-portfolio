@@ -25,7 +25,7 @@ export default function InfoCard() {
       }}
     >
       <img
-        src="https://i.ibb.co/ZKJyRbJ/about-Me-Section.png"
+        src="Assets/Images/myself.jpg"
         alt="myself"
         style={{
           width: "120px",

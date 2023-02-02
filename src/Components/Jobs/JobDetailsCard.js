@@ -35,11 +35,10 @@ export default function JobDetailsCard() {
               <Box>
                 <Avatar
                   style={{
-                    width: forBelow416?"30px":"60px",
-                    height: forBelow416?"30px":"60px",
+                    width: forBelow416?"32px":"60px",
+                    height: forBelow416?"32px":"60px",
                     backgroundColor: "#fff",
                     margin: "auto",
-                    objectFit: "cover",
                     boxShadow: "0px 0px 20px rgba(85, 98, 217, 0.1)",
                     borderRadius: "4px",
                     border: "1px solid rgba(85, 98, 217, 0.4)",
