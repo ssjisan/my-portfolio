@@ -53,7 +53,7 @@ export default function DetailsCard() {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: forBelow999 ? "14px" : "20px",
+                  fontSize: forBelow999 ? "14px" : "18px",
                   fontWeight: 350,
                   paddingTop: "16px",
                 }}
