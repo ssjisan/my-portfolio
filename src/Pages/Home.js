@@ -1,5 +1,4 @@
-import { Grid, useMediaQuery } from "@mui/material";
-import { Box } from "@mui/system";
+import { Grid, useMediaQuery, Box } from "@mui/material";
 import React from "react";
 import HomeCard from "../Components/Home/HomeCard";
 import Menu from "../Components/Menu/Menu";

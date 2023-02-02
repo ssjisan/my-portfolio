@@ -1,5 +1,4 @@
-import { Grid, useMediaQuery } from "@mui/material";
-import { Box } from "@mui/system";
+import { Grid, useMediaQuery, Box } from "@mui/material";
 import React from "react";
 import AboutMe from "../Components/About/AboutMe";
 import Menu from "../Components/Menu/Menu";
@@ -41,7 +40,13 @@ export default function About() {
           </Grid>
         )}
         {fontForMobile && (
-          <Box sx={{ padding: forBelow416? "20px 16px 80px 16px" : "20px 32px 80px 32px" }}>
+          <Box
+            sx={{
+              padding: forBelow416
+                ? "20px 16px 80px 16px"
+                : "20px 32px 80px 32px",
+            }}
+          >
             <AboutMe />
             <MobileMenu />
           </Box>

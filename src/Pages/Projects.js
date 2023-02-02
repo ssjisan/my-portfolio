@@ -1,7 +1,6 @@
 import React from "react";
-import { Grid, useMediaQuery } from "@mui/material";
+import { Grid, useMediaQuery, Box } from "@mui/material";
 import ProjectCard from "../Components/Projects/ProjectCard";
-import { Box } from "@mui/system";
 import Menu from "../Components/Menu/Menu";
 import MobileMenu from "../Components/Menu/MobileMenu";
 

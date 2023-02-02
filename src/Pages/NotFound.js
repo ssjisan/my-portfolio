@@ -1,9 +1,8 @@
 import React, { useRef, useEffect } from "react";
-import { Button, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Button, Typography, Box } from "@mui/material";
 import Lottie from "lottie-web";
 import { Link } from "react-router-dom";
-export default function NotFound({ pages }) {
+export default function NotFound() {
   const container = useRef(null);
   useEffect(() => {
     Lottie.loadAnimation({
@@ -41,7 +40,7 @@ export default function NotFound({ pages }) {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          gap:2
+          gap: 2,
         }}
       >
         <Typography sx={{ fontSize: "24px", fontWeight: 700 }}>
