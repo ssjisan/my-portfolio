@@ -43,8 +43,14 @@ export default function Blog() {
           </Grid>
         )}
         {fontForMobile && (
-        <Box sx={{ padding: forBelow416? "20px 16px 80px 16px" : "20px 32px 80px 32px" }}>
-        <BlogCard />
+          <Box
+            sx={{
+              padding: forBelow416
+                ? "20px 16px 80px 16px"
+                : "20px 32px 80px 32px",
+            }}
+          >
+            <BlogCard />
             <MobileMenu />
           </Box>
         )}
