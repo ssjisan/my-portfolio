@@ -8,7 +8,7 @@ export default function Contact() {
     const fontForMobile = useMediaQuery("(max-width:900px)");
 
     return (
-        <Box className="contact-body">
+        <Box className="contact-body" sx={{backgroundColor:"#F7F8FA"}}>
             <Box>
                 {!fontForMobile && (
                     <Grid container>
