@@ -21,3 +21,7 @@ body {
   background-color: transparent;
   display: hidden;
 }
+::selection {
+  color: rgb(255, 255, 255);
+  background: #111827;
+}

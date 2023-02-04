@@ -2,15 +2,15 @@ import React from "react";
 import { Typography, Box, Divider, Button, useMediaQuery } from "@mui/material";
 import Download from "../../Assets/Icon/Download";
 import Arrow from "../../Assets/Icon/Arrow";
-import "../Styles/AboutMe.css";
 import socialConnection from "../../Assets/SocialConnection";
 export default function InfoCard() {
+  const forBelow416 = useMediaQuery("(max-width:416px)");
   const forBelow899 = useMediaQuery("(max-width:899px)");
   const forBelow1199 = useMediaQuery("(max-width:1199px)");
   return (
     <Box
       sx={{
-        width: "280px",
+        width: forBelow416?"100%":"280px",
         p: 4,
         backgroundColor: "#FAFCFF",
         border: "1px solid rgba(0, 0, 0, 0.2)",
@@ -24,7 +24,7 @@ export default function InfoCard() {
       }}
     >
       <img
-        src="https://i.ibb.co/ZKJyRbJ/about-Me-Section.png"
+        src="Assets/Images/myself.jpg"
         alt="myself"
         style={{
           width: "120px",

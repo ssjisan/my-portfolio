@@ -1,56 +1,56 @@
 [
   {
     "id": 1,
-    "title": "Let’s Start a Journey With JavaScript",
-    "imgUrl": "https://i.ibb.co/b1K82HF/javascript-illustration.png",
+    "title": "A Comprehensive Guide to JavaScript: Variables, Arrays, Objects & more",
+    "imgUrl": "Assets/Images/Blog/js-01.png",
     "tags": "javascript",
     "time": "5 mins to read",
-    "demo": "At the very first age, JavaScript was called LiveScript. An engineer named Brendan Eich",
+    "date": "Nov 2, 2020",
     "link": "https://sakibfset13.medium.com/lets-start-a-journey-with-javascript-ca4485adf2e3"
   },
   {
     "id": 2,
-    "title": "JavaScript Essentials",
-    "imgUrl": "https://i.ibb.co/QQSkffC/js-ess.jpg",
+    "title": "A Beginner's Guide to JavaScript: Understanding Coding Style",
+    "imgUrl": "Assets/Images/Blog/js-02.png",
     "tags": "javascript",
     "time": "4 mins to read",
-    "demo": "Every language has some primitives types. And JavaScript also has some",
+    "date": "Nov 3, 2020",
     "link": "https://sakibfset13.medium.com/javascript-essentials-5415e89d8a25"
   },
   {
     "id": 3,
-    "title": "Simple Problem: Solution with JavaScript",
-    "imgUrl": "https://i.ibb.co/g6qv7Gq/js-problem-Solving.jpg",
-    "tags": "javascript",
-    "time": "4 mins to read",
-    "demo": "I try to solve some beginner level problem using JavaScript. Just for practice.",
-    "link": "https://medium.com/@sakibfset13/simple-problem-solution-with-javascript-de78478b54c9"
-  },
-  {
-    "id": 4,
-    "title": "Hello React",
-    "imgUrl": "https://i.ibb.co/qNSc6LQ/welcome-React.jpg",
+    "title": "An Overview of React: A JavaScript User Interface Library",
+    "imgUrl": "Assets/Images/Blog/react.png",
     "tags": "react",
     "time": "4 mins to read",
-    "demo": "Facebook recently launched their new interface. Which is nice and attractive.",
+    "date": "Nov 4, 2020",
     "link": "https://sakibfset13.medium.com/hello-react-59b4dd2d46ff"
   },
   {
+    "id": 4,
+    "title": "Beginner-Level JavaScript Programming Exercises and Solutions",
+    "imgUrl": "Assets/Images/Blog/js-03.png",
+    "tags": "javascript",
+    "time": "4 mins to read",
+    "date": "Nov 5, 2020",
+    "link": "https://medium.com/@sakibfset13/simple-problem-solution-with-javascript-de78478b54c9"
+  },
+  {
     "id": 5,
-    "title": "Let's learn flexbox",
-    "imgUrl": "https://i.ibb.co/MV6ZvBJ/coming-soon.jpg",
+    "title": "An Introduction to Flexbox in CSS: Understanding the Basics of Flexible Box Layout",
+    "imgUrl": "Assets/Images/Blog/flexbox.png",
     "tags": "css",
-    "time": "",
-    "demo": "coming soon",
+    "time": "to be announced",
+    "date": "coming soon",
     "link": ""
   },
   {
     "id": 6,
-    "title": "Netlify: Build & Deploy",
-    "imgUrl": "https://i.ibb.co/MV6ZvBJ/coming-soon.jpg",
+    "title": "Deploying on Netlify: A Comprehensive Guide line",
+    "imgUrl": "Assets/Images/Blog/netlify.png",
     "tags": "deployment",
-    "time": "",
-    "demo": "coming soon",
+    "time": "to be announced",
+    "date": "coming soon",
     "link": ""
   }
 ]

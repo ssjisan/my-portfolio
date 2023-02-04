@@ -3,7 +3,6 @@ import About from "../../Assets/Icon/About";
 import Jobs from "../../Assets/Icon/Jobs";
 import Projects from "../../Assets/Icon/Projects";
 import Blog from "../../Assets/Icon/Blog";
-import Contact from "../../Assets/Icon/Contact";
 import Linkedin from "../../Assets/Icon/Linkedin";
 import Github from "../../Assets/Icon/Github";
 const menuItem = [
@@ -36,13 +35,7 @@ const menuItem = [
         title: "Blog",
         link: "/blog",
         icon: <Blog />,
-    },
-    {
-        id: 6,
-        title: "Contact",
-        link: "/contact",
-        icon: <Contact />,
-    },
+    }
 ];
 const socialMedia = [
     {
