@@ -8,7 +8,8 @@ import {
   Grid,
   IconButton,
   Typography,
-  Chip
+  Chip,
+  Box,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import React, { useState } from "react";
@@ -29,7 +30,7 @@ const ExpandMore = styled((props) => {
 }));
 
 export default function ProjectCard() {
-   // eslint-disable-next-line
+  // eslint-disable-next-line
   const [project, setProject] = useState(projectData);
   const [expanded, setExpanded] = useState(false);
   const handleExpandClick = (id) => {
@@ -38,8 +39,9 @@ export default function ProjectCard() {
   return (
     <Grid container spacing={5}>
       {project.map((data) => (
-        <Grid item lg={4} md={6} sm={6} key={data.id}>
-          <Card>
+        <Grid item lg={4} md={6} sm={6} key={data.id} >
+          <Box sx={{height: 'auto', overflow: 'auto'}}>
+          <Card sx={{height: 'auto', overflow: 'auto'}}>
             <CardHeader title={data.title} />
             <CardMedia
               component="img"
@@ -53,29 +55,35 @@ export default function ProjectCard() {
               </Typography>
             </CardContent>
             <CardActions disableSpacing>
-              <a href={data.live}><IconButton><GoGlobe/></IconButton></a>
-              <a href={data.github}><IconButton>
-                <AiFillGithub />
-              </IconButton></a>
+              <a href={data.live}>
+                <IconButton>
+                  <GoGlobe />
+                </IconButton>
+              </a>
+              <a href={data.github}>
+                <IconButton>
+                  <AiFillGithub />
+                </IconButton>
+              </a>
               <ExpandMore
                 expand={expanded === data.id}
-                onClick={()=>handleExpandClick(data.id)}
+                onClick={() => handleExpandClick(data.id)}
               >
                 <BsCaretDown />
               </ExpandMore>
             </CardActions>
-            <Collapse in={expanded === data.id} timeout="auto" unmountOnExit>
+            <Collapse in={expanded === data.id} timeout="auto">
               <CardContent>
                 <Typography paragraph>Description</Typography>
-                <Typography paragraph>
-                  {data.detailsDescription}
-                </Typography>
+                <Typography paragraph>{data.detailsDescription}</Typography>
                 <Typography paragraph>Tech:</Typography>
-                {data.tech.map((data,i)=>
-                  <Chip label={data} style={{ margin: "5px" }} key={i}/>)}
+                {data.tech.map((data, i) => (
+                  <Chip label={data} style={{ margin: "5px" }} key={i} />
+                ))}
               </CardContent>
             </Collapse>
           </Card>
+          </Box>
         </Grid>
       ))}
     </Grid>
