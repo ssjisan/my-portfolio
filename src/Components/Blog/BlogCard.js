@@ -1,7 +1,11 @@
 import { Box, Chip, Grid, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 import blog from "../../Assets/blogData.json";
 
+const linkStyle = {
+  textDecoration: "none",
+};
 export default function BlogCard() {
   const forBelow416 = useMediaQuery("(max-width:416px)");
   return (
@@ -9,12 +13,7 @@ export default function BlogCard() {
       {blog.map((data) => {
         return (
           <Grid item xs={12} sm={6} md={4} lg={3}>
-            <a
-              href={data.link}
-              style={{ textDecoration: "none", color: "#111827" }}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Link to={"/" + data.link} style={linkStyle}>
               <Box>
                 <Box
                   sx={{
@@ -56,6 +55,7 @@ export default function BlogCard() {
                     sx={{
                       fontSize: forBelow416 ? "14px" : "16px",
                       fontWeight: 700,
+                      color: "#111827",
                     }}
                   >
                     {data.title}
@@ -75,6 +75,7 @@ export default function BlogCard() {
                         fontSize: forBelow416 ? "12px" : "14px",
                         fontWeight: 400,
                         opacity: 0.6,
+                        color: "#111827",
                         height: "36px",
                       }}
                     >
@@ -88,6 +89,7 @@ export default function BlogCard() {
                         fontSize: forBelow416 ? "10px" : "14px",
                         fontWeight: 400,
                         opacity: 0.6,
+                        color: "#111827",
                         height: "36px",
                       }}
                     >
@@ -96,7 +98,7 @@ export default function BlogCard() {
                   </Box>
                 </Box>
               </Box>
-            </a>
+            </Link>
           </Grid>
         );
       })}
