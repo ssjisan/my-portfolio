@@ -18,6 +18,7 @@ export default function BlogDetails() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+    // eslint-disable-next-line
   }, []);
   const handleScroll = () => {
     if (window.pageYOffset > 160 && !isScrolling) {
