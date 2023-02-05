@@ -25,3 +25,11 @@ body {
   color: rgb(255, 255, 255);
   background: #111827;
 }
+.paragraph {
+  color: #6f7a8b;
+
+  font-size: 16px;
+}
+.strong {
+  color: #111827;
+}
