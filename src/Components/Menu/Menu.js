@@ -9,6 +9,12 @@ export default function Menu() {
     color: "white",
   };
   const { pathname } = useLocation();
+  const goToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+};
   return (
     <Box
       sx={{
@@ -24,7 +30,7 @@ export default function Menu() {
         alignItems: "center",
       }}
     >
-      <Box>
+      <Box onClick={goToTop}>
         <Link to="/">
           <img src={Logo} alt="logo" />
         </Link>
@@ -32,7 +38,7 @@ export default function Menu() {
       <Box>
         <List>
           {menuItem.map((item) => (
-            <Box key={item.id}>
+            <Box key={item.id} onClick={goToTop}>
               <Link to={item.link} style={linkStyle}>
                 <ListItem
                   sx={{

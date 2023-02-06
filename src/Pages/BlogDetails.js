@@ -21,7 +21,12 @@ export default function BlogDetails() {
   const [selectedBlog, setSingleBlog] = useState([]);
   const [relatedBlog, setRelatedBlog] = useState([]);
   const { path } = useParams();
- 
+  const goToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+};
   useEffect(() => {
     let selectedBlog = blog.filter((data) => data.link === path);
     setSingleBlog(selectedBlog);
@@ -73,6 +78,7 @@ export default function BlogDetails() {
               display: "flex",
               justifyContent: "center",
             }}
+           onClick={goToTop}
           >
             <Link to="/">
               <img src="Assets/Images/Logo/Logo-black.png" alt="logo" />
@@ -178,7 +184,7 @@ export default function BlogDetails() {
               return (
                 <Grid item xs={12} sm={6} md={4} lg={3}>
                   <Link to={"/" + data.link} style={linkStyle}>
-                    <Box>
+                    <Box onClick={goToTop}>
                       <Box
                         sx={{
                           width: "100%",
