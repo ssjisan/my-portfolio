@@ -13,6 +13,10 @@ export default function NotFound() {
       animationData: require("../Assets/error.json"),
     });
   }, []);
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <Box
       sx={{

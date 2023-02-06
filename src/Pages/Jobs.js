@@ -6,6 +6,10 @@ import MobileMenu from "../Components/Menu/MobileMenu";
 export default function Jobs() {
   const fontForMobile = useMediaQuery("(max-width:900px)");
   const forBelow416 = useMediaQuery("(max-width:416px)");
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <Box>
       {!fontForMobile && (

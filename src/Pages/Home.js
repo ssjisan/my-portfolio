@@ -6,6 +6,10 @@ import MobileMenu from "../Components/Menu/MobileMenu";
 
 export default function Home() {
   const forBelow900 = useMediaQuery("(max-width:900px)");
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <Box>
       <Box>

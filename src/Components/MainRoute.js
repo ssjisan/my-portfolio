@@ -8,6 +8,7 @@ import NotFound from "../Pages/NotFound";
 import BlogDetails from "../Pages/BlogDetails";
 
 export default function MainRoute() {
+  
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />

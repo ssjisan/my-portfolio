@@ -12,7 +12,12 @@ export default function MobileMenu() {
     const forBelow576 = useMediaQuery("(max-width:576px)");
     const forBelow667 = useMediaQuery("(max-width:667px)");
     const forBelow456 = useMediaQuery("(max-width:456px)");
-
+    const goToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
     return (
         <Box
             sx={{
@@ -34,6 +39,7 @@ export default function MobileMenu() {
                        
                         "linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.8) 100%)"
                 }}
+                onClick={goToTop}
             >
                 <List
                     sx={{

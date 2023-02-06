@@ -21,6 +21,10 @@ export default function BlogDetails() {
   const [selectedBlog, setSingleBlog] = useState([]);
   const [relatedBlog, setRelatedBlog] = useState([]);
   const { path } = useParams();
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
   const goToTop = () => {
     window.scrollTo({
         top: 0,
@@ -177,8 +181,8 @@ export default function BlogDetails() {
             );
           })}
         </Box>
-        <Box>
-          <Typography>Related Blogs</Typography>
+        <Box sx={{mt:5, mb:5}}>
+          <Typography sx={{fontSize:forBelow680?"20px":"24px", fontWeight:700, mb:4, textAlign:"center"}}>Related Blogs</Typography>
           <Grid container spacing={forBelow416 ? 1 : 4}>
             {relatedBlog.map((data) => {
               return (

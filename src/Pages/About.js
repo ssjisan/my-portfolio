@@ -7,6 +7,9 @@ export default function About() {
   const fontForMobile = useMediaQuery("(max-width:900px)");
   const forBelow999 = useMediaQuery("(max-width:999px)");
   const forBelow416 = useMediaQuery("(max-width:416px)");
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
 
   return (
     <Box>
