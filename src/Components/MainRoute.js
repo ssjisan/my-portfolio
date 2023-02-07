@@ -16,8 +16,8 @@ export default function MainRoute() {
       <Route path="work" element={<Projects />} />
       <Route path="jobs" element={<Jobs />} />
       <Route path="blog" element={<Blog />} />
+      <Route exact path="blog/:path" element={<BlogDetails/>}/>
       <Route path="*" element={<NotFound />} />
-      <Route path=":path" element={<BlogDetails/>}/>
     </Routes>
   );
 }

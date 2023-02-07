@@ -13,7 +13,7 @@ export default function BlogCard() {
       {blog.map((data) => {
         return (
           <Grid item xs={12} sm={6} md={4} lg={3}>
-            <Link to={"/" + data.link} style={linkStyle}>
+            <Link to={`/blog/${data.link}`} style={linkStyle}>
               <Box>
                 <Box
                   sx={{

@@ -85,7 +85,7 @@ export default function BlogDetails() {
            onClick={goToTop}
           >
             <Link to="/">
-              <img src="Assets/Images/Logo/Logo-black.png" alt="logo" />
+              <img src="/Assets/Images/Logo/Logo-black.png" alt="logo" />
             </Link>
           </Box>
         </Container>
