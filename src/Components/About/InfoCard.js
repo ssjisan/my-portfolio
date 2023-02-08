@@ -24,7 +24,7 @@ export default function InfoCard() {
       }}
     >
       <img
-        src="Assets/Images/myself.jpg"
+        src="Assets/Images/myself.webp"
         alt="myself"
         style={{
           width: "120px",
