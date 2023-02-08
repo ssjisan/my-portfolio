@@ -23,14 +23,14 @@ export default function BlogDetails() {
   const { path } = useParams();
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
-  }
+  };
 
   const goToTop = () => {
     window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
+      top: 0,
+      behavior: "smooth",
     });
-};
+  };
   useEffect(() => {
     let selectedBlog = blog.filter((data) => data.link === path);
     setSingleBlog(selectedBlog);
@@ -82,10 +82,10 @@ export default function BlogDetails() {
               display: "flex",
               justifyContent: "center",
             }}
-           onClick={goToTop}
+            onClick={goToTop}
           >
             <Link to="/">
-              <img src="Assets/Images/Logo/Logo-black.png" alt="logo" />
+              <img src="/Assets/Images/Logo/Logo-black.png" alt="logo" />
             </Link>
           </Box>
         </Container>
@@ -181,13 +181,22 @@ export default function BlogDetails() {
             );
           })}
         </Box>
-        <Box sx={{mt:5, mb:5}}>
-          <Typography sx={{fontSize:forBelow680?"20px":"24px", fontWeight:700, mb:4, textAlign:"center"}}>Related Blogs</Typography>
+        <Box sx={{ mt: 5, mb: 5 }}>
+          <Typography
+            sx={{
+              fontSize: forBelow680 ? "20px" : "24px",
+              fontWeight: 700,
+              mb: 4,
+              textAlign: "center",
+            }}
+          >
+            Related Blogs
+          </Typography>
           <Grid container spacing={forBelow416 ? 1 : 4}>
             {relatedBlog.map((data) => {
               return (
                 <Grid item xs={12} sm={6} md={4} lg={3}>
-                  <Link to={"/" + data.link} style={linkStyle}>
+                  <Link to={`/blog/${data.link}`} style={linkStyle}>
                     <Box onClick={goToTop}>
                       <Box
                         sx={{

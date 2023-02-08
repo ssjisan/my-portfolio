@@ -34,7 +34,8 @@ export default function NotFound() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          width: "960px",
+          maxWidth:"960px",
+          width: "100%",
         }}
         ref={container}
       ></Box>
@@ -44,6 +45,7 @@ export default function NotFound() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
+          textAlign:"center",
           gap: 2,
         }}
       >
