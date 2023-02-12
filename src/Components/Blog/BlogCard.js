@@ -8,13 +8,19 @@ const linkStyle = {
 };
 export default function BlogCard() {
   const forBelow416 = useMediaQuery("(max-width:416px)");
+  const goToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+};
   return (
     <Grid container spacing={forBelow416 ? 1 : 4}>
       {blog.map((data) => {
         return (
           <Grid item xs={12} sm={6} md={4} lg={3}>
             <Link to={`/blog/${data.link}`} style={linkStyle}>
-              <Box>
+              <Box onClick={goToTop}>
                 <Box
                   sx={{
                     width: "100%",
