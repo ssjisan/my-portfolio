@@ -5,6 +5,7 @@ import {
   useMediaQuery,
   Grid,
   Chip,
+  Divider,
 } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import parse from "html-react-parser";
@@ -182,16 +183,19 @@ export default function BlogDetails() {
           })}
         </Box>
         <Box sx={{ mt: 5, mb: 5 }}>
+          <Box sx={{mb: 4,}}>
+          <Divider>
           <Typography
             sx={{
               fontSize: forBelow680 ? "20px" : "24px",
               fontWeight: 700,
-              mb: 4,
               textAlign: "center",
             }}
           >
             Related Blogs
           </Typography>
+          </Divider>
+          </Box>
           <Grid container spacing={forBelow416 ? 1 : 4}>
             {relatedBlog.map((data) => {
               return (
