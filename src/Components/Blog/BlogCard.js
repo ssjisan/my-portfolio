@@ -10,10 +10,10 @@ export default function BlogCard() {
   const forBelow416 = useMediaQuery("(max-width:416px)");
   const goToTop = () => {
     window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
+      top: 0,
+      behavior: "smooth",
     });
-};
+  };
   return (
     <Grid container spacing={forBelow416 ? 1 : 4}>
       {blog.map((data) => {

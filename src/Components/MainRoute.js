@@ -6,6 +6,7 @@ import Blog from "../Pages/Blog";
 import Home from "../Pages/Home";
 import NotFound from "../Pages/NotFound";
 import BlogDetails from "../Pages/BlogDetails";
+import ProjectDetails from "../Pages/ProjectDetails";
 
 export default function MainRoute() {
   return (
@@ -16,6 +17,7 @@ export default function MainRoute() {
       <Route path="jobs" element={<Jobs />} />
       <Route path="blog" element={<Blog />} />
       <Route path="blog/:path" element={<BlogDetails/>}/>
+      <Route path="project/:path" element={<ProjectDetails/>}/>
       <Route exact path="*" element={<NotFound />} />
     </Routes>
   );

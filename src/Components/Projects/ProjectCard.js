@@ -1,88 +1,73 @@
-import {
-  Card,
-  CardActions,
-  CardContent,
-  CardHeader,
-  CardMedia,
-  Collapse,
-  Grid,
-  IconButton,
-  Typography,
-  Chip,
-  Box,
-} from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { Grid, Typography, Chip, Box, useMediaQuery } from "@mui/material";
 import React, { useState } from "react";
-import { AiFillGithub } from "react-icons/ai";
-import { BsCaretDown } from "react-icons/bs";
-import { GoGlobe } from "react-icons/go";
 import projectData from "../../Assets/projects.json";
-
-const ExpandMore = styled((props) => {
-  const { expand, ...other } = props;
-  return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-  transform: !expand ? "rotate(0deg)" : "rotate(180deg)",
-  marginLeft: "auto",
-  transition: theme.transitions.create("transform", {
-    duration: theme.transitions.duration.shortest,
-  }),
-}));
 
 export default function ProjectCard() {
   // eslint-disable-next-line
   const [project, setProject] = useState(projectData);
-  const [expanded, setExpanded] = useState(false);
-  const handleExpandClick = (id) => {
-    setExpanded(expanded === id ? false : id);
+  const forBelow416 = useMediaQuery("(max-width:416px)");
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
+
   return (
     <Grid container spacing={5}>
       {project.map((data) => (
-        <Grid item lg={4} md={6} sm={6} key={data.id} >
-          <Box sx={{height: 'auto', overflow: 'auto'}}>
-          <Card sx={{height: 'auto', overflow: 'auto'}}>
-            <CardHeader title={data.title} />
-            <CardMedia
-              component="img"
-              height="194"
-              image={data.image}
-              alt={data.title}
-            />
-            <CardContent>
-              <Typography variant="body2" color="text.secondary">
-                {data.shortDescription}
-              </Typography>
-            </CardContent>
-            <CardActions disableSpacing>
-              <a href={data.live}>
-                <IconButton>
-                  <GoGlobe />
-                </IconButton>
-              </a>
-              <a href={data.github}>
-                <IconButton>
-                  <AiFillGithub />
-                </IconButton>
-              </a>
-              <ExpandMore
-                expand={expanded === data.id}
-                onClick={() => handleExpandClick(data.id)}
+        <Grid item lg={4} md={6} sm={6} key={data.id}>
+          <Box sx={{ height: "auto", overflow: "auto" }}>
+            <Box onClick={goToTop}>
+              <Box
+                sx={{
+                  width: "100%",
+                  height: forBelow416 ? "160px" : "180px",
+                  borderRadius: "12px",
+                  overflow: "hidden",
+                }}
               >
-                <BsCaretDown />
-              </ExpandMore>
-            </CardActions>
-            <Collapse in={expanded === data.id} timeout="auto">
-              <CardContent>
-                <Typography paragraph>Description</Typography>
-                <Typography paragraph>{data.detailsDescription}</Typography>
-                <Typography paragraph>Tech:</Typography>
-                {data.tech.map((data, i) => (
-                  <Chip label={data} style={{ margin: "5px" }} key={i} />
-                ))}
-              </CardContent>
-            </Collapse>
-          </Card>
+                <img
+                  src={data.image}
+                  alt="images"
+                  style={{
+                    width: "100%",
+                    height: forBelow416 ? "160px" : "180px",
+                    objectFit: "cover",
+                  }}
+                />
+              </Box>
+              <Box
+                sx={{
+                  mt: 1,
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: forBelow416 ? 0.5 : 2,
+                }}
+              >
+                <Typography
+                  sx={{
+                    fontSize: forBelow416 ? "14px" : "16px",
+                    fontWeight: 700,
+                    color: "#111827",
+                  }}
+                >
+                  {data.title}
+                </Typography>
+                <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
+                  {data.tech.map((data, i) => (
+                    <Chip
+                      label={data}
+                      sx={{
+                        backgroundColor: "#fff1f1",
+                        color: "#ff3535",
+                        fontWeight: 700,
+                      }}
+                    />
+                  ))}
+                </Box>
+              </Box>
+            </Box>
           </Box>
         </Grid>
       ))}
