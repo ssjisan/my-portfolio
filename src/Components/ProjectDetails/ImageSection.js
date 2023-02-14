@@ -18,7 +18,7 @@ export default function ImageSection({handleOpen}) {
         columnSpacing={3}
         sx={{ display: "flex", justifyContent: "center" }}
       >
-        <Grid item sm={6} md={6} lg={4}>
+        <Grid item md={6} lg={6}>
           <Box
             sx={{
               border: "1px solid #CACACA",
@@ -30,11 +30,11 @@ export default function ImageSection({handleOpen}) {
             <img
               src={a[0]}
               alt="nothing"
-              style={{ width: "100%", height: "272px", objectFit: "cover" }}
+              style={{ width: "100%", height: "364px", objectFit: "cover" }}
             />
           </Box>
         </Grid>
-        <Grid item sm={6} md={6} lg={4}>
+        <Grid item md={6} lg={6}>
           <Grid container spacing={2.25}>
             <Grid item sm={6} md={6} lg={6}>
               <Box
@@ -50,7 +50,7 @@ export default function ImageSection({handleOpen}) {
                   alt="nothing"
                   style={{
                     width: "100%",
-                    height: "124px",
+                    height: "170px",
                     objectFit: "cover",
                   }}
                 />
@@ -70,7 +70,7 @@ export default function ImageSection({handleOpen}) {
                   alt="nothing"
                   style={{
                     width: "100%",
-                    height: "124px",
+                    height: "170px",
                     objectFit: "cover",
                   }}
                 />
@@ -90,13 +90,13 @@ export default function ImageSection({handleOpen}) {
                   alt="nothing"
                   style={{
                     width: "100%",
-                    height: "124px",
+                    height: "170px",
                     objectFit: "cover",
                   }}
                 />
               </Box>
             </Grid>
-            <Grid item sm={6} md={6} lg={6} sx={{ height: "124px" }}>
+            <Grid item sm={6} md={6} lg={6} sx={{ height: "170px" }}>
               <Box
                 sx={{
                   border: "1px solid #CACACA",
@@ -112,7 +112,7 @@ export default function ImageSection({handleOpen}) {
                   alt="nothing"
                   style={{
                     width: "100%",
-                    height: "124px",
+                    height: "170px",
                     objectFit: "cover",
                     filter: "blur(4px)",
                   }}

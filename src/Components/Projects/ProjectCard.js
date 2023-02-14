@@ -21,10 +21,10 @@ export default function ProjectCard() {
             <Box onClick={goToTop}>
               <Box
                 sx={{
-                  width: "100%",
-                  height: forBelow416 ? "160px" : "180px",
+                  height: forBelow416 ? "220px" : "272px",
                   borderRadius: "12px",
                   overflow: "hidden",
+                  border:"1px solid #EDEDED"
                 }}
               >
                 <img
@@ -32,7 +32,7 @@ export default function ProjectCard() {
                   alt="images"
                   style={{
                     width: "100%",
-                    height: forBelow416 ? "160px" : "180px",
+                    height: forBelow416 ? "220px" : "272px",
                     objectFit: "cover",
                   }}
                 />

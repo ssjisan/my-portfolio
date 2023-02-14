@@ -4,6 +4,7 @@ import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRound
 import { Link } from "react-router-dom";
 import ImageSection from "../Components/ProjectDetails/ImageSection";
 import ImageModal from "../Components/ProjectDetails/ImageModal";
+import Project from "../Components/ProjectDetails/Project";
 
 export default function ProjectDetails() {
   // eslint-disable-next-line
@@ -79,6 +80,7 @@ export default function ProjectDetails() {
       <Container>
         <Box sx={{ mt: 14 }}>
           <ImageSection handleOpen={handleOpen} />
+          <Project />
           <ImageModal open={open} handleClose={handleClose} />
         </Box>
       </Container>
