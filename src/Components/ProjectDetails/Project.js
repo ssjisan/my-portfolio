@@ -60,7 +60,7 @@ export default function Project() {
                 color: "#6f7a8b",
               }}
             >
-              Role
+              My Role
             </Typography>
             <Typography
               sx={{ fontSize: "16px", fontWeight: 600, color: "#3967FF" }}
@@ -114,9 +114,9 @@ export default function Project() {
             label="React js"
             variant="outlined"
             sx={{
-              color: "#ff3535",
+              color: "#B5B5B5",
               borderRadius: "2px",
-              border: "1px solid #ff3535",
+              border: "1px solid #B5B5B5",
               fontWeight: 700,
             }}
           />
@@ -124,9 +124,9 @@ export default function Project() {
             label="React js"
             variant="outlined"
             sx={{
-              color: "#ff3535",
+              color: "#B5B5B5",
               borderRadius: "2px",
-              border: "1px solid #ff3535",
+              border: "1px solid #B5B5B5",
               fontWeight: 700,
             }}
           />
@@ -134,9 +134,9 @@ export default function Project() {
             label="React js"
             variant="outlined"
             sx={{
-              color: "#ff3535",
+              color: "#B5B5B5",
               borderRadius: "2px",
-              border: "1px solid #ff3535",
+              border: "1px solid #B5B5B5",
               fontWeight: 700,
             }}
           />
@@ -144,9 +144,9 @@ export default function Project() {
             label="React js"
             variant="outlined"
             sx={{
-              color: "#ff3535",
+              color: "#B5B5B5",
               borderRadius: "2px",
-              border: "1px solid #ff3535",
+              border: "1px solid #B5B5B5",
               fontWeight: 700,
             }}
           />
@@ -154,9 +154,9 @@ export default function Project() {
             label="React js"
             variant="outlined"
             sx={{
-              color: "#ff3535",
+              color: "#B5B5B5",
               borderRadius: "2px",
-              border: "1px solid #ff3535",
+              border: "1px solid #B5B5B5",
               fontWeight: 700,
             }}
           />
@@ -164,9 +164,9 @@ export default function Project() {
             label="React js"
             variant="outlined"
             sx={{
-              color: "#ff3535",
+              color: "#B5B5B5",
               borderRadius: "2px",
-              border: "1px solid #ff3535",
+              border: "1px solid #B5B5B5",
               fontWeight: 700,
             }}
           />
@@ -174,9 +174,9 @@ export default function Project() {
             label="React js"
             variant="outlined"
             sx={{
-              color: "#ff3535",
+              color: "#B5B5B5",
               borderRadius: "2px",
-              border: "1px solid #ff3535",
+              border: "1px solid #B5B5B5",
               fontWeight: 700,
             }}
           />
@@ -184,9 +184,9 @@ export default function Project() {
             label="React js"
             variant="outlined"
             sx={{
-              color: "#ff3535",
+              color: "#B5B5B5",
               borderRadius: "2px",
-              border: "1px solid #ff3535",
+              border: "1px solid #B5B5B5",
               fontWeight: 700,
             }}
           />
@@ -194,9 +194,9 @@ export default function Project() {
             label="React js"
             variant="outlined"
             sx={{
-              color: "#ff3535",
+              color: "#B5B5B5",
               borderRadius: "2px",
-              border: "1px solid #ff3535",
+              border: "1px solid #B5B5B5",
               fontWeight: 700,
             }}
           />
@@ -204,9 +204,9 @@ export default function Project() {
             label="React js"
             variant="outlined"
             sx={{
-              color: "#ff3535",
+              color: "#B5B5B5",
               borderRadius: "2px",
-              border: "1px solid #ff3535",
+              border: "1px solid #B5B5B5",
               fontWeight: 700,
             }}
           />
