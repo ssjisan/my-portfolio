@@ -1,15 +1,26 @@
-import { Box, Modal, Typography } from "@mui/material";
+import { Box, Modal } from "@mui/material";
 import React from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 export default function ImageModal({ open, handleClose }) {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    draggable:true
   };
+  const a = [
+    "/Assets/Images/Projects/tech-hack/landing-page.svg",
+    "/Assets/Images/Projects/tech-hack/profile.svg",
+    "/Assets/Images/Projects/tech-hack/landing-page.jpg",
+    "/Assets/Images/Projects/tech-hack/profile.svg",
+    "/Assets/Images/Projects/tech-hack/landing-page.jpg",
+    "/Assets/Images/Projects/tech-hack/profile.svg",
+  ];
   return (
     <Modal
       open={open}
@@ -19,30 +30,16 @@ export default function ImageModal({ open, handleClose }) {
       <Box
         sx={{
           background: "white",
-          width: "75%",
-          height: "90%",
+          width:"70%",
           outline: "none",
         }}
       >
         <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
+         {a.map((data)=>{return(
+          <Box>
+            <img src={data} alt="asde" style={{width:"100%",objectFit:"fit"}}/>
+          </Box>
+         )})}
         </Slider>
       </Box>
     </Modal>
