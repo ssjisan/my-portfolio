@@ -3,12 +3,11 @@ import React from "react";
 
 export default function ImageSection({handleOpen}) {
   const a = [
-    "/Assets/Images/Projects/tech-hack/landing-page.svg",
-    "/Assets/Images/Projects/tech-hack/profile.svg",
     "/Assets/Images/Projects/tech-hack/landing-page.jpg",
-    "/Assets/Images/Projects/tech-hack/profile.svg",
-    "/Assets/Images/Projects/tech-hack/landing-page.jpg",
-    "/Assets/Images/Projects/tech-hack/profile.svg",
+    "/Assets/Images/Projects/tech-hack/dev-profile.jpg",
+    "/Assets/Images/Projects/tech-hack/dev-profile2.jpg",
+    "/Assets/Images/Projects/tech-hack/dev-profile3.jpg",
+    "/Assets/Images/Projects/tech-hack/dev-profile4.jpg",
   ];
 
   return (
