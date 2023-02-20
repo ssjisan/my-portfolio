@@ -113,10 +113,10 @@ export default function ImageSection({handleOpen}) {
                     width: "100%",
                     height: "170px",
                     objectFit: "cover",
-                    filter: "blur(4px)",
+                    filter: a.length>5 && "blur(4px)",
                   }}
                 />
-                <Typography
+                {a.length>5 && <Typography
                   sx={{
                     position: "absolute",
                     top: "60px",
@@ -126,7 +126,7 @@ export default function ImageSection({handleOpen}) {
                   }}
                 >
                   +{a.length - 4}
-                </Typography>
+                </Typography>}
               </Box>
             </Grid>
           </Grid>
