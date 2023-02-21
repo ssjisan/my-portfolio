@@ -60,7 +60,7 @@ export default function ProjectDetails() {
             alignItems: "center",
           }}
         >
-          <Link to="/blog">
+          <Link to="/work">
             <ArrowBackIosNewRoundedIcon />
           </Link>
           <Box
