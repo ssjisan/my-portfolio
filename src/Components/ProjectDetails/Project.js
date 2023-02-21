@@ -1,7 +1,16 @@
-import { Box, Chip, Container, Typography } from "@mui/material";
+import { Box, Button, Chip, Container, Typography } from "@mui/material";
 import React from "react";
+import Swal from "sweetalert2";
 
 export default function Project() {
+  const swalLive = () => {
+    Swal.fire({
+      title: 'Live link not available',
+      text: "Sorry. May be this project is not working anymore or company doens't exist",
+      icon: 'warning',
+      confirmButtonColor: '#141414',
+    })
+  };
   return (
     <Container sx={{ mt: 4, mb: 4 }}>
       <Box>
@@ -16,57 +25,92 @@ export default function Project() {
           placement will be highly appreciated. If you like what you see, please
           show some love by pressing L & F on your keyboard
         </Typography>
-        <Box sx={{ display: "flex", gap: 4, mt: 4 }}>
-          <Box>
-            <Typography
-              sx={{
-                fontSize: "14px",
-                fontWeight: 600,
-                mb: 1,
-                color: "#6f7a8b",
-              }}
-            >
-              Completetion Time
-            </Typography>
-            <Typography
-              sx={{ fontSize: "16px", fontWeight: 600, color: "#3967FF" }}
-            >
-              6 months
-            </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            mt: 4,
+            alignItems: "flex-end",
+          }}
+        >
+          <Box sx={{ display: "flex", gap: 4 }}>
+            <Box>
+              <Typography
+                sx={{
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  mb: 1,
+                  color: "#6f7a8b",
+                }}
+              >
+                Completetion Time
+              </Typography>
+              <Typography
+                sx={{ fontSize: "16px", fontWeight: 600, color: "#3967FF" }}
+              >
+                6 months
+              </Typography>
+            </Box>
+            <Box>
+              <Typography
+                sx={{
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  mb: 1,
+                  color: "#6f7a8b",
+                }}
+              >
+                Total Team Member
+              </Typography>
+              <Typography
+                sx={{ fontSize: "16px", fontWeight: 600, color: "#3967FF" }}
+              >
+                12
+              </Typography>
+            </Box>
+            <Box>
+              <Typography
+                sx={{
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  mb: 1,
+                  color: "#6f7a8b",
+                }}
+              >
+                My Role
+              </Typography>
+              <Typography
+                sx={{ fontSize: "16px", fontWeight: 600, color: "#3967FF" }}
+              >
+                Front End Developer
+              </Typography>
+            </Box>
           </Box>
-          <Box>
-            <Typography
+          <Box sx={{ display: "flex", gap: 2 }}>
+            <Button
+              variant="contained"
               sx={{
-                fontSize: "14px",
-                fontWeight: 600,
-                mb: 1,
-                color: "#6f7a8b",
+                height: "40px",
+                textTransform: "none",
+                background:
+                  "linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.8) 100%)",
               }}
+              onClick={swalLive}
             >
-              Total Team Member
-            </Typography>
-            <Typography
-              sx={{ fontSize: "16px", fontWeight: 600, color: "#3967FF" }}
-            >
-              12
-            </Typography>
-          </Box>
-          <Box>
-            <Typography
+              Live Preview
+            </Button>
+            <Button
+              variant="outlined"
               sx={{
-                fontSize: "14px",
-                fontWeight: 600,
-                mb: 1,
-                color: "#6f7a8b",
+                height: "40px",
+                textTransform: "none",
+                border: "1px solid #141414",
+                color: "#141414",
               }}
+              // onClick={handleButton}
             >
-              My Role
-            </Typography>
-            <Typography
-              sx={{ fontSize: "16px", fontWeight: 600, color: "#3967FF" }}
-            >
-              Front End Developer
-            </Typography>
+              Github
+            </Button>
           </Box>
         </Box>
       </Box>
