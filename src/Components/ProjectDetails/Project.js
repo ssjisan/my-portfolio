@@ -114,100 +114,100 @@ export default function Project() {
             label="React js"
             variant="outlined"
             sx={{
-              color: "#B5B5B5",
+              color: "#829795",
               borderRadius: "2px",
               border: "1px solid #B5B5B5",
-              fontWeight: 700,
+              fontWeight: 600,
             }}
           />
           <Chip
             label="React js"
             variant="outlined"
             sx={{
-              color: "#B5B5B5",
+              color: "#829795",
               borderRadius: "2px",
               border: "1px solid #B5B5B5",
-              fontWeight: 700,
+              fontWeight: 600,
             }}
           />
           <Chip
             label="React js"
             variant="outlined"
             sx={{
-              color: "#B5B5B5",
+              color: "#829795",
               borderRadius: "2px",
               border: "1px solid #B5B5B5",
-              fontWeight: 700,
+              fontWeight: 600,
             }}
           />
           <Chip
             label="React js"
             variant="outlined"
             sx={{
-              color: "#B5B5B5",
+              color: "#829795",
               borderRadius: "2px",
               border: "1px solid #B5B5B5",
-              fontWeight: 700,
+              fontWeight: 600,
             }}
           />
           <Chip
             label="React js"
             variant="outlined"
             sx={{
-              color: "#B5B5B5",
+              color: "#829795",
               borderRadius: "2px",
               border: "1px solid #B5B5B5",
-              fontWeight: 700,
+              fontWeight: 600,
             }}
           />
           <Chip
             label="React js"
             variant="outlined"
             sx={{
-              color: "#B5B5B5",
+              color: "#829795",
               borderRadius: "2px",
               border: "1px solid #B5B5B5",
-              fontWeight: 700,
+              fontWeight: 600,
             }}
           />
           <Chip
             label="React js"
             variant="outlined"
             sx={{
-              color: "#B5B5B5",
+              color: "#829795",
               borderRadius: "2px",
               border: "1px solid #B5B5B5",
-              fontWeight: 700,
+              fontWeight: 600,
             }}
           />
           <Chip
             label="React js"
             variant="outlined"
             sx={{
-              color: "#B5B5B5",
+              color: "#829795",
               borderRadius: "2px",
               border: "1px solid #B5B5B5",
-              fontWeight: 700,
+              fontWeight: 600,
             }}
           />
           <Chip
             label="React js"
             variant="outlined"
             sx={{
-              color: "#B5B5B5",
+              color: "#829795",
               borderRadius: "2px",
               border: "1px solid #B5B5B5",
-              fontWeight: 700,
+              fontWeight: 600,
             }}
           />
           <Chip
             label="React js"
             variant="outlined"
             sx={{
-              color: "#B5B5B5",
+              color: "#829795",
               borderRadius: "2px",
               border: "1px solid #B5B5B5",
-              fontWeight: 700,
+              fontWeight: 600,
             }}
           />
         </Box>

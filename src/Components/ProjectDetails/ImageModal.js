@@ -15,10 +15,11 @@ export default function ImageModal({ open, handleClose }) {
   };
   const a = [
     "/Assets/Images/Projects/tech-hack/landing-page.jpg",
+    "/Assets/Images/Projects/tech-hack/dev-dashboard-1.jpg",
+    "/Assets/Images/Projects/tech-hack/dev-dashboard-2.jpg",
     "/Assets/Images/Projects/tech-hack/dev-profile.jpg",
-    "/Assets/Images/Projects/tech-hack/dev-profile2.jpg",
-    "/Assets/Images/Projects/tech-hack/dev-profile3.jpg",
-    "/Assets/Images/Projects/tech-hack/dev-profile4.jpg",
+    "/Assets/Images/Projects/tech-hack/dev-assessments.jpg",
+    "/Assets/Images/Projects/tech-hack/com-dashboard.png",
   ];
   return (
     <Modal
