@@ -1,7 +1,6 @@
 import { Box, List, ListItem, ListItemIcon, Typography } from "@mui/material";
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "../../Assets/Logo.png";
 import { menuItem, socialMedia } from "./MenuItem";
 export default function Menu() {
   const linkStyle = {
@@ -32,7 +31,7 @@ export default function Menu() {
     >
       <Box onClick={goToTop}>
         <Link to="/">
-          <img src={Logo} alt="logo" />
+          <img src='Assets/Images/Logo.png' alt="logo" />
         </Link>
       </Box>
       <Box>

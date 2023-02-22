@@ -2,7 +2,7 @@ import { Typography, useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-import TypeScript from "../../Assets/Icon/TypeScript";
+import { TypeScript } from "../../Assets/Icon/Icons";
 import { LightAsync as SyntaxHighlighter } from "react-syntax-highlighter";
 import js from "react-syntax-highlighter/dist/esm/languages/hljs/javascript";
 import tomorrowNightBright from "react-syntax-highlighter/dist/esm/styles/hljs/tomorrow-night-bright";

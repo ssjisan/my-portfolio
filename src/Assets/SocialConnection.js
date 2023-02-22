@@ -1,7 +1,4 @@
-import Github from "./Icon/For About Section/Github";
-import Linkedin from "./Icon/For About Section/Linkedin";
-import Facebook from "./Icon/For About Section/Facebook";
-import Whatsapp from "./Icon/For About Section/Whatsapp";
+import { Github, Linkedin, Facebook, Whatsapp } from "./Icon/Icons";
 const socialConnection = [
   {
     id: 1,
