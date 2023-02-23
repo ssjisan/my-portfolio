@@ -3,12 +3,12 @@ import React from "react";
 
 export default function ImageSection({handleOpen}) {
   const a = [
-    "/Assets/Images/Projects/tech-hack/landing-page.svg",
-    "/Assets/Images/Projects/tech-hack/profile.svg",
     "/Assets/Images/Projects/tech-hack/landing-page.jpg",
-    "/Assets/Images/Projects/tech-hack/profile.svg",
-    "/Assets/Images/Projects/tech-hack/landing-page.jpg",
-    "/Assets/Images/Projects/tech-hack/profile.svg",
+    "/Assets/Images/Projects/tech-hack/dev-dashboard-1.jpg",
+    "/Assets/Images/Projects/tech-hack/dev-dashboard-2.jpg",
+    "/Assets/Images/Projects/tech-hack/dev-profile.jpg",
+    "/Assets/Images/Projects/tech-hack/dev-assessments.jpg",
+    "/Assets/Images/Projects/tech-hack/com-dashboard.jpg",
   ];
 
   return (
@@ -114,10 +114,10 @@ export default function ImageSection({handleOpen}) {
                     width: "100%",
                     height: "170px",
                     objectFit: "cover",
-                    filter: "blur(4px)",
+                    filter: a.length>5 && "blur(4px)",
                   }}
                 />
-                <Typography
+                {a.length>5 && <Typography
                   sx={{
                     position: "absolute",
                     top: "60px",
@@ -127,7 +127,7 @@ export default function ImageSection({handleOpen}) {
                   }}
                 >
                   +{a.length - 4}
-                </Typography>
+                </Typography>}
               </Box>
             </Grid>
           </Grid>

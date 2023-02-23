@@ -57,13 +57,15 @@ export default function ProjectCard() {
                 <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
                   {data.tech.map((data, i) => (
                     <Chip
-                      label={data}
-                      sx={{
-                        backgroundColor: "#fff1f1",
-                        color: "#ff3535",
-                        fontWeight: 700,
-                      }}
-                    />
+                    label={data}
+                    variant="outlined"
+                    sx={{
+                      color: "#829795",
+                      borderRadius: "2px",
+                      border: "1px solid #B5B5B5",
+                      fontWeight: 600,
+                    }}
+                  />
                   ))}
                 </Box>
               </Box>
