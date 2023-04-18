@@ -13,6 +13,7 @@
       "Express.js",
       "Mongodb"
     ],
+    "thumbnails":"/Assets/Images/Projects/thumbnails/Developer Hiring Platform.jpg",
     "image": "/Assets/Images/Projects/tech-hack/landing-page.jpg",
     "github": "",
     "live": "https://techhack-ca.herokuapp.com/"
@@ -29,6 +30,7 @@
       "Material ui",
       "Lottie"
     ],
+    "thumbnails":"/Assets/Images/Projects/thumbnails/Inventesy.png",
     "image": "https://i.ibb.co/R0HhRtJ/innovation-venture.png",
     "github": "https://github.com/ssjisan/innovation-venture",
     "live": ""
@@ -45,37 +47,43 @@
       "React Router",
       "Context-api"
     ],
+    "thumbnails":"/Assets/Images/Projects/thumbnails/Marriage Matrimony Site.jpg",
     "image": "https://i.ibb.co/P6YGsp5/personality-test.png",
     "github": "https://github.com/ssjisan/personality-test",
     "live": ""
   },
   {
     "id": 4,
-    "title": "Weather-App",
-    "shortDescription": "A simple weather forecast website for searching weather updates based on city name",
-    "detailsDescription": "A simple weather forecast website for searching weather updates based on city name. The background image will change by demanding weather status. Showing results with temperature and weather status.",
+    "title": "Actuality-The Pshychological Test",
+    "shortDescription": "A platform for software company, where they can find developer",
+    "detailsDescription": "Running Project for my current company.",
     "tech": [
-      "JavaScript",
-      "Weather-api",
-      "HTML",
-      "CSS"
+      "React.js",
+      "Material ui",
+      "React-Hook",
+      "React Router",
+      "Context-api"
     ],
-    "image": "https://i.ibb.co/JHgY4kZ/weather-app.png",
-    "github": "https://github.com/ssjisan/weather-app",
-    "live": "https://ssjisan.github.io/weather-app/"
+    "thumbnails":"/Assets/Images/Projects/thumbnails/fact.jpg",
+    "image": "https://i.ibb.co/P6YGsp5/personality-test.png",
+    "github": "https://github.com/ssjisan/personality-test",
+    "live": ""
   },
   {
     "id": 5,
-    "title": "Guess the number",
-    "shortDescription": "Guess the Number is basically an number guessing game.",
-    "detailsDescription": "Guess the Number is basically an number guessing game. You will guess a number and give it to the box and machine will match it. If a guess is wrong it will continue and show the wrong setp. But when it was right, the machine will notify you",
+    "title": "Actuality-The Pshychological Test",
+    "shortDescription": "A platform for software company, where they can find developer",
+    "detailsDescription": "Running Project for my current company.",
     "tech": [
-      "JavaScript",
-      "HTML",
-      "Css"
+      "React.js",
+      "Material ui",
+      "React-Hook",
+      "React Router",
+      "Context-api"
     ],
-    "image": "https://i.ibb.co/rZGwV4m/guess-game.png",
-    "github": "https://github.com/ssjisan/Guess-The-Number",
-    "live": "https://ssjisan.github.io/Guess-The-Number/"
+    "thumbnails":"/Assets/Images/Projects/thumbnails/Resume Builder.jpg",
+    "image": "https://i.ibb.co/P6YGsp5/personality-test.png",
+    "github": "https://github.com/ssjisan/personality-test",
+    "live": ""
   }
 ]

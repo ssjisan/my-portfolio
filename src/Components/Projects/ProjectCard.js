@@ -1,4 +1,4 @@
-import { Grid, Typography, Chip, Box, useMediaQuery } from "@mui/material";
+import { Grid, Box, useMediaQuery } from "@mui/material";
 import React, { useState } from "react";
 import projectData from "../../Assets/projects.json";
 
@@ -24,11 +24,11 @@ export default function ProjectCard() {
                   height: forBelow416 ? "220px" : "272px",
                   borderRadius: "12px",
                   overflow: "hidden",
-                  border:"1px solid #EDEDED"
+                  border: "1px solid #EDEDED",
                 }}
               >
                 <img
-                  src={data.image}
+                  src={data.thumbnails}
                   alt="images"
                   style={{
                     width: "100%",
@@ -36,38 +36,6 @@ export default function ProjectCard() {
                     objectFit: "cover",
                   }}
                 />
-              </Box>
-              <Box
-                sx={{
-                  mt: 1,
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: forBelow416 ? 0.5 : 2,
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontSize: forBelow416 ? "14px" : "16px",
-                    fontWeight: 700,
-                    color: "#111827",
-                  }}
-                >
-                  {data.title}
-                </Typography>
-                <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
-                  {data.tech.map((data, i) => (
-                    <Chip
-                    label={data}
-                    variant="outlined"
-                    sx={{
-                      color: "#829795",
-                      borderRadius: "2px",
-                      border: "1px solid #B5B5B5",
-                      fontWeight: 600,
-                    }}
-                  />
-                  ))}
-                </Box>
               </Box>
             </Box>
           </Box>
