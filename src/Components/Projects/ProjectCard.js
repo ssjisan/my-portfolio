@@ -14,17 +14,15 @@ export default function ProjectCard() {
   };
 
   return (
-    <Grid container spacing={5}>
+    <Grid container spacing={forBelow416?2:5}>
       {project.map((data) => (
-        <Grid item lg={4} md={6} sm={6} key={data.id}>
-          <Box sx={{ height: "auto", overflow: "auto" }}>
+        <Grid item lg={4} md={6} sm={6} xs={12} key={data.id}>
+          <Box>
             <Box onClick={goToTop}>
               <Box
                 sx={{
-                  height: forBelow416 ? "220px" : "272px",
-                  borderRadius: "12px",
-                  overflow: "hidden",
-                  border: "1px solid #EDEDED",
+                  width: "100%",
+                  height: forBelow416 ? "220px" : "272px",border: "1px solid #ededed", borderRadius: "12px" 
                 }}
               >
                 <img
@@ -32,7 +30,7 @@ export default function ProjectCard() {
                   alt="images"
                   style={{
                     width: "100%",
-                    height: forBelow416 ? "220px" : "272px",
+                    height: forBelow416 ? "220px" : "272px",borderRadius: "12px" ,
                     objectFit: "cover",
                   }}
                 />
