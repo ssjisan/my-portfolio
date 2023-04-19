@@ -109,7 +109,7 @@ export default function JobDetailsCard() {
               </Box>
             </Box>
             {i !== experience.length - 1 && (
-              <Divider sx={{ width: "100%", mt: 4, mb: 4 }} />
+              <Divider sx={{ width: "100%", mt: 4, mb: 4, borderStyle:"dashed" }} />
             )}
           </Box>
         );

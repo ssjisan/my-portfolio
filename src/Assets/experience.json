@@ -7,7 +7,7 @@
     "start": "February,2022",
     "end": "present",
     "location": "Dhaka,Bangladesh",
-    "description": "I design intuitive user experiences and develop high-quality web applications as a UI/UX Designer and Developer. I translate user research into actionable data, design wireframes and mockups, and collaborate with product and project managers and front-end developers. I have experience building SaaS products, saleable UI templates, and in-house websites using React, JavaScript, HTML, and CSS.",
+    "description": "BYSL Global Technology Group is a next-generation technology conglomerate.The group operates as an integrated business ecosystem with investments in multiple brands, industries, markets, and supply chains. A fast-growth organization built on a forward-thinking culture of learning, teamwork, and integrity, embracing change and fueling innovation.",
     "responsibilities": [
       "Translate user behavior and research into actionable data",
       "Make ideas, wireframes, and mockups that lead to intuitive client encounters",
@@ -21,14 +21,14 @@
     "skills": []
   },
   {
-    "id": 1,
+    "id": 2,
     "companyName": "Tech Hack Limited",
     "companyLogo": "Assets/Images/Company/techhack.png",
     "position": "Front-end Developer",
     "start": "September,2021",
     "end": "February,2022",
     "location": "Dhaka,Bangladesh",
-    "description": "As a Front end Developer, I was responsible for designing and developing a developer hiring platform. My job included understanding the user experience, prototyping the flow with Figma, planning and implementing the project flow, and converting the UI using React.js and Material UI. I also created reusable components, ensured responsiveness for every screen, integrated Rest API, and collaborated with the backend development team.",
+    "description": "Techhack is a Canadian startup. It's a developer hiring platform. Initially, there is a plan that Canadian companies can hire developers from Bangladesh, but later that plan-track change to launch it on a larger scale. Various assessments are arranged for the developers. After completing the assessment, the recruiter will get an idea about the skills of a developer. I was appointed as a front end developer in this company.",
     "responsibilities": [
       "Understanding the user experience",
       "Prototyping the flow with figma",
