@@ -1,6 +1,5 @@
 import React from "react";
 import { Typography, useMediaQuery, Box } from "@mui/material";
-import TypeAnimation from "./TypeAnimations";
 import CodeBlock from "./CodeBlock";
 export default function HomeCard() {
   const forBelow416 = useMediaQuery("(max-width:416px)");
@@ -29,29 +28,44 @@ export default function HomeCard() {
       <Typography
         sx={{
           fontSize: forBelow416
+            ? "16px"
+            : forBelow667
+            ? "18px"
+            : forBelow767
+            ? "20px"
+            : forBelow999
+            ? "24px"
+            : "24px",
+          fontWeight: 400,
+          textAlign: "center",
+        }}
+      >
+        Sadman Sakib Jisan
+      </Typography><Typography
+        sx={{
+          fontSize: forBelow416
             ? "24px"
             : forBelow667
             ? "36px"
             : forBelow767
             ? "48px"
-            : forBelow999
-            ? "64px"
-            : "64px",
+            : "48px",
           fontWeight: 700,
           textAlign: "center",
         }}
       >
-        Hello I'm <br /> Sadman Sakib Jisan
-      </Typography>
+        UI/UX Engineer at <a href="https://www.aarong.com/" target="_blank" rel="noreferrer"><span style={{textDecoration:"underline", color:"#111827"}}>Aarong</span></a>.
+        <br/>Previously UI/UX Developer
+        at <a href="https://www.byslglobal.com/" target="_blank" rel="noreferrer"><span style={{textDecoration:"underline", color:"#111827"}}>BYSL</span></a>.
+      </Typography> 
       <Typography
         sx={{
           fontSize: forBelow667 ? "14px" : "20px",
           opacity: 0.6,
           fontWeight: 400,
-          pb:4
+          pb: 4,
         }}
       >
-        <TypeAnimation />
       </Typography>
       <CodeBlock />
     </Box>

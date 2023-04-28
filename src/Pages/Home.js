@@ -15,9 +15,6 @@ export default function Home() {
       <Box>
         {!forBelow900 && (
           <Grid container>
-            <Grid item md={11} style={{ padding: "5%" }}>
-              <HomeCard />
-            </Grid>
             <Grid
               item
               md={1}
@@ -29,6 +26,9 @@ export default function Home() {
               }}
             >
               <Menu />
+            </Grid>
+            <Grid item md={11} style={{ padding: "5%" }}>
+              <HomeCard />
             </Grid>
           </Grid>
         )}

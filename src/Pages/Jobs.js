@@ -8,27 +8,12 @@ export default function Jobs() {
   const forBelow416 = useMediaQuery("(max-width:416px)");
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <Box>
       {!fontForMobile && (
         <Grid container>
-          <Grid
-            item
-            md={11}
-            className="scroll"
-            sx={{
-              p: 5,
-              maxHeight: "100vh",
-              overflowY: "scroll",
-              display:"flex",
-              justifyContent:"center",
-              alignItems:"flex-start"
-            }}
-          >
-            <JobDetailsCard />
-          </Grid>
           <Grid
             item
             md={1}
@@ -41,10 +26,31 @@ export default function Jobs() {
           >
             <Menu />
           </Grid>
+          <Grid
+            item
+            md={11}
+            className="scroll"
+            sx={{
+              p: 5,
+              maxHeight: "100vh",
+              overflowY: "scroll",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "flex-start",
+            }}
+          >
+            <JobDetailsCard />
+          </Grid>
         </Grid>
       )}
       {fontForMobile && (
-        <Box sx={{ padding: forBelow416? "20px 16px 80px 16px" : "20px 32px 80px 32px" }}>
+        <Box
+          sx={{
+            padding: forBelow416
+              ? "20px 16px 80px 16px"
+              : "20px 32px 80px 32px",
+          }}
+        >
           <JobDetailsCard />
           <MobileMenu />
         </Box>

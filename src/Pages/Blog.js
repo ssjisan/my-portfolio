@@ -9,13 +9,25 @@ export default function Blog() {
   const forBelow416 = useMediaQuery("(max-width:416px)");
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <Box>
       <Box>
         {!fontForMobile && (
           <Grid container>
+            <Grid
+              item
+              md={1}
+              sx={{
+                height: "100vh",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Menu />
+            </Grid>
             <Grid
               item
               md={11}
@@ -30,18 +42,6 @@ export default function Blog() {
               }}
             >
               <BlogCard />
-            </Grid>
-            <Grid
-              item
-              md={1}
-              sx={{
-                height: "100vh",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Menu />
             </Grid>
           </Grid>
         )}

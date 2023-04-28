@@ -18,18 +18,6 @@ export default function Projects() {
           <Grid container>
             <Grid
               item
-              md={11}
-              className="scroll"
-              sx={{
-                padding: "5%",
-                maxHeight: "100vh",
-                overflowY: "scroll",
-              }}
-            >
-              <ProjectCard />
-            </Grid>
-            <Grid
-              item
               md={1}
               sx={{
                 height: "100vh",
@@ -40,6 +28,18 @@ export default function Projects() {
             >
               <Menu />
             </Grid>
+              <Grid
+                item
+                md={11}
+                className="scroll"
+                sx={{
+                  padding: "5%",
+                  maxHeight: "100vh",
+                  overflowY: "scroll",
+                }}
+              >
+                <ProjectCard />
+              </Grid>
           </Grid>
         )}
         {fontForMobile && (

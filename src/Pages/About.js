@@ -9,25 +9,13 @@ export default function About() {
   const forBelow416 = useMediaQuery("(max-width:416px)");
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
-  }
+  };
 
   return (
     <Box>
       <Box>
         {!fontForMobile && (
           <Grid container>
-            <Grid
-              item
-              md={11}
-              sx={{
-                p: forBelow999 ? 2 : 5,
-                maxHeight: "100vh",
-                overflowY: "scroll",
-              }}
-              className="scroll"
-            >
-              <AboutMe />
-            </Grid>
             <Grid
               item
               md={1}
@@ -39,6 +27,18 @@ export default function About() {
               }}
             >
               <Menu />
+            </Grid>
+            <Grid
+              item
+              md={11}
+              sx={{
+                p: forBelow999 ? 2 : 5,
+                maxHeight: "100vh",
+                overflowY: "scroll",
+              }}
+              className="scroll"
+            >
+              <AboutMe />
             </Grid>
           </Grid>
         )}
