@@ -1,4 +1,4 @@
-import { Box, Chip, Grid, Typography, useMediaQuery } from "@mui/material";
+import { Box, Grid, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import blog from "../../Assets/blogData.json";
@@ -24,7 +24,7 @@ export default function BlogCard() {
                 <Box
                   sx={{
                     width: "100%",
-                    height: forBelow416 ? "160px" : "180px",
+                    height: forBelow416 ? "180px" : "200px",
                     borderRadius: "12px",
                     overflow: "hidden",
                   }}
@@ -34,7 +34,7 @@ export default function BlogCard() {
                     alt="images"
                     style={{
                       width: "100%",
-                      height: forBelow416 ? "160px" : "180px",
+                      height: forBelow416 ? "180px" : "200px",
                       objectFit: "cover",
                     }}
                   />
@@ -47,16 +47,6 @@ export default function BlogCard() {
                     gap: forBelow416 ? 0.5 : 2,
                   }}
                 >
-                  <Box sx={{ display: "flex", gap: 1 }}>
-                    <Chip
-                      label={data.tags}
-                      sx={{
-                        backgroundColor: "#fff1f1",
-                        color: "#ff3535",
-                        fontWeight: 700,
-                      }}
-                    />{" "}
-                  </Box>
                   <Typography
                     sx={{
                       fontSize: forBelow416 ? "14px" : "16px",
