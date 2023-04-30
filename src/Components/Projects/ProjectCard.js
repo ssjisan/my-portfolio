@@ -14,9 +14,9 @@ export default function ProjectCard() {
   };
 
   return (
-    <Grid container spacing={forBelow416 ? 2 : 5}>
+    <Grid container spacing={forBelow416 ? 2 : 5} >
       {project.map((data, i) => (
-        <Grid item lg={10} md={10} sm={12} xs={12} key={data.id}>
+        <Grid item lg={10} md={10} sm={12} xs={12} key={data.id} sx={{display:"flex", flexDirection:"column", alignItems:"center"}}>
           <Box sx={{ backgroundColor: data.bg , borderRadius:"16px"}}>
             <Box onClick={goToTop}>
               <Grid container>
@@ -57,7 +57,7 @@ export default function ProjectCard() {
                               fontWeight: 400,
                               mb: 1,
                               color: "#FFF",
-                              opacity: "24%",
+                              opacity: "64%",
                             }}
                           >
                             Completetion Time
@@ -79,7 +79,7 @@ export default function ProjectCard() {
                               fontWeight: 400,
                               mb: 1,
                               color: "#FFF",
-                              opacity: "24%",
+                              opacity: "64%",
                             }}
                           >
                             Total Team Member
@@ -101,7 +101,7 @@ export default function ProjectCard() {
                               fontWeight: 400,
                               mb: 1,
                               color: "#FFF",
-                              opacity: "24%",
+                              opacity: "64%",
                             }}
                           >
                             My Role
