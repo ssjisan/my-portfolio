@@ -44,7 +44,7 @@ export default function JobDetailsCard() {
               )}
             </Box>
             <Grid container spacing={4}>
-              <Grid item sx={12} md={3}>
+              <Grid item xs={12} md={3}>
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 0 }}>
                   <Typography sx={{ fontSize: "40px", fontWeight: 600 }}>
                     {data.position}
@@ -54,7 +54,7 @@ export default function JobDetailsCard() {
                   </Typography>
                 </Box>
               </Grid>
-              <Grid item sx={12} md={6}>
+              <Grid item xs={12} md={6}>
                 <Typography sx={{ color: "#0009", lineHeight: 2 , fontWeight:400, fontSize:"16px"}}>
                   {data.description}
                 </Typography>

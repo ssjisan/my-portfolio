@@ -13,6 +13,7 @@
       "Express.js",
       "Mongodb"
     ],
+    "bg":"#00756A",
     "thumbnails":"/Assets/Images/Projects/thumbnails/Developer Hiring Platform.jpg",
     "image": "/Assets/Images/Projects/tech-hack/landing-page.jpg",
     "github": "",
@@ -30,6 +31,7 @@
       "Material ui",
       "Lottie"
     ],
+    "bg":"#EE2E5F",
     "thumbnails":"/Assets/Images/Projects/thumbnails/Inventesy.png",
     "image": "https://i.ibb.co/R0HhRtJ/innovation-venture.png",
     "github": "https://github.com/ssjisan/innovation-venture",
@@ -47,6 +49,7 @@
       "React Router",
       "Context-api"
     ],
+    "bg":"#F1458D",
     "thumbnails":"/Assets/Images/Projects/thumbnails/Marriage Matrimony Site.jpg",
     "image": "https://i.ibb.co/P6YGsp5/personality-test.png",
     "github": "https://github.com/ssjisan/personality-test",
@@ -64,6 +67,7 @@
       "React Router",
       "Context-api"
     ],
+    "bg":"#4278EB",
     "thumbnails":"/Assets/Images/Projects/thumbnails/fact.jpg",
     "image": "https://i.ibb.co/P6YGsp5/personality-test.png",
     "github": "https://github.com/ssjisan/personality-test",
@@ -81,6 +85,7 @@
       "React Router",
       "Context-api"
     ],
+    "bg":"#2964E1",
     "thumbnails":"/Assets/Images/Projects/thumbnails/Resume Builder.jpg",
     "image": "https://i.ibb.co/P6YGsp5/personality-test.png",
     "github": "https://github.com/ssjisan/personality-test",
