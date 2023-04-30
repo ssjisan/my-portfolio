@@ -27,7 +27,11 @@ export default function DetailsCard() {
             I'm Frontend Developer & UI/UX Designer.
           </Typography>
           <Typography
-            sx={{ fontSize: forBelow999 ? "16px" : "20px", fontWeight: 350 }}
+            sx={{
+              color: "#0009",
+              fontSize: forBelow999 ? "14px" : "18px",
+              fontWeight: 400,
+            }}
           >
             Hey, I’m Sadman Sakib Jisan - hope you doing well. Now that you are
             here, why not know a little about me?
@@ -53,8 +57,9 @@ export default function DetailsCard() {
               </Typography>
               <Typography
                 sx={{
+                  color: "#0009",
                   fontSize: forBelow999 ? "14px" : "18px",
-                  fontWeight: 350,
+                  fontWeight: 400,
                   paddingTop: "16px",
                 }}
               >

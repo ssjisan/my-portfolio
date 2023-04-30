@@ -55,7 +55,7 @@ export default function JobDetailsCard() {
                 </Box>
               </Grid>
               <Grid item sx={12} md={6}>
-                <Typography sx={{ color: "#555555", lineHeight: 2 , fontWeight:400}}>
+                <Typography sx={{ color: "#0009", lineHeight: 2 , fontWeight:400, fontSize:"16px"}}>
                   {data.description}
                 </Typography>
               </Grid>
