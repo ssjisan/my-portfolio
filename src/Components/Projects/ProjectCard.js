@@ -14,13 +14,35 @@ export default function ProjectCard() {
   };
 
   return (
-    <Grid container spacing={forBelow416 ? 2 : 5} >
+    <Grid container spacing={forBelow416 ? 2 : 5}>
       {project.map((data, i) => (
-        <Grid item lg={10} md={10} sm={12} xs={12} key={data.id} sx={{display:"flex", flexDirection:"column", alignItems:"center"}}>
-          <Box sx={{ backgroundColor: data.bg , borderRadius:"16px"}}>
+        <Grid
+          item
+          lg={10}
+          md={10}
+          sm={12}
+          xs={12}
+          key={data.id}
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <Box
+            sx={{
+              backgroundColor: data.bg,
+              borderRadius: "16px",
+              overflow: "hidden",
+            }}
+          >
             <Box onClick={goToTop}>
               <Grid container>
-                <Grid item md={6} sx={{display:"flex",alignItems: "center"}}>
+                <Grid
+                  item
+                  md={6}
+                  sx={{ display: "flex", alignItems: "center" }}
+                >
                   <Box
                     sx={{
                       p: 4,
@@ -39,12 +61,15 @@ export default function ProjectCard() {
                     >
                       {i + 1}/
                     </Typography>
-                    <Box sx={{display:"flex", flexDirection:"column", gap:2}}>
+                    <Box
+                      sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+                    >
                       <Typography
                         sx={{
                           fontSize: "32px",
                           fontWeight: 600,
                           color: "#fff",
+                          width: "320px",
                         }}
                       >
                         {data.title}
@@ -69,7 +94,7 @@ export default function ProjectCard() {
                               color: "#FFF",
                             }}
                           >
-                            6 months
+                            {data.completetion}
                           </Typography>
                         </Box>
                         <Box>
@@ -91,7 +116,7 @@ export default function ProjectCard() {
                               color: "#FFF",
                             }}
                           >
-                            12
+                            {data.totalMember}
                           </Typography>
                         </Box>
                         <Box>
@@ -113,7 +138,7 @@ export default function ProjectCard() {
                               color: "#FFF",
                             }}
                           >
-                            Front End Developer
+                            {data.role}
                           </Typography>
                         </Box>
                       </Box>
@@ -126,11 +151,15 @@ export default function ProjectCard() {
                   </Box>
                 </Grid>
                 <Grid item md={6}>
-                  <Box sx={{ height: "400px"}}>
+                  <Box sx={{ height: "400px" }}>
                     <img
                       src={data.thumbnails}
                       alt="1"
-                      style={{ height: "400px", objectFit: "cover" }}
+                      style={{
+                        height: "400px",
+                        objectFit: "cover",
+                        width: "100%",
+                      }}
                     />
                   </Box>
                 </Grid>

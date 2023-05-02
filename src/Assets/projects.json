@@ -13,33 +13,33 @@
       "Express.js",
       "Mongodb"
     ],
-    "bg":"#00756A",
-    "thumbnails":"/Assets/Images/Projects/thumbnails/Developer Hiring Platform.jpg",
+    "bg": "#00756A",
+    "thumbnails": "/Assets/Images/Projects/thumbnails/Developer Hiring Platform.png",
     "image": "/Assets/Images/Projects/tech-hack/landing-page.jpg",
     "github": "",
+    "completetion": "6 months",
+    "totalMember": "12",
+    "role": "Front End Developer",
     "live": "https://techhack-ca.herokuapp.com/"
   },
   {
     "id": 2,
-    "title": "Innovation Venture",
+    "title": "Inventory Management",
     "shortDescription": "A platform for a software company, where they can offer their services, and give an update to the client",
     "detailsDescription": "This is a complete full stack dummy project. Is platform can be used for any software fire. Firm can show their prime services, current clients, services price. A user who want to build any tech product like website, e-commerce, mobile app or similar like that they can give an order to the firm. An admin pnale will be added for company staff. By this dashboard they can give an update to the client, receive the order e.t.c",
-    "tech": [
-      "React.js",
-      "React-Hook",
-      "React router",
-      "Material ui",
-      "Lottie"
-    ],
-    "bg":"#EE2E5F",
-    "thumbnails":"/Assets/Images/Projects/thumbnails/Inventesy.png",
+    "tech": ["React.js", "React-Hook", "React router", "Material ui", "Lottie"],
+    "bg": "#EE2E5F",
+    "thumbnails": "/Assets/Images/Projects/thumbnails/Inventesy.png",
     "image": "https://i.ibb.co/R0HhRtJ/innovation-venture.png",
     "github": "https://github.com/ssjisan/innovation-venture",
+    "completetion": "12 months",
+    "totalMember": "Solo",
+    "role": "Design & Development",
     "live": ""
   },
   {
     "id": 3,
-    "title": "Actuality-The Pshychological Test",
+    "title": "Marriage Matrimony Site",
     "shortDescription": "A platform for software company, where they can find developer",
     "detailsDescription": "Running Project for my current company.",
     "tech": [
@@ -49,10 +49,13 @@
       "React Router",
       "Context-api"
     ],
-    "bg":"#F1458D",
-    "thumbnails":"/Assets/Images/Projects/thumbnails/Marriage Matrimony Site.jpg",
+    "bg": "#F1458D",
+    "thumbnails": "/Assets/Images/Projects/thumbnails/Marriage Matrimony Site.png",
     "image": "https://i.ibb.co/P6YGsp5/personality-test.png",
     "github": "https://github.com/ssjisan/personality-test",
+    "completetion": "2 months",
+    "totalMember": "Solo",
+    "role": "Design & Development",
     "live": ""
   },
   {
@@ -67,15 +70,18 @@
       "React Router",
       "Context-api"
     ],
-    "bg":"#4278EB",
-    "thumbnails":"/Assets/Images/Projects/thumbnails/fact.jpg",
+    "bg": "#1E2128",
+    "thumbnails": "/Assets/Images/Projects/thumbnails/fact.png",
     "image": "https://i.ibb.co/P6YGsp5/personality-test.png",
     "github": "https://github.com/ssjisan/personality-test",
+    "completetion": "1 months",
+    "totalMember": "Solo",
+    "role": "Design & Development",
     "live": ""
   },
   {
     "id": 5,
-    "title": "Actuality-The Pshychological Test",
+    "title": "Professional Resume / CV Builder",
     "shortDescription": "A platform for software company, where they can find developer",
     "detailsDescription": "Running Project for my current company.",
     "tech": [
@@ -85,10 +91,13 @@
       "React Router",
       "Context-api"
     ],
-    "bg":"#2964E1",
-    "thumbnails":"/Assets/Images/Projects/thumbnails/Resume Builder.jpg",
+    "bg": "#2964E1",
+    "thumbnails": "/Assets/Images/Projects/thumbnails/Resume Builder.png",
     "image": "https://i.ibb.co/P6YGsp5/personality-test.png",
     "github": "https://github.com/ssjisan/personality-test",
+    "completetion": "6 months",
+    "totalMember": "Solo",
+    "role": "Full Stack Development",
     "live": ""
   }
 ]
