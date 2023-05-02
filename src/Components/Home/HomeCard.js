@@ -41,7 +41,8 @@ export default function HomeCard() {
         }}
       >
         Sadman Sakib Jisan
-      </Typography><Typography
+      </Typography>
+      <Typography
         sx={{
           fontSize: forBelow416
             ? "24px"
@@ -54,10 +55,26 @@ export default function HomeCard() {
           textAlign: "center",
         }}
       >
-        UI/UX Engineer at <a href="https://www.aarong.com/" target="_blank" rel="noreferrer"><span style={{textDecoration:"underline", color:"#111827"}}>Aarong</span></a>.
-        <br/>Previously UI/UX Developer
-        at <a href="https://www.byslglobal.com/" target="_blank" rel="noreferrer"><span style={{textDecoration:"underline", color:"#111827"}}>BYSL</span></a>.
-      </Typography> 
+        UI/UX Developer at{" "}
+        <a href="https://www.byslglobal.com/" target="_blank" rel="noreferrer">
+          <span style={{ textDecoration: "underline", color: "#111827" }}>
+            BYSL
+          </span>
+        </a>
+        .
+        <br />
+        Previously Front-end Developer at{" "}
+        <a
+          href="https://www.linkedin.com/company/techhack/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span style={{ textDecoration: "underline", color: "#111827" }}>
+            TechHack
+          </span>
+        </a>
+        .
+      </Typography>
       <Typography
         sx={{
           fontSize: forBelow667 ? "14px" : "20px",
@@ -65,8 +82,7 @@ export default function HomeCard() {
           fontWeight: 400,
           pb: 4,
         }}
-      >
-      </Typography>
+      ></Typography>
       <CodeBlock />
     </Box>
   );
