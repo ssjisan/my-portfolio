@@ -53,6 +53,7 @@ export default function HomeCard() {
             : "48px",
           fontWeight: 700,
           textAlign: "center",
+          mb:"48px"
         }}
       >
         UI/UX Developer at{" "}
@@ -75,14 +76,6 @@ export default function HomeCard() {
         </a>
         .
       </Typography>
-      <Typography
-        sx={{
-          fontSize: forBelow667 ? "14px" : "20px",
-          opacity: 0.6,
-          fontWeight: 400,
-          pb: 4,
-        }}
-      ></Typography>
       <CodeBlock />
     </Box>
   );
