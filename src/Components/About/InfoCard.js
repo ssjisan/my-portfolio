@@ -100,17 +100,19 @@ export default function InfoCard() {
         ))}
       </Box>
       <Divider sx={{ width: "100%" }} />
-      <Button
-        variant="contained"
-        sx={{
-          width: "150px",
-          background:
-            "linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.8) 100%)",
-        }}
-      >
-        <Download />
-        &nbsp;&nbsp; Resume
-      </Button>
+      <a href="Assets/sadman_sakib_resume.pdf" download="sadman_sakib_resume">
+        <Button
+          variant="contained"
+          sx={{
+            width: "150px",
+            background:
+              "linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.8) 100%)",
+          }}
+        >
+          <Download />
+          &nbsp;&nbsp; Resume
+        </Button>
+      </a>
     </Box>
   );
 }
