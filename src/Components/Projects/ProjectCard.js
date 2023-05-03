@@ -6,6 +6,8 @@ export default function ProjectCard() {
   // eslint-disable-next-line
   const [project, setProject] = useState(projectData);
   const forBelow416 = useMediaQuery("(max-width:416px)");
+  const forBelow467 = useMediaQuery("(max-width:467px)");
+  const forBelow900 = useMediaQuery("(max-width:900px)");
   const goToTop = () => {
     window.scrollTo({
       top: 0,
@@ -14,12 +16,16 @@ export default function ProjectCard() {
   };
 
   return (
-    <Grid container spacing={forBelow416 ? 2 : 5}>
+    <Grid
+      container
+      spacing={forBelow416 ? 2 : 5}
+      sx={{ display: "flex", justifyContent: "center" }}
+    >
       {project.map((data, i) => (
         <Grid
           item
           lg={10}
-          md={10}
+          md={12}
           sm={12}
           xs={12}
           key={data.id}
@@ -34,13 +40,16 @@ export default function ProjectCard() {
               backgroundColor: data.bg,
               borderRadius: "16px",
               overflow: "hidden",
+              width:"100%"
             }}
           >
             <Box onClick={goToTop}>
               <Grid container>
                 <Grid
                   item
+                  xs={12}
                   md={6}
+                  lg={6}
                   sx={{ display: "flex", alignItems: "center" }}
                 >
                   <Box
@@ -53,7 +62,7 @@ export default function ProjectCard() {
                   >
                     <Typography
                       sx={{
-                        fontSize: "32px",
+                        fontSize: forBelow900 ? "24px" : "32px",
                         fontWeight: 600,
                         opacity: "30%",
                         color: "#fff",
@@ -66,10 +75,10 @@ export default function ProjectCard() {
                     >
                       <Typography
                         sx={{
-                          fontSize: "32px",
+                          fontSize: forBelow900 ? "24px" : "32px",
                           fontWeight: 600,
                           color: "#fff",
-                          width: "320px",
+                          width: forBelow467?"100%":"320px",
                         }}
                       >
                         {data.title}
@@ -78,51 +87,29 @@ export default function ProjectCard() {
                         <Box>
                           <Typography
                             sx={{
-                              fontSize: "14px",
+                              fontSize: forBelow900 ? "12px" : "14px",
                               fontWeight: 400,
                               mb: 1,
                               color: "#FFF",
                               opacity: "64%",
                             }}
                           >
-                            Completetion Time
+                            Completion Time
                           </Typography>
                           <Typography
                             sx={{
-                              fontSize: "16px",
+                              fontSize: forBelow900 ? "14px" : "16px",
                               fontWeight: 600,
                               color: "#FFF",
                             }}
                           >
-                            {data.completetion}
+                            {data.timeframe}
                           </Typography>
                         </Box>
                         <Box>
                           <Typography
                             sx={{
-                              fontSize: "14px",
-                              fontWeight: 400,
-                              mb: 1,
-                              color: "#FFF",
-                              opacity: "64%",
-                            }}
-                          >
-                            Total Team Member
-                          </Typography>
-                          <Typography
-                            sx={{
-                              fontSize: "16px",
-                              fontWeight: 600,
-                              color: "#FFF",
-                            }}
-                          >
-                            {data.totalMember}
-                          </Typography>
-                        </Box>
-                        <Box>
-                          <Typography
-                            sx={{
-                              fontSize: "14px",
+                              fontSize: forBelow900 ? "12px" : "14px",
                               fontWeight: 400,
                               mb: 1,
                               color: "#FFF",
@@ -133,7 +120,7 @@ export default function ProjectCard() {
                           </Typography>
                           <Typography
                             sx={{
-                              fontSize: "16px",
+                              fontSize: forBelow900 ? "14px" : "16px",
                               fontWeight: 600,
                               color: "#FFF",
                             }}
@@ -150,19 +137,19 @@ export default function ProjectCard() {
                     </Box>
                   </Box>
                 </Grid>
-                <Grid item md={6}>
-                  <Box sx={{ height: "400px" }}>
-                    <img
-                      src={data.thumbnails}
-                      alt="1"
-                      style={{
-                        height: "400px",
-                        objectFit: "cover",
-                        width: "100%",
-                      }}
-                    />
-                  </Box>
-                </Grid>
+                {!forBelow900 && (
+                  <Grid item lg={6}  md={6}>
+                    <Box sx={{ height: "400px" }}>
+                      <img
+                        src={data.thumbnails}
+                        alt="1"
+                        style={{
+                          height: "400px",
+                        }}
+                      />
+                    </Box>
+                  </Grid>
+                )}
               </Grid>
             </Box>
           </Box>

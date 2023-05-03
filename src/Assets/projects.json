@@ -17,7 +17,7 @@
     "thumbnails": "/Assets/Images/Projects/thumbnails/Developer Hiring Platform.png",
     "image": "/Assets/Images/Projects/tech-hack/landing-page.jpg",
     "github": "",
-    "completetion": "6 months",
+    "timeframe": "6 months",
     "totalMember": "12",
     "role": "Front End Developer",
     "live": "https://techhack-ca.herokuapp.com/"
@@ -32,7 +32,7 @@
     "thumbnails": "/Assets/Images/Projects/thumbnails/Inventesy.png",
     "image": "https://i.ibb.co/R0HhRtJ/innovation-venture.png",
     "github": "https://github.com/ssjisan/innovation-venture",
-    "completetion": "12 months",
+    "timeframe": "12 months",
     "totalMember": "Solo",
     "role": "Design & Development",
     "live": ""
@@ -53,7 +53,7 @@
     "thumbnails": "/Assets/Images/Projects/thumbnails/Marriage Matrimony Site.png",
     "image": "https://i.ibb.co/P6YGsp5/personality-test.png",
     "github": "https://github.com/ssjisan/personality-test",
-    "completetion": "2 months",
+    "timeframe": "2 months",
     "totalMember": "Solo",
     "role": "Design & Development",
     "live": ""
@@ -74,7 +74,7 @@
     "thumbnails": "/Assets/Images/Projects/thumbnails/fact.png",
     "image": "https://i.ibb.co/P6YGsp5/personality-test.png",
     "github": "https://github.com/ssjisan/personality-test",
-    "completetion": "1 months",
+    "timeframe": "1 months",
     "totalMember": "Solo",
     "role": "Design & Development",
     "live": ""
@@ -95,7 +95,7 @@
     "thumbnails": "/Assets/Images/Projects/thumbnails/Resume Builder.png",
     "image": "https://i.ibb.co/P6YGsp5/personality-test.png",
     "github": "https://github.com/ssjisan/personality-test",
-    "completetion": "6 months",
+    "timeframe": "6 months",
     "totalMember": "Solo",
     "role": "Full Stack Development",
     "live": ""
