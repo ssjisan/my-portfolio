@@ -1,11 +1,32 @@
 [
   {
     "id": 1,
+    "companyName": "Brac - Aarong",
+    "companyLogo": "Assets/Images/Company/bysl.png",
+    "position": "UI/UX Engineer",
+    "start": "2023",
+    "end": "present",
+    "location": "Dhaka,Bangladesh",
+    "description": "Aarong is Bangladesh’s most popular lifestyle retail chain. This ethical brand began in 1978 as a humble means to empower rural artisans to rise above poverty. Today, with 25 retail stores across Bangladesh and over 100 fashion and lifestyle product lines, Aarong supports 65,000 artisans with fair terms of trade. Revolutionizing the retail industry with high standards for quality and artistry, this iconic brand blends the traditional with the contemporary in ways that never cease to win consumer appeal both at home and abroad.",
+    "responsibilities": [
+      "Translate user behavior and research into actionable data",
+      "Make ideas, wireframes, and mockups that lead to intuitive client encounters",
+      "Design and create mockups and client ventures for many gadgets including mobile",
+      "Gather and evaluate user requirements in collaboration with product manager / project manager and front-end developers",
+      "Develop UI mockups and prototypes that clearly illustrate how sites function and look like",
+      "Identify and troubleshoot UX problems",
+      "Conduct layout adjustments based on user feedback",
+      "Design, build, and maintain highly reusable React, JavaScript, HTML and CSS code"
+    ],
+    "skills": []
+  },
+  {
+    "id": 2,
     "companyName": "BYSL Global Technology Group",
     "companyLogo": "Assets/Images/Company/bysl.png",
     "position": "UI/UX Developer",
     "start": "2022",
-    "end": "present",
+    "end": "2023",
     "location": "Dhaka,Bangladesh",
     "description": "BYSL Global Technology Group is a next-generation technology conglomerate.The group operates as an integrated business ecosystem with investments in multiple brands, industries, markets, and supply chains. A fast-growth organization built on a forward-thinking culture of learning, teamwork, and integrity, embracing change and fueling innovation.",
     "responsibilities": [
@@ -21,7 +42,7 @@
     "skills": []
   },
   {
-    "id": 2,
+    "id": 3,
     "companyName": "Tech Hack Limited",
     "companyLogo": "Assets/Images/Company/techhack.png",
     "position": "Frontend Developer",
@@ -49,7 +70,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "companyName": "Antaranga Dot Com Ltd.",
     "companyLogo": "Assets/Images/Company/antbd.png",
     "position": "Network Engineer",
@@ -78,7 +99,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "companyName": "Antaranga Dot Com Ltd.",
     "companyLogo": "Assets/Images/Company/antbd.png",
     "position": "Support Engineer",
