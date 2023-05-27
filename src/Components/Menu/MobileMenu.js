@@ -95,7 +95,7 @@ export default function MobileMenu() {
               </ListItem>
             </Link>
           ))}
-          <a
+          {/* <a
             href="Assets/sadman_sakib_resume.pdf"
             download="sadman_sakib_resume"
             target="_blank"
@@ -105,7 +105,7 @@ export default function MobileMenu() {
                sx={{
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "center",
+                justifyContent: "space-around",
                 alignItems: "center",
                 borderRadius: "8px",
                 height: "48px",
@@ -122,7 +122,7 @@ export default function MobileMenu() {
                 <Download />
               </ListItemIcon>
             </ListItem>
-          </a>
+          </a> */}
         </List>
       </Box>
     </Box>
