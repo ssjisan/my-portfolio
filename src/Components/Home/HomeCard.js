@@ -17,7 +17,7 @@ export default function HomeCard() {
         paddingTop: forBelow416
           ? "48px"
           : forBelow667
-          ? "160px"
+          ? "80px"
           : forBelow767
           ? "120px"
           : forBelow900
@@ -46,9 +46,9 @@ export default function HomeCard() {
       <Typography
         sx={{
           fontSize: forBelow416
-            ? "24px"
+            ? "20px"
             : forBelow667
-            ? "36px"
+            ? "24px"
             : forBelow767
             ? "48px"
             : "48px",

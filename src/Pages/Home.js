@@ -27,7 +27,7 @@ export default function Home() {
             >
               <Menu />
             </Grid>
-            <Grid item md={11} style={{ padding: "5%" }}>
+            <Grid item md={11} style={{ padding: "5%" }} >
               <HomeCard />
             </Grid>
           </Grid>

@@ -19,7 +19,7 @@ export default function Menu() {
     <Box
       sx={{
         width: "80px",
-        height: "94vh",
+        height: "90vh",
         background:
           "linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.8) 100%)",
         padding: "20px 00px 20px 00px",
