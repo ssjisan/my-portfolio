@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import { menuItem } from "./MenuItem";
 import { Link, useLocation } from "react-router-dom";
+// eslint-disable-next-line
 import { Download } from "../../Assets/Icon/Icons";
 
 export default function MobileMenu() {
