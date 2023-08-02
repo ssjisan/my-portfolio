@@ -8,25 +8,25 @@ export default function ProjectCard() {
   const forBelow416 = useMediaQuery("(max-width:416px)");
   const forBelow467 = useMediaQuery("(max-width:467px)");
   const forBelow900 = useMediaQuery("(max-width:900px)");
+  const reverseData=[...project].reverse()
   const goToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
-
   return (
     <Grid
       container
       spacing={forBelow416 ? 2 : 5}
       sx={{ display: "flex", justifyContent: "center" }}
     >
-      {project.map((data, i) => (
+      {reverseData.map((data, i) => (
         <Grid
           item
-          lg={10}
-          md={12}
-          sm={12}
+          lg={4}
+          md={6}
+          sm={6}
           xs={12}
           key={data.id}
           sx={{
@@ -37,120 +37,28 @@ export default function ProjectCard() {
         >
           <Box
             sx={{
-              backgroundColor: data.bg,
-              borderRadius: "16px",
+              backgroundColor: "rgba(186,186,186,0.16)",
+              borderRadius: "8px",
               overflow: "hidden",
-              width:"100%"
+              p:"16px",
+              maxWidth:"430px",
+              width:"100%",
+              display:"flex",
+              flexDirection:"column",
+              gap:"24px",
+              backdropFilter:"blur(8px)"
             }}
+            onClick={goToTop}
           >
-            <Box onClick={goToTop}>
-              <Grid container>
-                <Grid
-                  item
-                  xs={12}
-                  md={6}
-                  lg={6}
-                  sx={{ display: "flex", alignItems: "center" }}
-                >
-                  <Box
-                    sx={{
-                      p: 4,
-                      display: "flex",
-                      flexDirection: "column",
-                      gap: 4,
-                    }}
-                  >
-                    <Typography
-                      sx={{
-                        fontSize: forBelow900 ? "24px" : "32px",
-                        fontWeight: 600,
-                        opacity: "30%",
-                        color: "#fff",
-                      }}
-                    >
-                      {i + 1}/
-                    </Typography>
-                    <Box
-                      sx={{ display: "flex", flexDirection: "column", gap: 2 }}
-                    >
-                      <Typography
-                        sx={{
-                          fontSize: forBelow900 ? "24px" : "32px",
-                          fontWeight: 600,
-                          color: "#fff",
-                          width: forBelow467?"100%":"320px",
-                        }}
-                      >
-                        {data.title}
-                      </Typography>
-                      <Box sx={{ display: "flex", gap: 4 }}>
-                        <Box>
-                          <Typography
-                            sx={{
-                              fontSize: forBelow900 ? "12px" : "14px",
-                              fontWeight: 400,
-                              mb: 1,
-                              color: "#FFF",
-                              opacity: "64%",
-                            }}
-                          >
-                            Completion Time
-                          </Typography>
-                          <Typography
-                            sx={{
-                              fontSize: forBelow900 ? "14px" : "16px",
-                              fontWeight: 600,
-                              color: "#FFF",
-                            }}
-                          >
-                            {data.timeframe}
-                          </Typography>
-                        </Box>
-                        <Box>
-                          <Typography
-                            sx={{
-                              fontSize: forBelow900 ? "12px" : "14px",
-                              fontWeight: 400,
-                              mb: 1,
-                              color: "#FFF",
-                              opacity: "64%",
-                            }}
-                          >
-                            My Role
-                          </Typography>
-                          <Typography
-                            sx={{
-                              fontSize: forBelow900 ? "14px" : "16px",
-                              fontWeight: 600,
-                              color: "#FFF",
-                            }}
-                          >
-                            {data.role}
-                          </Typography>
-                        </Box>
-                      </Box>
-                    </Box>
-                    <Box>
-                      <Button sx={{ border: "1px solid white", color: "#FFF" }}>
-                        See More
-                      </Button>
-                    </Box>
-                  </Box>
-                </Grid>
-                {!forBelow900 && (
-                  <Grid item lg={6}  md={6}>
-                    <Box sx={{ height: "400px" }}>
-                      <img
-                        src={data.thumbnails}
-                        alt="1"
-                        style={{
-                          height: "400px",
-                        }}
-                      />
-                    </Box>
-                  </Grid>
-                )}
-              </Grid>
+            <Box>
+              <img src={data.thumbnails} alt="thumb" width="100%"/>
+            </Box>
+            <Box sx={{display:"flex", gap:"12px"}}>
+              <Box sx={{width:"40px", height:"40px", backgroundColor:"#000", borderRadius:"100%"}}></Box>
+              <Box>
+                <Typography sx={{fontSize:"16px", fontWeight:700,}}>{data.title}</Typography>
+                <Typography>{data.owner}</Typography>
+              </Box>
             </Box>
           </Box>
         </Grid>

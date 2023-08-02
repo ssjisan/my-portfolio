@@ -1,6 +1,6 @@
 import { Typography, Box, Grid, useMediaQuery } from "@mui/material";
 import React from "react";
-import job from "../../Assets/experience.json";
+import job from "../../Assets/jobDetails.json";
 import { useState } from "react";
 
 export default function JobDetailsCard() {
@@ -10,6 +10,8 @@ export default function JobDetailsCard() {
   const forBelow999 = useMediaQuery("(max-width:999px)");
   // eslint-disable-next-line
   const forBelow567 = useMediaQuery("(max-width:567px)");
+  const reversedData = [...experience].reverse();
+
   return (
     <Box
       sx={{
@@ -18,7 +20,7 @@ export default function JobDetailsCard() {
         width: "100%",
       }}
     >
-      {experience.map((data, i) => {
+      {reversedData.map((data, i) => {
         return (
           <Box sx={{ mb: (forBelow999 && "40px" ) || (i !== experience.length - 1 && "128px")}}>
             <Box

@@ -3,6 +3,7 @@
     "id": 1,
     "title": "Developer Hiring Platform",
     "shortDescription": "A platform for software company, where they can find developer for full time or contractual job",
+    "owner":"TechHack Canada",
     "detailsDescription": "Running Project for my current company. A developer can find job and a company can hire a developer based on their criteria. Firstly developer have to create his/her own accout. And after this developer can attend any skill test. This test result will boost the profile of developer. And a user can create his/her company profile. This company profile will be the identity of the company. Company can create a job circuler,shortlist,hire,offer,set interview for developer",
     "tech": [
       "React.js",
@@ -14,7 +15,7 @@
       "Mongodb"
     ],
     "bg": "#00756A",
-    "thumbnails": "/Assets/Images/Projects/thumbnails/Developer Hiring Platform.png",
+    "thumbnails": "/Assets/Images/Blog/demo.png",
     "image": "/Assets/Images/Projects/tech-hack/landing-page.jpg",
     "github": "",
     "timeframe": "6 months",
@@ -27,9 +28,16 @@
     "title": "Inventory Management",
     "shortDescription": "A platform for a software company, where they can offer their services, and give an update to the client",
     "detailsDescription": "This is a complete full stack dummy project. Is platform can be used for any software fire. Firm can show their prime services, current clients, services price. A user who want to build any tech product like website, e-commerce, mobile app or similar like that they can give an order to the firm. An admin pnale will be added for company staff. By this dashboard they can give an update to the client, receive the order e.t.c",
-    "tech": ["React.js", "React-Hook", "React router", "Material ui", "Lottie"],
+    "tech": [
+      "React.js",
+      "React-Hook",
+      "React router",
+      "Material ui",
+      "Lottie"
+    ],
     "bg": "#EE2E5F",
-    "thumbnails": "/Assets/Images/Projects/thumbnails/Inventesy.png",
+    "thumbnails": "/Assets/Images/Blog/demo.png",
+    "owner":"Inventezy",
     "image": "https://i.ibb.co/R0HhRtJ/innovation-venture.png",
     "github": "https://github.com/ssjisan/innovation-venture",
     "timeframe": "12 months",
@@ -50,7 +58,8 @@
       "Context-api"
     ],
     "bg": "#F1458D",
-    "thumbnails": "/Assets/Images/Projects/thumbnails/Marriage Matrimony Site.png",
+    "thumbnails": "/Assets/Images/Blog/demo.png",
+    "owner":"Inventezy",
     "image": "https://i.ibb.co/P6YGsp5/personality-test.png",
     "github": "https://github.com/ssjisan/personality-test",
     "timeframe": "2 months",
@@ -71,7 +80,7 @@
       "Context-api"
     ],
     "bg": "#1E2128",
-    "thumbnails": "/Assets/Images/Projects/thumbnails/fact.png",
+    "thumbnails": "/Assets/Images/Blog/demo.png",
     "image": "https://i.ibb.co/P6YGsp5/personality-test.png",
     "github": "https://github.com/ssjisan/personality-test",
     "timeframe": "1 months",
@@ -92,7 +101,7 @@
       "Context-api"
     ],
     "bg": "#2964E1",
-    "thumbnails": "/Assets/Images/Projects/thumbnails/Resume Builder.png",
+    "thumbnails": "/Assets/Images/Blog/demo.png",
     "image": "https://i.ibb.co/P6YGsp5/personality-test.png",
     "github": "https://github.com/ssjisan/personality-test",
     "timeframe": "6 months",

@@ -8,23 +8,22 @@ const linkStyle = {
 export default function BlogCard() {
   const forBelow416 = useMediaQuery("(max-width:416px)");
   const [blogData, setBlogData] = useState();
-  const fetchData = async () => {
-    try {
-      const response = await fetch(
-        "https://api.npoint.io/ec39aa8ca509d6cea2ad"
-      );
+  const fetchData = async()=>{
+    try{
+      const response = await fetch("https://api.npoint.io/ec39aa8ca509d6cea2ad"); 
 
-      if (response.ok) {
+      if(response.ok){
         const jsonData = await response.json();
-        setBlogData(jsonData);
-      } else {
+        setBlogData(jsonData)
+      }
+      else{
         console.error("Failed to fetch data:", response.status);
       }
-    } catch (error) {
-      console.error("Error:", error);
     }
-  };
-
+    catch(error){
+      console.log("error",error);
+    }
+  }
   useEffect(() => {
     fetchData();
   }, []);
